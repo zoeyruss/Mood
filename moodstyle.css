@@ -1,0 +1,151 @@
+img,
+video {
+    max-height: 100%
+}
+.fontsize{margin-top:28vh;}
+.fontsize  h1{
+    font-size: 1.5rem;
+    font-family: neue-haas-grotesk-display,sans-serif;
+}
+.fontsize h6{
+    font-family: neue-haas-grotesk-display,sans-serif;
+
+}
+.logo{height: 10vh;}
+ p {
+    width: 20vw;
+    font-size: 1rem;
+    font-family: neue-haas-grotesk-display,sans-serif;
+
+    line-height: 1.5em
+}
+.grid h2 {
+    font-family: neue-haas-grotesk-display,sans-serif;
+    width: 20vw;
+    font-size: 1.14rem;
+    font-weight: 300;
+    line-height: 1.5em;
+    letter-spacing: .02em;
+}
+.fontsize h6{
+    font-size:2rem;
+}
+.grow {
+    transition: all 1s ease;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.grid {
+    background: #fff;
+    display: grid;
+    grid-gap:1rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.grow .card {
+    flex: 1;
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+.grow .card .card__head {
+    text-align: left;
+    top: ba;
+    color: #000;
+    font-size: 1em;
+    transition: all 1s ease;
+    min-width: 100;
+    align-self: center;
+    padding: 1vh 1vw 1vh 1vw;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+}
+
+.grow .card:hover img,
+.grow .card:hover video {
+    filter: grayscale(0)
+}
+
+
+.grow .card:hover .card__head {
+    text-align: left;
+
+    color: #000;
+    font-size: 1em;
+    min-width: 100;
+    
+    align-self: center;
+    padding: 1vh 1vw 1vh 1vw;
+    position: absolute;
+    opacity: 1;
+}
+.grow .card img,
+.grow .card video {
+    width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 1s ease;
+    z-index: 3;
+}
+
+.grow .card img:hover {
+    object-fit: contain
+}
+
+.card {
+    transition: all 1s ease;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.growone .one {
+}
+
+.growone .one:hover {
+
+  
+    
+}
+video{ opacity: 1; 
+
+}
+video:hover{ opacity: 0; 
+
+}
+
+@media (max-width:767px) and (min-width:0px) {
+    .fontsize{
+        margin-top:10vh;
+    }
+.grid{
+display:flex;
+flex-direction: column;}
+.growseven:hover{
+
+}
+.grid h2 {
+    width: 80vw;
+    font-size: 1.14rem;
+    line-height: 1.5em;
+}
+.grid p{
+    width:80vw;
+}
+
+.fontsize h6 {
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+    line-height: 1em;
+}
+.fontsize h1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.fontsize{
+    margin-top:30vh;
+}
+}
