@@ -1,0 +1,1040 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px
+}
+
+blockquote,
+body,
+code,
+dd,
+div,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: 400
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: 400
+}
+
+q:after,
+q:before {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit
+}
+
+legend {
+    color: #000
+}
+
+#yui3-css-stamp.cssreset {
+    display: none
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none
+}
+
+a.btn {
+    z-index: 99999;
+    color: currentColor;
+    position: fixed;
+    right: 15px;
+    opacity: 1;
+    top: 94vh
+}
+
+#top a {
+    text-transform: uppercase
+}
+
+.btn h3 {
+    font-size: .65rem;
+    text-align: center;
+    line-height: 1.15em;
+    text-transform: uppercase;
+    line-height: 1.15em
+}
+
+@media (max-width:598px) and (min-width:0px) {
+    a.btn {
+        top: 94vh
+    }
+    .btn h3 {
+        font-size: .75rem;
+        line-height: 1.15em
+    }
+    a.btntwo {
+        left: -155vw;
+        right: 0
+    }
+}
+
+.process a,
+.processtwo a {
+    font-family: fontthree;
+    border-bottom: .25px solid currentColor;
+    display: inline-block;
+    line-height: 2.8vh
+}
+
+video {
+    max-width: 100%;
+    max-height: auto
+}
+
+body,
+html {
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-wrap: break-word
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden
+}
+
+#OVERlay-menu {
+    background-color: transparent
+}
+
+.warning {
+    position: fixed;
+    height: 100vh;
+    background: #000;
+    width: 100vw;
+    justify-content: space-around;
+    flex-direction: column;
+    opacity: .85;
+    display: flex;
+    align-items: center;
+    z-index: 99999
+}
+
+img {
+    max-width: 100%;
+    max-height: auto
+}
+
+video {
+    max-width: 100%;
+    max-height: auto
+}
+
+.containfit {
+    height: 40vh;
+    object-fit: contain;
+    width: 100%
+}
+
+.paddingtop {
+    padding-top: 10vh
+}
+
+.coverimage,
+.objectfitcover {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw
+}
+
+.containimage {
+    object-fit: cover
+}
+
+.kfk_body .full {
+    background-color: gray
+}
+
+.logo {
+    width: 100%;
+    margin: 1.5vh 1vw
+}
+
+.image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%
+}
+
+.heightvideo {
+    height: auto;
+    width: 100vw;
+    object-fit: contain
+}
+
+.contentright {
+    display: flex
+}
+
+.spantwoleft {
+    grid-column: 1/3
+}
+
+.spanthree {
+    grid-column: 1/4
+}
+
+.padding {
+    padding: 0 12em 0 12em
+}
+
+.imagepadding {
+    padding: 0 4em 0 4em
+}
+
+.paddingbottom15vh {
+    margin-bottom: 12vh
+}
+
+.image {
+    display: flex
+}
+
+.fullvideo {
+    display: flex;
+    align-content: start;
+    height: 100vh
+}
+
+.image img {
+    object-fit: contain
+}
+
+.padding {
+    padding: 0
+}
+
+.imagepadding {
+    padding: 0 9em 0 9em
+}
+
+.ux_body .projbody span {
+    font-weight: 600;
+    font-family: neue-haas-grotesk-display, sans-serif
+}
+
+.spanthin {
+    font-weight: 200
+}
+
+.blackback {
+    background-color: #000
+}
+
+@font-face {
+    font-family: fontone;
+    src: url(fonts/SuisseIntl-Book.ttf)
+}
+
+@font-face {
+    font-family: fontthree;
+    src: url(fonts/SangBleuEmpireTrial-Regular.ttf)
+}
+
+@font-face {
+    font-family: Fonttwo;
+    src: url(fonts/SuisseIntl-Light.ttf)
+}
+
+@font-face {
+    font-family: Fontfour;
+    src: url(fonts/SangBleuEmpireTrial-Medium.ttf)
+}
+
+h2 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    letter-spacing: .03em;
+    line-height: .9em;
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 2vh
+}
+
+h1 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    scroll-behavior: initial;
+    user-select: none;
+    font-style: 100;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    letter-spacing: .05em;
+    line-height: .9em;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 2.3rem
+}
+
+.indexbio h1 {
+    color: #fff
+}
+
+.projhead h1 {
+    font-family: Fontone;
+    font-size: 2.9rem;
+    font-weight: 500;
+    margin-right: 6vw;
+    color: #000;
+    letter-spacing: .96px;
+    line-height: 3rem
+}
+
+h3 {
+    font-size: 1rem;
+    font-family: neue-haas-grotesk-display, sans-serif
+}
+
+.smcolumns_about h4 {
+    color: #fff
+}
+
+.about_inner_columns h3 {
+    color: #fff
+}
+
+.smcolumns_desc h4 {
+    color: #000
+}
+
+.smcolumns_desc .about_inner_columns h3 {
+    color: #000
+}
+
+.biotext h6 {
+    color: #fff;
+    font-size: 2rem
+}
+
+h6 {
+    font-family: Neue Haas Grotesk Text Pro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 3em;
+    letter-spacing: .04em;
+    color: #000
+}
+
+footer {
+    height: 10vh;
+    line-height: 40vh;
+    padding: 5rem
+}
+
+.footer a,
+.footer h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+    line-height: 6vh;
+    font-weight: 300;
+    font-size: 1.5rem
+}
+
+.footer {
+    line-height: 12vh;
+    height: 20vh;
+    padding: 3em 1em 2em 6em;
+    background-color: #000
+}
+
+.bio_head h3 {
+    font-size: 4rem;
+    color: #fff;
+    font-family: fonttwo
+}
+
+h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 1em;
+    letter-spacing: .04em;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    color: #000
+}
+
+h5 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 34px;
+    letter-spacing: .09em;
+    color: #302f2f
+}
+
+h3 {
+    font-size: 1.05rem;
+    font-family: neue-haas-grotesk-display, sans-serif
+}
+
+h6 {
+    font-family: Neue Haas Grotesk Text Pro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: .85rem;
+    line-height: 3em;
+    letter-spacing: .04em;
+    color: #000
+}
+
+h5 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: .09em;
+    color: #302f2f
+}
+
+.bio_body p {
+    width: 47vw
+}
+
+p {
+    font-family: Fonttwo;
+    width: 100%;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.15rem;
+    letter-spacing: .05em;
+    line-height: 1.6
+}
+
+.startLogo {
+    position: fixed
+}
+
+.ExperienceHead h1 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: .96px;
+    line-height: 3rem
+}
+
+.experience_body p {
+    font-size: 1rem;
+    line-height: 1em
+}
+
+.projectdescription h4 {
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.85rem;
+    line-height: 1em;
+    letter-spacing: .04em;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    color: #000
+}
+
+@media (max-width:2500px) and (min-width:1601px) {
+    a.btntwo {
+        left: 0;
+        right: 90vw
+    }
+    h1 {
+        font-size: 2.75rem;
+        line-height: 1.6em
+    }
+    .projectdescription h4 {
+        font-size: 2rem;
+        line-height: 1em
+    }
+    h5 {
+        font-size: .85rem;
+        line-height: 2em
+    }
+    P {
+        font-size: 2rem
+    }
+    .projhead h1 {
+        font-size: 4rem;
+        line-height: 3.8rem
+    }
+    .process a {
+        font-size: 1.4rem
+    }
+}
+
+@media (max-width:1600px) and (min-width:1025px) {
+    a.btntwo {
+        left: 0;
+        right: 90vw
+    }
+    h1 {
+        font-size: 2.15rem;
+        letter-spacing: .05em;
+        line-height: 1.5em
+    }
+    h2 {
+        font-size: 1.2rem
+    }
+}
+
+@media (max-width:1024px) and (min-width:768px) {
+    a.btntwo {
+        left: 0;
+        right: 90vw
+    }
+    h1 {
+        font-size: 1.8rem
+    }
+    .projhead h1 {
+        font-size: 2.3rem;
+        line-height: 2.2rem;
+        margin-bottom: 6vh
+    }
+    .bg_body p,
+    .ux_body p,
+    p {
+        font-size: 1.1rem
+    }
+    .experience h1 {
+        font-size: 2rem
+    }
+    h5 {
+        font-size: .75rem
+    }
+    h4 {
+        font-size: 2.5rem
+    }
+}
+
+@media (max-width:767px) and (min-width:599px) {
+    a.btntwo {
+        left: 0;
+        right: 90vw
+    }
+    .bio_body p {
+        width: 87vw
+    }
+    h1 {
+        font-size: 1.8rem
+    }
+    .ux_body .projhead h1 {
+        font-size: 2rem;
+        line-height: 2rem
+    }
+    .projhead h1 {
+        font-size: 2.3rem;
+        line-height: 2.2rem;
+        margin-bottom: 6vh
+    }
+    .bg_body p,
+    .ux_body p,
+    p {
+        font-size: 1.1rem
+    }
+    .projhead h1 {
+        font-family: Fontone;
+        font-size: 2.9rem;
+        font-weight: 500;
+        margin-right: 6vw;
+        color: #000;
+        letter-spacing: .96px;
+        line-height: 3rem
+    }
+    .projhead h1 {
+        font-size: 2.3rem;
+        line-height: 2.2rem;
+        margin-bottom: 3vh
+    }
+    p {
+        font-size: 1.1rem
+    }
+    h4 {
+        font-size: 2.5rem
+    }
+    h5 {
+        font-size: .65rem
+    }
+    .dropdown h3 {
+        font-size: 4.05rem;
+        line-height: 4rem;
+        font-weight: 400
+    }
+    h3 {
+        font-size: 1.5rem;
+        line-height: 3em;
+        font-family: neue-haas-grotesk-display, sans-serif
+    }
+    a.btntwo {
+        left: -90vw;
+        right: 74vw
+    }
+    a.btntwo {
+        left: -90vw;
+        right: 74vw
+    }
+}
+
+@media (max-width:598px) and (min-width:376px) {
+    a.btn {
+        top: 94vh
+    }
+    .btn h3 {
+        font-size: .75rem;
+        line-height: 1.15em
+    }
+    a.btntwo {
+        left: -155vw;
+        right: 0
+    }
+    .bio_body p {
+        width: 87vw
+    }
+    .footer a,
+    .footer h4 {
+        font-size: 1.25rem
+    }
+    h1 {
+        font-size: 1.85rem
+    }
+    .projhead h1 {
+        font-family: Fontone;
+        font-size: 2.9rem;
+        font-weight: 500;
+        margin-right: 6vw;
+        color: #000;
+        letter-spacing: .96px;
+        line-height: 3rem
+    }
+    .projhead h1 {
+        font-size: 2.3rem;
+        line-height: 2.2rem;
+        margin-bottom: 3vh
+    }
+    p {
+        font-size: 1rem
+    }
+    h4 {
+        font-size: 2.255rem
+    }
+    h5 {
+        font-size: .65rem
+    }
+    h3 {
+        font-size: 1.05rem;
+        font-family: neue-haas-grotesk-display, sans-serif
+    }
+    .dropdown h3 {
+        font-size: 4.05rem;
+        font-weight: 400;
+        line-height: 4rem
+    }
+    h3 {
+        font-size: 1.5rem;
+        line-height: 3em;
+        font-weight: 400;
+        font-family: neue-haas-grotesk-display, sans-serif
+    }
+    .smcolumns_desc h4 {
+        color: #fff
+    }
+    .smcolumns_desc .about_inner_columns h3 {
+        color: #fff
+    }
+}
+
+@media (max-width:375px) and (min-width:0px) {
+    a.btn {
+        top: 94vh
+    }
+    .btn h3 {
+        font-size: .75rem;
+        line-height: 1.15em
+    }
+    a.btntwo {
+        left: -155vw;
+        right: 0
+    }
+    .bio_body p {
+        width: 87vw
+    }
+    .footer a,
+    .footer h4 {
+        font-size: 1.25rem
+    }
+    h1 {
+        font-size: 1.5rem
+    }
+    .projhead h1 {
+        font-family: Fontone;
+        font-size: 2.9rem;
+        font-weight: 500;
+        margin-right: 6vw;
+        color: #000;
+        letter-spacing: .96px;
+        line-height: 3rem
+    }
+    .projhead h1 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        margin-bottom: 3vh
+    }
+    p {
+        font-size: 1rem;
+        line-height: 1.4em
+    }
+    h4 {
+        font-size: 1.75rem
+    }
+    h5 {
+        font-size: .65rem
+    }
+    h3 {
+        font-size: 1.05rem;
+        font: 400;
+        font-family: neue-haas-grotesk-display, sans-serif
+    }
+    .dropdown h3 {
+        font-size: 4.05rem;
+        font-weight: 400: 4rem
+    }
+    h3 {
+        font-size: 1.5rem;
+        line-height: 3em;
+        font-family: neue-haas-grotesk-display, sans-serif
+    }
+    .smcolumns_desc h4 {
+        color: #fff
+    }
+    .smcolumns_desc .about_inner_columns h3 {
+        color: #fff
+    }
+    .projectdescription h4 {
+        font-size: 1.6rem
+    }
+}
+
+.index_body #content-back,
+.index_body #content-back .content-container {
+    position: absolute;
+    width: 100%;
+    min-height: 100%
+}
+
+.index_body .change-navbar-two {
+    display: none
+}
+
+.index_body .change-navbar {
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear
+}
+
+.change-navbar,
+.change-navbar-two {
+    width: 100%;
+    height: 3.88889rem;
+    position: absolute;
+    z-index: 120
+}
+
+.change-navbar .container-fluid,
+.change-navbar-two .container-fluid {
+    padding: 0
+}
+
+.change-navbar .logo a,
+.change-navbar-two .logo a {
+    color: #000
+}
+
+a {
+    color: #000;
+    transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    text-decoration: none;
+    color: #000
+}
+
+nav {
+    right: 0;
+    text-align: right
+}
+
+.change-navbar .logo,
+.change-navbar nav,
+.change-navbar-two .logo,
+.change-navbar-two nav {
+    position: absolute;
+    height: 2%;
+    line-height: 1
+}
+
+.change-navbar .nav-active {
+    background-color: #fff;
+    mix-blend-mode: none
+}
+
+.menu {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 100%
+}
+
+.menu li {
+    padding: 1.2em 3em 1em 1em
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: ease-in-out .4s
+}
+
+.nav-links-drop {
+    display: none;
+    position: fixed;
+    z-index: 1
+}
+
+.nav-links-drop a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    position: relative
+}
+
+.change-navbar {
+    mix-blend-mode: exclusion;
+    filter: invert(1)!important
+}
+
+.change-navbar {
+    display: block!important;
+    opacity: 1!important
+}
+
+.change-navbar-two {
+    display: none
+}
+
+.dropdown:hover .nav-links-drop {
+    display: block
+}
+
+.change-navbar-two .logo a {
+    display: none
+}
+
+@media (max-width:999px) and (min-width:0px) {
+    .change-navbar-two {
+        mix-blend-mode: exclusion;
+        filter: invert(1)!important
+    }
+    .change-navbar-two {
+        display: block!important;
+        opacity: 1!important
+    }
+    .index_body .change-navbar-two {
+        position: fixed;
+        display: block;
+        width: 30%;
+        opacity: 0;
+        top: 0;
+        transition: background-color .2s linear;
+        -moz-transition: background-color .2s linear;
+        -webkit-transition: background-color .2s linear;
+        -o-transition: background-color .2s linear
+    }
+    .index_body .change-navbar {
+        width: 30%;
+        right: 0
+    }
+    .change-navbar-two .logo a {
+        display: block
+    }
+    .change-navbar .logo a {
+        display: none
+    }
+    .nav-bar-two {
+        display: flex
+    }
+    .change-navbar {
+        mix-blend-mode: unset;
+        filter: invert(0)!important
+    }
+    .change-navbar {
+        z-index: 999;
+        display: block!important;
+        opacity: 1!important
+    }
+    .nav-links {
+        text-align: left;
+        padding-top: 10vw;
+        right: 0;
+        display: block;
+        transform: translateX(100%);
+        transition: all ease-in-out .3s;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all ease-in-out .3s;
+        justify-content: flex-start;
+        align-items: left;
+        transform: translate(100%);
+        justify-content: baseline
+    }
+    .nav .nav-links {
+        display: flex
+    }
+    .burger {
+        cursor: pointer;
+        right: 0;
+        display: block;
+        margin: 2vh 2vw;
+        position: fixed;
+        top: 0
+    }
+    .nav-active {
+        padding-top: 2vh;
+        height: 100vh;
+        text-align: left;
+        width: 100vw;
+        transform: translateX(0);
+        transform: 0
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 38px;
+        height: 1px;
+        background-color: gray;
+        margin: 6.5px;
+        transition: all ease .3s
+    }
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-12px, 10px)
+    }
+    .change .bar2 {
+        opacity: 0
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-2px, -2px);
+        transform: rotate(45deg) translate(0, 1px)
+    }
+    .dropdown {
+        text-decoration: none;
+        margin: 0 2em 4em 3em;
+        border-bottom: .1px solid #000
+    }
+    .dropdown h3 {
+        font-size: 4.05rem;
+        font-weight: 400;
+        line-height: 4rem
+    }
+    .dropdown:hover .nav-links-drop {
+        display: none
+    }
+}

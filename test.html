@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="generator" content="SuperHi" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Video hover</title>
+		<link rel="stylesheet" href="css/aos.css" />
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<style>
+			body {
+				overflow-y: scroll;
+				overflow-x: hidden;
+				height: 100%;
+				width: 100%;
+			}
+			.Video-Grid {
+				display: grid;
+				height: 200vh;
+				z-index: 1;
+				background: white;
+				grid-template-columns: repeat(4, 1fr);
+			}
+
+			video {
+				max-width: 100%;
+
+				cursor: pointer;
+			}
+			section.container-4-Experience.container {
+				position: relative;
+				height: 400vh;
+				box-sizing: border-box;
+				flex-direction: column;
+				display: flex;
+				top: 34vh;
+				background: white;
+				z-index: 4;
+			}
+		</style>
+	</head>
+
+	<body
+		class="index_body"
+		translate="no"
+		data-aos-easing="ease"
+		data-aos-duration="1200"
+		data-aos-delay="0"
+	>
+		<section class="container-4-Experience container">
+			<div class="line number-sticky  number-sticky-container-3">
+				<h2>03.</h2>
+			</div>
+			<div class="item learn-subsection">
+				<div class="line number-sticky">
+					<span>Experience</span>
+				</div>
+			</div>
+
+			<div class="video-grid">
+				<video
+					src="images/Render_Final_Mood_Logo_Motion_AD2_Spring2020_2.mov"
+					loop=""
+				></video>
+				<video
+					src="images/V2_Behaviors_DynamicLogo_AD2_Spring2020 copy 2.mp4"
+					loop=""
+				></video>
+				<video class="video" src="images/1_motiongraphic.mp4" loop=""></video>
+				<video src="4-design.mp4" loop=""></video>
+				<video src="5-time.mp4" loop=""></video>
+				<video src="6-interests.mp4" loop=""></video>
+				<video src="7-ui.mp4" loop=""></video>
+				<video src="8-telescope.mp4" loop=""></video>
+			</div>
+		</section>
+		<script src="videohover.js"></script>
+	</body>
+</html>
