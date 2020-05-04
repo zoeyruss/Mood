@@ -29,7 +29,7 @@
 					<ul class="menu nav-links" id="nav-links">
 						<li class="dropdown">
 							<a href="#.html">
-								<h3>Experience</h3>
+								<h3>About</h3>
 							</a>
 						</li>
 						<li class="dropdown">
@@ -39,22 +39,24 @@
 						</li>
 						<li class="dropdown">
 							<a href="#.html">
-								<h3>Explore</h3>
+								<h3>Experience</h3>
+							</a>
+						</li>
+						<li class="dropdown">
+							<a href="#.html">
+								<h3>Experience</h3>
 							</a>
 						</li>
 					</ul>
 
 					<div class="burger" onclick="myFunction(this)">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
+						<h3>Menu</h3>
 					</div>
 					<a href="#top" class="top-btn">
 						<h3>↑ <br />top</h3>
 					</a>
 				</header>
 
-				<a name="top"></a>
 				<main class="index">
 					<section class="Section-1-Landing container">
 						<video
@@ -73,10 +75,16 @@
 					</section>
 
 					<section class="Section-2-About container">
-						<div class="number-sticky">
+						<div class="number-sticky invert">
 							<h2>01.</h2>
 						</div>
-						<div class="Container-Grid">
+						<div class="item sub-section learn-subsection">
+							<div class="number-sticky flex-column">
+								<span class="sub-section">About</span>
+							</div>
+						</div>
+
+						<div class="Container-Grid about-info-section">
 							<video
 								class="Letter-1-Video letter-video"
 								playsinline=""
@@ -88,26 +96,58 @@
 							</video>
 
 							<div class="item item-1 item-sticky">
-								<h4>What is "Mood"?</h4>
+								<h4> <span>mood</span></h4>
 								<p>
-									Mood is a social campagin that aims to spread awareness and
-									openly talk about anxiety and depression
+									Mood is a community and social campaign which aims to question
+									and inform others on the realities of those living with
+									anxiety and depression.
+								</p>
+							</div><div class="item item-2-about item-sticky">
+								<h4>About –</span></h4>
+							</div>
+											</div>
+										<div class="Container-Grid about-info-section">
+													
+											
+
+							<div class="item item-1 item-sticky">
+							
+								<p>
+									The ultimate goal of Mood is to get others to question societal outlook on hiding/mask mental illness. Mood
+									visualizes mental illness throughmotion graphics, augmented reality, and every object, such as clothing, to
+									visualizing anxiety and depression. <br>Having a
+									visual representation of these disorders aims to help people who don't suffer to understand and to connect those who
+									do
+									suffer as a reminder they are not alone.
 								</p>
 							</div>
-						</div>
+							<div class="item item-2-about item-sticky">
+								<h4>Goals –</span></h4>
+							</div>
+														
+													
+											
+											<span class="pull-qoute item-sticky">you are<br />
+												not alone</span>
+											</div>
+
+				
 					</section>
 					<section class="Section-3-Learn container">
 						<div class="number-sticky number-sticky-container-3">
 							<h2>02.</h2>
 						</div>
 						<div class="item sub-section learn-subsection">
-							<div class="number-sticky">
-								<span>Learn</span>
+							<div class="number-sticky flex-column">
+								<span class="sub-section">Learn</span>
+								<a href="#anxiety-learn">anxiety</a>
+								<a href="#depression-learn">depression</a>
 							</div>
 						</div>
 
 						<div class="item anxiety-subsection">
 							<div class="number-sticky sticky-anxiety">
+								<a class="anxiety-learn" id="anxiety-learn"></a>
 								<h5>anxiety</h5>
 							</div>
 							<div class="Container-Grid">
@@ -128,7 +168,7 @@
 								</video>
 							</div>
 						</div>
-						<div class="item depression-subsection">
+						<div class="item depression-subsection" id="depression-learn">
 							<div class="number-sticky sticky-depression">
 								<h5>depression</h5>
 							</div>
