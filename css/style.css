@@ -33,6 +33,17 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
+::-moz-selection { /* Code for Firefox */
+  background-color: black;
+  color:white;
+}
+
+::selection {
+  background-color: black;
+  opacity: 1;
+  color:white;
+
+}
 .index{display: flex;width: 100vw;flex-direction: column;}
 
 
@@ -401,6 +412,10 @@ and (max-device-width : 1800px) {
 }
 .Container-Grid {grid-template-rows: repeat(5,20%);grid-template-columns: repeat(5, 20%);}
 .item-sticky{width: 30vw;}
+.item-2-about{grid-column:1/2;}
+.item.item-1.item-sticky.display-flex {
+    width: 43vw;
+}
 }
 
 @media only screen 
@@ -415,6 +430,9 @@ and (min-width : 1801px)
 .Section-1-Landing{
   height: 112vh;
 }
+.item.item-1.item-sticky.display-flex {
+    width: 43vw;
+}
 
 }
 /*Section One Close*/
@@ -427,6 +445,11 @@ and (min-width : 1801px)
   flex-direction: column;
   display: flex;
   z-index: 4;
+}
+.display-flex{
+  display:flex;
+  flex-direction: row;
+  margin-right:2vw;
 }
 .about-info-section.Container-Grid{
 }
@@ -468,7 +491,7 @@ and (max-device-width : 1024px) {
 and (min-width : 1024px)
 and (max-device-width : 1800px) { 
   .Section-2-About {height: 150vh;}
-  .about-info-section.Container-Grid{height: 140vh;}
+  .about-info-section.Container-Grid{height: 140vh;padding: 4vh 0vw 5vh 3vw;}
   
 }
 
@@ -1254,10 +1277,13 @@ span{
   letter-spacing: 0.01em;
   letter-spacing: -.01em;
 }
-p{font-size: 1.51rem;}
+p{font-size: 1.5rem;}
+p.margin-right{margin-right: 5vw;}
 span.pull-qoute{
   grid-row: 3;
   top: 66vh;
+  text-align: right;
+  grid-column: 1/5;
 }
 }
 
@@ -1387,7 +1413,7 @@ margin: 1vh 2vw 1vh 1vw;
   .burger {
     right: 0;
     position: fixed;
-    top: 0;
+    top: 14px;
   }
   .burger h3{
 
@@ -1397,7 +1423,8 @@ margin: 1vh 2vw 1vh 1vw;
   .nav-active {
     padding-top: 2vh;
     height: 100vh;
-    text-align: left;
+    position: absolute;
+    text-align: right;
     width: 100vw;
     transform: translateX(0%);
   }
@@ -1578,7 +1605,7 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (min-width : 1024px)
 and (max-device-width : 1800px) { 
-  .Section-2-About {height: 500vh;}
+  .Section-2-About {height: 330vh;}
   
 }
 
@@ -1624,6 +1651,7 @@ and (max-device-width : 1800px) {
   .item.item-1.item-sticky {
     grid-column: 2/4;
     height: 13vh;
+    width: 27vw;
     margin-bottom: 10vh;
 }
 item-2-about{grid-column:1/2}
