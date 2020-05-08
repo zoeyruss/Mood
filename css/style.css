@@ -337,7 +337,6 @@ a.top-btn:hover{
 .Section-1-Landing{
   background: white;
   top: 0;
-  height: 100vh;
   padding-bottom: 8vh;
   align-items: flex-end;
   position: relative;
@@ -408,7 +407,6 @@ and (max-device-width : 1800px) {
        transform: translate(34%, -2%);
 }
 .Section-1-Landing{
-  height: 120vh;
 }
 .Container-Grid {grid-template-rows: repeat(5,20%);grid-template-columns: repeat(5, 20%);}
 .item-sticky{width: 30vw;}
@@ -440,7 +438,6 @@ and (min-width : 1801px)
 
 .Section-2-About {
   position: relative;
-  height: 100vh;
   box-sizing: border-box;
   flex-direction: column;
   display: flex;
@@ -490,7 +487,7 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (min-width : 1024px)
 and (max-device-width : 1800px) { 
-  .Section-2-About {height: 150vh;}
+  .Section-2-About {}
   .about-info-section.Container-Grid{height: 140vh;padding: 4vh 0vw 5vh 3vw;}
   
 }
@@ -559,7 +556,6 @@ and (min-width : 1801px)
 /*Section Three Open*/
 .Section-3-Learn {
   position: relative;
-  height: 300vh;
   box-sizing: border-box;
   flex-direction: column;
   display: flex;
@@ -574,15 +570,12 @@ and (min-width : 1801px)
 
 
 .number-sticky.sticky-anxiety {
-    height: 23vh;
     margin-bottom: 20vh;
     top: 15vh;
     mix-blend-mode: exclusion;
     filter: invert(1) !important;
 }
 .number-sticky.sticky-depression{
-    height: 23vh;
-  
     top: 20vh;
     mix-blend-mode: exclusion;
     filter: invert(1) !important;
@@ -598,12 +591,10 @@ and (min-width : 1801px)
 .item.anxiety-subsection {
   z-index: 1;
   background: white;
-  height: 150vh;
   }
   .item.depression-subsection {
   z-index: 1;
   background: white;
-  height: 150vh;
   }
 
 .number-sticky-container-3{
@@ -666,7 +657,6 @@ and (max-device-width : 1800px) {
      }
 
 .Section-3-Learn {
-  height: 400vh;
   }
 }
 
@@ -693,7 +683,6 @@ and (min-width : 1801px)
 /*Section Three Open*/
 section.Section-4-Experience.container {
   position: relative;
-  height: 450vh;
   box-sizing: border-box;
   padding: 0;
   flex-direction: column;
@@ -1190,11 +1179,11 @@ img {
   max-width: 100%;
   max-height: auto;
 }
-span.pull-qoute{font-size: 12rem;grid-column: 1/4;grid-row: 15;line-height: .8em;width: 100%;margin-top: 5vh;font-family: suisse int;}
+span.pull-qoute{font-size: 16rem;grid-column: 1/4;grid-row: 15;line-height: .8em;width: 100%;margin-top: 5vh;font-family: suisse int;}
 span.mood{
-         font-size: 19rem;
-       font-style: italic;
-       font-family:recife-italic;
+         font-size: 15rem;
+         font-style: italic;
+         font-family:recife-italic;
 }
 span{
        font-size: 12rem;
@@ -1277,11 +1266,11 @@ span{
   letter-spacing: 0.01em;
   letter-spacing: -.01em;
 }
-p{font-size: 1.5rem;}
+p{font-size: 1.25rem;}
 p.margin-right{margin-right: 5vw;}
 span.pull-qoute{
-  grid-row: 3;
-  top: 66vh;
+  grid-row: 2;
+  top: 59vh;
   text-align: right;
   grid-column: 1/5;
 }
@@ -1467,7 +1456,6 @@ a.top-btn:hover{
 .Section-1-Landing{
   background: white;
   top: 0;
-  height: 100vh;
   padding-bottom: 8vh;
   align-items: flex-end;
   position: relative;
@@ -1503,10 +1491,9 @@ video.Logo-Video:hover{
         }
         .item-sticky{
   position: sticky;
-  top: 33vh;
-      mix-blend-mode: exclusion ;
-    filter: invert(1) !important;
-
+  top: 27vh;
+  mix-blend-mode: exclusion;
+  filter: invert(1) !important;
   background: white;
   margin-left: 8vw;
   }
@@ -1536,9 +1523,7 @@ and (max-device-width : 1800px) {
        height: 98vh;
        transform: translate(34%, -2%);
 }
-.Section-1-Landing{
-  height: 120vh;
-}
+.Section-1-Landing{position: relative;height: 120vh;}
 .Container-Grid {grid-template-rows: repeat(5,20vh);grid-template-columns: repeat(5, 20%);}
 .item-sticky{width: 30vw;}
 }
@@ -1562,7 +1547,6 @@ and (min-width : 1801px)
 
 .Section-2-About {
   position: relative;
-  height: 100vh;
   box-sizing: border-box;
   flex-direction: column;
   display: flex;
@@ -1605,7 +1589,7 @@ and (max-device-width : 1024px) {
 @media only screen 
 and (min-width : 1024px)
 and (max-device-width : 1800px) { 
-  .Section-2-About {height: 330vh;}
+  .Section-2-About {}
   
 }
 
@@ -1650,7 +1634,6 @@ and (max-device-width : 1800px) {
   }
   .item.item-1.item-sticky {
     grid-column: 2/4;
-    height: 13vh;
     width: 27vw;
     margin-bottom: 10vh;
 }
@@ -1676,7 +1659,6 @@ and (min-width : 1801px)
 /*Section Three Open*/
 .Section-3-Learn {
   position: relative;
-  height: 300vh;
   box-sizing: border-box;
   flex-direction: column;
   display: flex;
@@ -1691,15 +1673,12 @@ and (min-width : 1801px)
 
 
 .number-sticky.sticky-anxiety {
-    height: 23vh;
     margin-bottom: 20vh;
     top: 15vh;
     mix-blend-mode: exclusion;
     filter: invert(1) !important;
 }
 .number-sticky.sticky-depression{
-    height: 23vh;
-  
     top: 20vh;
     mix-blend-mode: exclusion;
     filter: invert(1) !important;
@@ -1715,19 +1694,16 @@ and (min-width : 1801px)
 .item.anxiety-subsection {
   z-index: 1;
   background: white;
-  height: 150vh;
   }
   .item.depression-subsection {
   z-index: 1;
   background: white;
-  height: 150vh;
   }
 
 .number-sticky-container-3{
   mix-blend-mode: exclusion;
   filter: invert(1) !important;}
 .learn-subsection {
-    height: 50vh;
     background: black;
     color: white;
     z-index: 1;
@@ -1783,7 +1759,6 @@ and (max-device-width : 1800px) {
      }
 
 .Section-3-Learn {
-  height: 400vh;
   }
 }
 
@@ -1810,7 +1785,6 @@ and (min-width : 1801px)
 /*Section Three Open*/
 section.Section-4-Experience.container {
   position: relative;
-  height: 450vh;
   box-sizing: border-box;
   padding: 0;
   flex-direction: column;
@@ -2257,3 +2231,8 @@ footer {
 
 
 
+/* Section 5 Wear */
+.t-shirt-subsection{
+   z-index: 1;
+  background: white; 
+}
