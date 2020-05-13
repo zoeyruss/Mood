@@ -1,0 +1,92 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+		<link rel="stylesheet" href="" />
+
+		<script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
+
+		<link rel="stylesheet" href="flickity.css" media="screen" />
+
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body
+		class="index_body"
+		translate="no"
+		data-aos-easing="ease"
+		data-aos-duration="1200"
+		data-aos-delay="0"
+	>
+		<div id="follower">
+			<div id="circle"></div>
+		</div>
+
+		<header class="change-navbar header-container">
+			<a class="logo" href="index.html">
+				<img class="logo-image" src="images/2_logo.svg" />
+			</a>
+
+			<ul class="menu nav-links" id="nav-links">
+				<li class="dropdown">
+					<a href="#.html">
+						<h3>About</h3>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="#.html">
+						<h3>Learn</h3>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="#.html">
+						<h3>Experience</h3>
+					</a>
+				</li>
+				<li class="dropdown">
+					<a href="#.html">
+						<h3>Experience</h3>
+					</a>
+				</li>
+			</ul>
+
+			<div class="menu" onclick="myFunction(this)">
+				<h3>Menu</h3>
+			</div>
+			<a href="#top" class="top-btn">
+				<h3>↑ <br />top</h3>
+			</a>
+		</header>
+
+		<main class="index">
+			<div
+				class="carousel"
+				data-flickity='{ "freeScroll": true, "wrapAround": true }'
+			>
+				<div class="carousel-cell">
+					<video playsinline="" autoplay="" loop="" muted="">
+						<source type="video/mp4" src="images/3_motion.mp4" />
+					</video>
+				</div>
+				<div class="carousel-cell">
+					<video playsinline="" autoplay="" loop="" muted="">
+						<source type="video/mp4" src="images/4_motion.mp4" />
+					</video>
+				</div>
+				<div class="carousel-cell">
+					<img src="images/v3 4- Mug Mockup.png" />
+				</div>
+				<div class="carousel-cell"></div>
+				<div class="carousel-cell"></div>
+			</div>
+		</main>
+
+		<script src="js/cube.js"></script>
+		<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
