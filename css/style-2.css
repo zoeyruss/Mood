@@ -48,17 +48,7 @@ html{scroll-behavior:smooth;font-size:16px}blockquote,body,code,dd,div,dl,dt,fie
      background: white;
      overflow-x: hidden;
 }
- ::-moz-selection {
-    /* Code for Firefox */
-     background-color: black;
-     color:white;
-     opacity: 1;
-}
- ::selection {
-     background-color: black;
-     opacity: 1;
-     color:white;
-}
+
  video {
      height: auto;
      object-fit: cover;
@@ -84,8 +74,12 @@ html{scroll-behavior:smooth;font-size:16px}blockquote,body,code,dd,div,dl,dt,fie
      font-size: 1rem;
 }
  h4 {
+    font-weight: 100;
     font-size: 2.5rem;
     line-height: 48px;
+}
+h4.anxiety-is{
+  font-size:4rem;
 }
  h5{
      letter-spacing: .08em;
@@ -108,7 +102,7 @@ html{scroll-behavior:smooth;font-size:16px}blockquote,body,code,dd,div,dl,dt,fie
     line-height: 3rem;
 }
 p.margin-right{
-  margin-right:3vw;
+  margin-right: 0;
 }
  span.typeface{
     font-family: recife-italic;
@@ -121,14 +115,22 @@ p.margin-right{
     font-size: 16rem;
     line-height: 0rem;
 }
+span.pull-qoute-span{
+    font-size: 2rem;
+    font-family: recife-italic;
+}
  em.intro{
-     font-size: 20rem;
+     font-size: 18rem;
      font-style: italic;
      font-family:recife-italic;
 }
+em.intro-anxiety{
+    font-size: 28rem;
+    line-height: .5em;
+}
  span.largetext{
     font-weight: 300;
-    font-size: 225px;
+    font-size: 13rem;
     line-height: 89.3%;
     display: block;
     text-align: right;
@@ -169,19 +171,23 @@ p.margin-right{
      span.largetext{
          font-size: 225px;
     }
+    p.margin-right {
+    margin-right: 3vw;
+}
 }
  @media only screen and (min-width : 1024px) and (max-device-width : 1800px) {
      h1 {
-        font-size: 9rem;
+        font-size: 8rem;
     }
      h2 {
-         font-size: 29px;
+         line-height: 4rem;
+         font-size: 2rem;
     }
      h3 {
          font-size: 1rem;
     }
      h4 {
-         font-size: 37px;
+         font-size: 2rem;
     }
      h5{
         font-size: 1.25rem;
@@ -191,7 +197,7 @@ p.margin-right{
     }
      p{
         font-size: 1.6rem;
-        line-height: 1.5em;
+        line-height: 1.25em;
     }
      span.intro{
         font-size: 15rem;
@@ -202,6 +208,9 @@ p.margin-right{
      span.largetext{
         font-size: 19rem;
     }
+    p.margin-right {
+    margin-right: 3vw;
+}
 }
  @media only screen and (min-width : 1801px) {
      h1 {
@@ -256,7 +265,7 @@ p.margin-right{
 }
  .sticky-item-bottom{
      position: sticky;
-     top: 95vh;
+     top: 93vh;
      width: 100%;
      bottom: 0vh;
      padding-left: 7vw;
@@ -267,7 +276,7 @@ p.margin-right{
 }
  .item-sticky{
      position: sticky;
-     top: 25vh;
+     top: 18vh;
      mix-blend-mode: exclusion;
      filter: invert(1) !important;
      display: flex;
@@ -289,8 +298,8 @@ p.margin-right{
      flex-direction: column;
 }
  .display-flex-row{
-     display: flex;
      flex-direction: column;
+     display: flex;
 }
  :root {
      // We just need to know these 3 values up front: --wrapper: 100vw;
@@ -316,14 +325,21 @@ p.margin-right{
      z-index: 1;
      display: grid;
 }
+a{z-index:9999;}
+a.tiny-link{
+ border-bottom: 1px black solid;
+ color: black;
+}
  @media only screen and (min-width : 1024px) and (max-device-width : 1800px) {
      .sub-section{
          height: 100vh;
-         padding: 17vh 14vw;
+         padding: 16vh 6vw;
     }
     .Container-Grid{
           padding-bottom: 40vh;
+          width: 100vw;
     }
+     .display-flex-row{flex-direction: row;}
 }
 /*open topnav */
  header{
@@ -346,7 +362,6 @@ p.margin-right{
      right: 0;
      display: block;
      transform: translateX(100%);
-     transition: all ease-in-out .1s;
      text-align: center;
      width: 100%;
      height: 100%;
@@ -389,7 +404,7 @@ p.margin-right{
 }
  a.top-btn {
      color: black;
-     z-index: 9;
+     z-index: 9999;
      position: fixed;
      background: white;
      display: flex;
@@ -420,12 +435,10 @@ p.margin-right{
      transform: rotate(-90deg);
      top: 50vh;
      mix-blend-mode: exclusion;
-     z-index: 7;
+     z-index: 999;
      color: white;
 }
- h6.h6-hover{
-     transition: ease-in-out 1s;
-}
+
  a.depression-mood-link.rotate-link.invert{
      right: -26px;
 }
@@ -502,16 +515,17 @@ p.margin-right{
          grid-row: 1/8;
     }
  .item.grid-item-1.item-sticky.display-flex-row {
-     grid-column: 3/10;
+     grid-column: 2/10;
+     grid-row: 2/6;
 }
  .sticky-item-bottom.Qoute-item{
-     grid-column: 2/11;
+     grid-column: 1/11;
      top: 0;
-     grid-row: 12/20;
+     grid-row: 16/20;
      bottom: 0;
 }
 .spacer{
-  height: 22vh;
+  height: 29vh;
   width: 100vw;
   grid-column:1/11;
   grid-row: 7/10;
@@ -547,8 +561,269 @@ p.margin-right{
          top: 12vh;
          width: 70%;
     }
+     .sticky-item-bottom.Qoute-item{
+     grid-column: 2/11;
+     top: 0;
+     grid-row: 12/20;
+     bottom: 0;
+}
+
+.spacer{
+  height: 22vh;
+  grid-column:1/11;
+  grid-row: 7/10;
+}
 }
 /*Section 2 about close */
  /*Section 3 Nav Open*/
+li.nav-section-item {
+margin-left:30vw;
+}
+li.nav-section-item a{
+  z-index: 9999;
+   font-family:recife-italic;
+   letter-spacing:.05em;
+    color: white;
+    font-size:6rem;
+    line-height:9rem;
+}
+ul.sticky-item-top {
+    z-index: 9999;
+}
+ @media only screen and (min-width : 1024px) and (max-device-width : 1800px) {
+ li.nav-section-item {z-index: 9999;
+  margin-left:30vw;}
+li.nav-section-item a{
+    color: white;
 
+    cursor: pointer;
+    font-size: 4rem;
+    line-height:13rem;
+   
+}
+
+
+
+
+}
   /*Section 3 Nav Close*/
+    /*Anxiety page Section 4 Anxiety open*/ 
+    section.Section.Section-1.Anxiety.Landing-Page{
+      flex-direction: column;
+      height: 114vh;
+      padding-bottom: 18vh;
+    }
+.Anxiety-Landing-Video {height: 62vh;}
+.item-1-anxiety.item.aos-init.aos-animate{
+  align-self: center;
+  background: white;
+}
+.grid-item-2-anxiety-is{
+  grid-column: 1/6;
+  top: 8vh;
+}
+.item.qoute-1.display-flex-row {
+    grid-column: 2/6;
+    grid-row: 4/5;
+}
+.item.qoute-2.display-flex-row {
+    grid-column: 1/6;
+}
+.item.qoute-3.display-flex-row{
+      grid-column: 1/6;
+
+}
+.item.qoute-4.display-flex-row {
+    grid-column: 1/6;
+}
+.item.qoute-5.display-flex-row{
+      grid-column: 1/6;
+
+}
+.item.qoute-6.display-flex-row{
+      grid-column: 1/6;
+
+}
+.item.qoute-7.display-flex-row {
+    grid-column: 1/6;
+}
+.item.qoute-8.display-flex-row{
+      grid-column: 1/6;
+
+}
+ video.Letter-2-Video{
+     grid-column: 5/11;
+     grid-row: 2/9;
+     height: 70vh;
+     justify-self: auto;
+}
+.Container-Grid.anxiety-is-section{
+  grid-template-columns: repeat(5,20vw);
+  grid-auto-rows: 10vh;}
+
+.image-Container-Grid {
+  display: grid;
+	max-width: var(--wrapper);
+	grid-template-columns: repeat(var(--noOfColumns), 1fr);
+	grid-auto-flow: dense;
+	grid-auto-rows: minmax(var(--rh), auto);
+	grid-gap: var(--gutter);
+
+}
+
+  .video-1{
+    grid-column: 1/6;
+    grid-row: 1/6;
+    z-index: 1;
+    }
+
+.video-2 {grid-column: 8/11;grid-row: 5/8;z-index: 2;}
+
+.video-3 {
+    grid-column: 8/11;
+    z-index: 3;
+    grid-row: 3/6;
+}
+.video-4 {grid-column: 5/8;grid-row: 5/8;z-index: 3;}
+.video-5 {grid-row: 1/6;grid-column: 6/11;z-index: 1;}
+.video-6 {grid-column: 3/4;grid-row: 3/4;z-index: 2;}
+.video-7 {grid-column: 5/7;grid-row: 1/5;z-index: 3;}
+.video-8 {
+    z-index: 3;
+    grid-column: 1/4;
+    grid-row: 4/7;
+}
+.video-9{
+grid-column: 1/2;
+    grid-row: 1/2;}
+.video-10 {grid-column: 1/5;z-index: 1;grid-row: 4/8;}
+.video-11 {
+grid-column: 1/2;
+    grid-row: 1/2;}
+.video-12 {
+    grid-column: 3/7;
+    grid-row: 2/6;
+}
+.video-13 {grid-column: 8/11;grid-row: 6/9;z-index: 2;}
+.video-14 {grid-column: 1/2;grid-row: 14/15;}
+.video-15 {grid-row: 15/19;grid-column: 4/8;}
+.video-16 {grid-column: 10/11;grid-row: 19/20;}
+.video-17 {
+    grid-column: 2/6;
+    grid-row: 2/6;
+}
+.video-18{
+    grid-column: 1/2;
+    grid-row: 20/21;
+}
+.video-19{
+    grid-column: 5/9;
+    grid-row: 26/30;
+}
+
+
+
+ @media only screen and (min-width : 1024px) and (max-device-width : 1800px) {
+     section.Section.Section-1.Anxiety.Landing-Page{
+      flex-direction: row-reverse;
+      height: 118vh;
+    }
+.Anxiety-Landing-Video {height: 100vh;}
+.item-1-anxiety.item.aos-init.aos-animate{
+  align-self: center;
+  background: white;
+}
+p.width-sm{
+  width: 37%;
+  margin-left: 7vw;
+}
+.item.qoute-1.Goal-paragraph.display-flex-row {
+    grid-column: 5/9;
+}
+.item.qoute-2.display-flex-row {
+    grid-column: 4/5;
+    grid-row: 7/9;
+}
+.item.qoute-3.display-flex-row{
+      grid-column: 2/3;
+      grid-row: 13/15;
+}
+.item.qoute-4.display-flex-row{
+      grid-column: 4/6;
+      grid-row: 12/14;
+}
+.item.qoute-5.display-flex-row{
+      grid-column: 3/4;
+      grid-row: 5/7;
+}
+.item.qoute-6.display-flex-row{
+      grid-column: 1/3;
+      top: 120vh;
+}
+.item.qoute-7.display-flex-row{
+      grid-column: 3/5;
+      grid-row: 17/18;
+}
+.sticky-item-bottom.sticky-item-bottom-anxiety {
+    right: 90vw;
+}
+ video.Letter-2-Video{
+     grid-column: 1/8;
+     grid-row: 5/12;
+     height: 80vh;
+     justify-self: auto;
+}
+
+  .video-1{
+    grid-column: 1/6;
+    grid-row: 1/6;
+    z-index: 1;
+    }
+
+.video-2 {grid-column: 8/11;grid-row: 5/8;z-index: 2;}
+
+.video-3 {
+    grid-column: 8/11;
+    z-index: 3;
+    grid-row: 3/6;
+}
+.video-4 {grid-column: 5/8;grid-row: 5/8;z-index: 3;}
+.video-5 {grid-row: 1/6;grid-column: 6/11;z-index: 1;}
+.video-6 {grid-column: 3/4;grid-row: 3/4;z-index: 2;}
+.video-7 {grid-column: 5/7;grid-row: 1/5;z-index: 3;}
+.video-8 {
+    z-index: 3;
+    grid-column: 1/4;
+    grid-row: 4/7;
+}
+.video-9{
+grid-column: 1/2;
+    grid-row: 1/2;}
+.video-10 {grid-column: 1/5;z-index: 1;grid-row: 4/8;}
+.video-11 {
+grid-column: 1/2;
+    grid-row: 1/2;}
+.video-12 {
+    grid-column: 3/7;
+    grid-row: 2/6;
+}
+.video-13 {grid-column: 8/11;grid-row: 6/9;z-index: 2;}
+.video-14 {grid-column: 1/2;grid-row: 14/15;}
+.video-15 {grid-row: 15/19;grid-column: 4/8;}
+.video-16 {grid-column: 10/11;grid-row: 19/20;}
+.video-17 {
+    grid-column: 2/6;
+    grid-row: 2/6;
+}
+.video-18{
+    grid-column: 1/2;
+    grid-row: 20/21;
+}
+.video-19{
+    grid-column: 5/9;
+    grid-row: 26/30;
+}
+}    
+    
+    
+    /*Anxiety page Section 4 Anxiety open*/ 
