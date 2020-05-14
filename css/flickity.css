@@ -18,16 +18,6 @@ object-fit: contain;
   counter-increment: carousel-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
-
 
 
 /*! Flickity v2.2.1
@@ -102,7 +92,7 @@ button.flickity-button.flickity-prev-next-button.previous{
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -231,13 +221,14 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button:hover {
-  background: white;
+
+
   
 }
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -260,7 +251,6 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button {
   top: 50%;
   width: 50%;
-  mix-blend-mode: difference;
   height: 100vh;
   
   /* vertically center */
@@ -334,15 +324,7 @@ body { font-family: sans-serif; }
   counter-increment: carousel-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
+
 
 
 
@@ -399,13 +381,13 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button:hover {
-  background: white;
+
   
 }
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -533,14 +515,11 @@ https://flickity.metafizzy.co
   border: none;
 }
 
-.flickity-button:hover {
-  background: white;
-  
-}
+
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -563,7 +542,7 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button {
   top: 50%;
   width: 50%;
-  mix-blend-mode: difference;
+
   height: 100vh;
   
   /* vertically center */
@@ -639,12 +618,7 @@ body { font-family: sans-serif; }
 
 /* cell number */
 .carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  display: none;
 }
 
 
@@ -704,13 +678,13 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button:hover {
-  background: white;
+  
 
 }
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -839,14 +813,10 @@ https://flickity.metafizzy.co
   color: #333;
 }
 
-.flickity-button:hover {
-  background: white;
-  
-}
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -869,7 +839,6 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button {
   top: 50%;
   width: 50%;
-  mix-blend-mode: difference;
   height: 100vh;
   
   /* vertically center */
@@ -943,15 +912,6 @@ body { font-family: sans-serif; }
   counter-increment: carousel-cell;
 }
 
-/* cell number */
-.carousel-cell:before {
-  display: block;
-  text-align: center;
-  content: counter(carousel-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
 
 
 
@@ -1007,14 +967,11 @@ https://flickity.metafizzy.co
   color: #333;
 }
 
-.flickity-button:hover {
-  background: white;
-  
-}
+
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -1143,14 +1100,11 @@ https://flickity.metafizzy.co
   border: none;
 }
 
-.flickity-button:hover {
-  background: white;
-  
-}
+
 
 .flickity-button:focus {
   outline: none;
-  box-shadow: 0 0 0 5px #19F;
+  
 }
 
 .flickity-button:active {
@@ -1173,7 +1127,6 @@ https://flickity.metafizzy.co
 .flickity-prev-next-button {
   top: 50%;
   width: 50%;
-  mix-blend-mode: difference;
   height: 100vh;
   
   /* vertically center */

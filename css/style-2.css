@@ -26,7 +26,7 @@ body.index_body.depression{
          content:"";
          cursor: none;
          position:absolute;
-         z-index:999;
+         z-index: 6;
          top:var(--y);
          left:var(--x);
          right:0;
@@ -366,7 +366,7 @@ a.tiny-link{
      position: fixed;
 }
  .change-navbar {
-     z-index: 3;
+     z-index: 9;
      height: 7vh;
      width: 100%;
      opacity: 0;
@@ -993,3 +993,10 @@ grid-column: 1/2;
     color: black;
 }
     /*anxiety page section 5 despression close*/
+
+    /*ar section*/
+.carousel.flickity-enabled.is-draggable {
+    width: 100vw;
+    z-index: 7;
+    height: 100vh;
+}
