@@ -1,0 +1,73 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Experiment 1a - perspective-skew</title>
+
+		<style>
+			body,
+			html {
+				height: 100%;
+			}
+
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			@font-face {
+				font-family: Morganite-SemiBold;
+				src: url(./fonts/Morganite-SemiBold.otf);
+			}
+			h1:nth-child(1) {
+				animation-delay: 0.1s;
+				-webkit-animation-delay: 0.1s;
+			}
+			h1:nth-child(2) {
+				animation-delay: 0.5s;
+				-webkit-animation-delay: 0.5s;
+			}
+			h1:nth-child(3) {
+				animation-delay: 1s;
+				-webkit-animation-delay: 1s;
+			}
+			h1 {
+				transition: all 0.5s ease-in-out;
+				text-transform: uppercase;
+				font-size: 52rem;
+				font-family: Morganite-SemiBold;
+				margin: 0 auto;
+				height: 52px;
+			}
+			h1:hover {
+				transition: all 0.5s ease-in-out;
+				animation-name: perspective-skew;
+				animation: perspective-skew 5s ease;
+				-webkit-animation: perspective-skew 5s ease;
+				animation-timing-function: ease;
+				-webkit-animation: perspective-skew 5s ease;
+			}
+			h1:hover {
+				transform: translate(0, -50px);
+			}
+			@keyframes perspective-skew {
+				0% {
+					transform: skew(60deg, -30deg) scaleY(0.667);
+				}
+
+				100% {
+					transform: translate(0, -50px);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<section>
+			<h1>N</h1>
+			<h1>o</h1>
+			<h1>w</h1>
+		</section>
+	</body>
+</html>
