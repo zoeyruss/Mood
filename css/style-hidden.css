@@ -132,7 +132,7 @@ p.margin-right{
     line-height: 0rem;
 }
 span.pull-qoute-span{
-    font-size: 1.75rem;
+    font-size: 2.3rem;
     font-family: recife-italic;
 }
  em.intro{
@@ -845,7 +845,7 @@ li.nav-section-item a{
 .item-1-anxiety-define{
   grid-row: 9/10;
   z-index: 2;
-  width: 85%;
+  width: 98%;
   filter: invert(1);
   grid-column: 2/4;
   mix-blend-mode: exclusion;
@@ -882,12 +882,12 @@ li.nav-section-item a{
 }
 .item.qoute-7.display-flex-row {
     grid-column: 1/5;
-    grid-row: 11/12;
+    grid-row: 16/17;
     margin-left: 3vw;
 }
 .item.qoute-8.display-flex-row{
-      grid-column: 1/6;
-
+      grid-column: 1/5;
+      grid-row: 12/18;
 }
  video.Letter-2-Video{
      grid-column: 4/11;
