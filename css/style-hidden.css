@@ -18,7 +18,7 @@ h2.warning{
      margin:0;
      padding:0;
      cursor: pointer;
-     font-family: neue-haas-grotesk-display, sans-serif;
+     font-family: sans-serif;
      box-sizing: border-box;
      font-size: 16px;
      scroll-behavior: smooth;
@@ -51,7 +51,6 @@ body.index_body.depression{
 }
  a {
      cursor: pointer;
-     pointer-events: none;
      text-decoration: none;
 }
  body, html {
@@ -82,20 +81,20 @@ body.index_body.depression{
  h2 {
     font-family: recife-italic;
     font-style: italic;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 35px;
 }
  h3 {
-     font-size: 1rem;
+     font-size: 1.5rem;
 }
  h4 {
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 2.95rem;
     line-height: 48px;
 }
 h4.anxiety-is,
 h4.depression-is{
-  font-size:4rem;
+  font-size: 6rem;
 }
 
  h5{
@@ -124,24 +123,23 @@ p.margin-right{
  span.typeface{
     font-family: recife-italic;
     font-style: italic;
-    font-size: 4rem;
+    font-size: 6rem;
     line-height: 6.75rem;
 }
  span.intro{
     font-weight: 500;
-    font-size: 4rem;
-    line-height: 6rem;
-}
- em.intro{
-     font-size: 6rem;
-     font-style: italic;
-     font-family:recife-italic;
+    font-size: 18rem;
+    line-height: 0rem;
 }
 span.pull-qoute-span{
     font-size: 1.75rem;
     font-family: recife-italic;
 }
-
+ em.intro{
+     font-size: 21rem;
+     font-style: italic;
+     font-family:recife-italic;
+}
 em.intro-anxiety{
     font-size: 28rem;
     line-height: .5em;
@@ -175,11 +173,14 @@ em.intro-depression{
          font-size: 29px;
     }
      h3 {
-         font-size: 1rem;
+         font-size: 1.25rem;
     }
      h4 {
-         font-size: 3rem;
+         font-size: 2rem;
     }
+    h4.depression-is {
+    font-size: 5rem;
+}
      h5{
          font-size: 26px;
     }
@@ -191,16 +192,19 @@ em.intro-depression{
          line-height: 2.76rem;
     }
      span.intro{
-         font-size: 4rem;
+         font-size: 205px;
     }
      em.intro{
-         font-size: 6rem;
+         font-size: 21rem;
     }
      span.largetext{
          font-size: 13rem;
     }
     p.margin-right {
     margin-right: 3vw;
+}
+em.intro-depression{
+        font-size: 12rem;
 }
 }
  @media only screen and (min-width : 1024px)  {
@@ -215,7 +219,8 @@ em.intro-depression{
          font-size: 1rem;
     }
      h4 {
-         font-size: 2.75rem;
+         font-size: 1.75rem;
+         line-height: 1.4em;
     }
      h5{
         font-size: 1.25rem;
@@ -228,15 +233,11 @@ em.intro-depression{
         line-height: 1.25em;
     }
      span.intro{
-        font-size: 5rem;
+        font-size: 19rem;
     }
      em.intro{
-        font-size: 5rem;
+        font-size: 20rem;
     }
-    .item-1 {
-    top: 0;
-    width: 66vw;
-}
      span.largetext{
         font-size: 19rem;
     }
@@ -248,6 +249,9 @@ em.intro-anxiety {
     line-height: .5em;
     letter-spacing: 0.02em;
 }
+em.intro-depression{
+        font-size: 15rem;
+}
 
 }
  
@@ -256,7 +260,7 @@ em.intro-anxiety {
  section{
      width: 100vw;
      top: 0;
-     align-items: flex-start;
+     align-items: flex-end;
      position: relative;
      display: flex;
      justify-content: flex-end;
@@ -264,10 +268,10 @@ em.intro-anxiety {
 }
  .sticky-item-top{
      position: sticky;
-     top: 9vh;
      width: 100%;
      bottom: 0vh;
      z-index: 9;
+     margin-bottom: 5vh;
      grid-row: 1;
 }
  .sticky-item-bottom{
@@ -294,7 +298,7 @@ em.intro-anxiety {
      color: white;
      background:black;
      width: 100vw;
-     height: 50vh;
+     height: 75vh;
      z-index: 1;
      top: 0;
      padding: 17vh 14vw;
@@ -332,10 +336,17 @@ em.intro-anxiety {
      z-index: 1;
      display: grid;
 }
-a{z-index:9999;}
+a{z-index:8;}
 a.tiny-link{
  border-bottom: 1px black solid;
  color: black;
+}
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+      .sticky-item-bottom{
+       top: 93vh;
+       grid-column: 1/5;
+     }
+
 }
  @media only screen and (min-width : 1024px){
      .sub-section{
@@ -345,78 +356,109 @@ a.tiny-link{
     .Container-Grid{
           padding-bottom: 40vh;
           width: 100vw;
+          grid-template-columns: repeat(5,20vw);
     }
      .display-flex-row{flex-direction: row;}
      .sticky-item-bottom{
-       top:;
        top: 93vh;
        grid-column: 1/3;
      }
 }
 /*open topnav */
- header{
-     position: fixed;
+header.open,
+header:after {
+    overflow: hidden;
 }
- .change-navbar {
-     z-index: 9;
-     height: 7vh;
-     width: 100%;
-     opacity: 0;
-     top: 0;
-     transition: background-color .2s linear;
-     -moz-transition: background-color .2s linear;
-     -webkit-transition: background-color .2s linear;
-     -o-transition: background-color .2s linear;
+.main-nav,
+header:after {
+    position: absolute;
 }
- .nav-links{
-     text-align: left;
-     padding-top: 10vw;
-     right: 0;
-     display: block;
-     transform: translateX(100%);
-     text-align: center;
-     width: 100%;
-     height: 100%;
-     top: 0;
-     display: flex;
-     flex-direction: column;
-     justify-content: flex-start;
-     align-items: left;
-     transform: translate(100%);
-     justify-content: baseline;
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
 }
- .dropdown:hover .nav-links-drop {
-     display: none;
+
+@-webkit-keyframes slideOutLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
+        visibility: hidden;
+    }
 }
- .change-navbar{
-     mix-blend-mode: exclusion ;
-     filter: invert(1) !important;
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
 }
- .change-navbar {
-     display: block !important;
-     opacity: 1 !important;
+header:after {
+  background: red;
+  content: "";
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100vw;
 }
- .burger {
-     position: fixed;
-     width: 17vw;
-     height: 9vw;
-     background: black;
-     top: 0px;
-     justify-content: center;
-     display: flex;
-     align-items: center;
-     right: 0;
+header.open:after {
+    opacity: 1;
+    visibility: visible;
 }
- .nav-active {
-     padding-top: 2vh;
-     height: 100vh;
-     text-align: left;
-     width: 100vw;
-     transform: translateX(0%);
+
+.main-nav:not(.open) {
+    visibility: hidden;
 }
+
+.main-nav.open {
+    visibility: visible;
+    width: 100vw;
+}
+.main-nav.open div {
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+.nav-menu {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: black;
+    height: 5vh;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18vw;
+}
+
+h5{
+    color: white;
+}
+.menu-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+
  a.top-btn {
      color: black;
-     z-index: 9999;
+     z-index: 9;
      position: fixed;
      background: white;
      display: flex;
@@ -441,13 +483,26 @@ a.tiny-link{
 }
  a.logo.change-navbar {
      position: fixed;
+     width: 100%;
 }
+
+ .change-navbar{
+    z-index: 9;
+    top: 0;
+    mix-blend-mode: exclusion;
+    filter: invert(1) !important;
+}
+ .change-navbar {
+     display: block !important;
+     opacity: 1 !important;
+}
+
  .rotate-link{
      position: absolute;
      transform: rotate(-90deg);
      top: 50vh;
      mix-blend-mode: exclusion;
-     z-index: 999;
+     z-index: 9;
      color: white;
 }
 
@@ -460,11 +515,15 @@ a.tiny-link{
 }
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
       a.top-btn{
-         width: 8vw;
+         width: 9vw;
          right: 1vw;
          top: 92vh;
-         height: 6vh;
+         height: 7vh;
     }
+    .nav-menu {
+    height: 6vh;
+    width: 16vw;
+}
 
 
 }
@@ -490,14 +549,15 @@ a.tiny-link{
      a.anixety-mood-link.rotate-link.invert{
          left: 0px;
     }
+        .nav-menu {
+    height: 5vh;
+    width: 8vw;
+}
 }
 /*close topnav*/
 /*Section 1 Landing Page Open*/
  .Section-1.Landing-Page{
      height: 108vh;
-     position: fixed;
-     justify-content: center;
-     align-items: center;
 }
  video.Logo-Video {
      height: 55vh;
@@ -507,16 +567,100 @@ a.tiny-link{
      top: 16vh;
 }
  .item-1{
-    top: 0;
-    width: 81vw;
+    align-self: baseline;
 }
  @media only screen and (min-width : 1024px)  {
      .Section-1.Landing-Page{
-         height: 100vh;
-         justify-content: end;
-         position: fixed;
-         justify-content: center;
-         align-items: center;
+         height: 110vh;
+         justify-content: flex-end;
+    }
+     video.Logo-Video {
+         height: 113vh;
+         top: -12vh;
+    }
+}
+
+
+/*Nav Section 3 Landing Page Open */
+.perspective-text {
+  color: white;
+  font-weight: 900;
+  background: black;
+  height: 100vh;
+  z-index: 9;
+}
+.perspective-text-background{
+    height: black;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+}
+
+p.perspective {
+  margin: 0;
+  height: 5rem;
+  line-height: 6rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 5.5rem;
+}
+
+
+.perspective-line:hover p.perspective {
+  transform: translate(0, -90px);
+ 
+}
+.perspective-text a{
+  color: white;
+  font-weight: 900;
+}
+a p.perspective {
+  margin: 0;
+  height: 5.35rem;
+  line-height: 5rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 5.5rem;
+}
+a p.perspective-italic {
+  margin: 0;
+  height: 5.35rem;
+font-family:recife-italic;
+  line-height: 5rem;
+  transition: all 0.3s ease-in-out;
+  font-size: 5.5rem;
+}
+.perspective-line {
+  position: relative;
+  z-index: 9;
+  left: 37%;
+  height: 5.5rem;
+  overflow: hidden;
+  margin-bottom: 7vh;
+  top: 20%;
+}
+.sticky-item-bottom.color-white{
+    color: black;
+    top: 10vh;
+} 
+
+/*Nav Section 3 Landing Page Close */
+/*Section 1 Landing Page Open*/
+ .Section-1.Landing-Page{
+     height: 108vh;
+}
+ video.Logo-Video {
+     height: 55vh;
+     filter: brightness(1.15);
+     align-self: center;
+     position: fixed;
+     top: 16vh;
+}
+ .item-1{
+    align-self: baseline;
+}
+ @media only screen and (min-width : 1024px)  {
+     .Section-1.Landing-Page{
+         height: 110vh;
+         justify-content: flex-end;
     }
      video.Logo-Video {
          height: 113vh;
@@ -537,9 +681,10 @@ a.tiny-link{
  .item.grid-item-1.item-sticky.display-flex-column {
      grid-column: 1/10;
      grid-row: 2/3;
+     top: 21vh;
 }
  .item.grid-item-2-about.item-sticky {
-     grid-column: 1/3;
+     grid-column: 1/5;
      grid-row: 1/2;
      top: 11.5vh;
 }
@@ -554,8 +699,8 @@ a.tiny-link{
 }
  .sticky-item-bottom.Qoute-item{
      grid-column: 1/11;
-     top: 0;
-     grid-row: 21/26;
+     top: 101vh;
+     grid-row: 12/13;
      bottom: 0;
 }
 .spacer{
@@ -575,11 +720,15 @@ a.tiny-link{
 }
  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
      video.Letter-1-Video{
-         grid-column: 8/14;
-         grid-row: 5/14;
-         height: 130vh;
+         grid-column: 6/14;
+         grid-row: 12/18;
+         height: 93vh;
          justify-self: auto;
     }
+    .item.grid-item-2-about.item-sticky {
+    grid-column: 1/6;
+
+}
  }
  @media only screen and (min-width : 1024px)  {
      video.Letter-1-Video{
@@ -600,8 +749,8 @@ a.tiny-link{
          top: 26.5vh;
     }
      .item.grid-item-2-Goals.item-sticky{
-         top: 12vh;
-         grid-column: 2/8;
+         top: 13vh;
+         grid-column: 1/5;
          grid-row: 1/8;
     }
      .item-sticky.Qoute-item{
@@ -630,7 +779,7 @@ a.tiny-link{
  /*Section 3 Nav Open*/
 li.nav-section-item {margin: 8vh 0vw 7vh 11vw;}
 li.nav-section-item a{
-  z-index: 9999;
+  z-index: 9;
   font-family:recife-italic;
   letter-spacing:.05em;
   color: white;
@@ -638,7 +787,7 @@ li.nav-section-item a{
   line-height: 6rem;
 }
 ul.sticky-item-top {
-    z-index: 9999;
+    z-index: 9;
 }
 .nav-subsection{
     height: 100vh;
@@ -653,7 +802,7 @@ transform: skewY(90deg, 15deg);
 
 }
  @media only screen and (min-width : 1024px)  {
- li.nav-section-item {z-index: 9999;
+ li.nav-section-item {z-index: 9;
   margin-left:30vw;}
 li.nav-section-item a{
     color: white;
@@ -683,16 +832,20 @@ li.nav-section-item a{
    display: grid;
    grid-auto-rows: 10vh;
    grid-template-columns: repeat(3,1fr);
+   color: black;
    }
-.Anxiety-Landing-Video {height: 69vh;grid-column: 2/4;grid-row: 1/5;}
+.Anxiety-Landing-Video {height: 83vh;grid-column: 2/4;width: auto;grid-row: 1/4;}
 .item-1-anxiety.item.aos-init.aos-animate{
   align-self: center;
-  grid-column: 1/4;
-  grid-row: 3/7;
+  grid-column: 1/3;
+  grid-row: 4/6;
+  filter: invert(1);
+  mix-blend-mode: exclusion;
 }
 .item-1-anxiety-define{
   grid-row: 9/10;
   z-index: 2;
+  width: 85%;
   filter: invert(1);
   grid-column: 2/4;
   mix-blend-mode: exclusion;
@@ -701,45 +854,53 @@ li.nav-section-item a{
   grid-column: 1/6;
   top: 8vh;
 }
+.qoute-item{
+    filter: invert(1);
+    mix-blend-mode: exclusion;
+}
 .item.qoute-1.display-flex-row {
-    grid-column: 2/6;
-    grid-row: 4/5;
+    grid-column: 2/4;
+    grid-row: 7/8;
 }
 .item.qoute-2.display-flex-row {
-    grid-column: 1/6;
+    grid-column: 3/6;
+    grid-row: 13/14;
+    margin-right: 1vw;
 }
-.item.qoute-3.display-flex-row{
-      grid-column: 1/6;
-
-}
+.item.qoute-3.display-flex-row{grid-column: 1/4;margin-left: 4vw;grid-row: 4/6;}
 .item.qoute-4.display-flex-row {
-    grid-column: 1/6;
+    grid-column: 4/6;
+    grid-row: 3/4;
 }
 .item.qoute-5.display-flex-row{
-      grid-column: 1/6;
-
+      grid-column: 2/5;
+      grid-row: 9/10;
 }
 .item.qoute-6.display-flex-row{
       grid-column: 1/6;
 
 }
 .item.qoute-7.display-flex-row {
-    grid-column: 1/6;
+    grid-column: 1/5;
+    grid-row: 11/12;
+    margin-left: 3vw;
 }
 .item.qoute-8.display-flex-row{
       grid-column: 1/6;
 
 }
  video.Letter-2-Video{
-     grid-column: 5/11;
-     grid-row: 2/9;
-     height: 70vh;
+     grid-column: 4/11;
+     grid-row: 4/9;
+     height: 56vh;
+     transform: rotate(180deg);
      justify-self: auto;
 }
 .Container-Grid.anxiety-is-section,
 .Container-Grid.depression-is-section{
-  grid-template-columns: repeat(5,20vw);
-  grid-auto-rows: 10vh;}
+  grid-template-columns: repeat(5,1fr);
+  grid-auto-rows: 10vh;
+  }
 
 .image-Container-Grid {
   display: grid;
@@ -752,37 +913,36 @@ li.nav-section-item a{
 }
 
   .video-1{
-    grid-column: 1/6;
-    grid-row: 1/6;
+    grid-column: 1/10;
+    grid-row: 1/10;
     z-index: 1;
     }
 
-.video-2 {grid-column: 8/11;grid-row: 5/8;z-index: 2;}
+.video-2 {grid-column: 5/11;grid-row: 10/16;z-index: 2;}
 
 .video-3 {
-    grid-column: 8/11;
-    z-index: 3;
-    grid-row: 3/6;
+    grid-column: 6/11;
+    z-index: 4;
+    grid-row: 3/8;
 }
-.video-4 {grid-column: 5/8;grid-row: 5/8;z-index: 3;}
+.video-4 {grid-column: 3/11;grid-row: 4/13;z-index: 3;}
 .video-5 {grid-row: 1/6;grid-column: 6/11;z-index: 1;}
-.video-6 {grid-column: 3/4;grid-row: 3/4;z-index: 2;}
+.video-6 {grid-column: 1/4;grid-row: 13/16;z-index: 3;}
 .video-7 {grid-column: 5/7;grid-row: 1/5;z-index: 3;}
 .video-8 {
-    z-index: 3;
-    grid-column: 1/4;
-    grid-row: 4/7;
+    z-index: 1;
+    grid-column: 4/11;
+    grid-row: 14/21;
 }
-.video-9{
-grid-column: 1/2;
-    grid-row: 1/2;}
+.video-9{grid-column: 1/5;grid-row: 10/14;z-index: 1;}
 .video-10 {grid-column: 1/5;z-index: 1;grid-row: 4/8;}
 .video-11 {
 grid-column: 1/2;
     grid-row: 1/2;}
 .video-12 {
-    grid-column: 3/7;
-    grid-row: 2/6;
+    grid-column: 1/6;
+    grid-row: 16/20;
+    z-index: 2;
 }
 .video-13 {grid-column: 8/11;grid-row: 6/9;z-index: 2;}
 .video-14 {grid-column: 1/2;grid-row: 14/15;}
@@ -806,18 +966,26 @@ grid-column: 1/2;
  @media only screen and (min-width : 1024px) {
      section.Section.Section-1.Anxiety.Landing-Page{
       flex-direction: row-reverse;
+      grid-template-columns: repeat(5,1fr);
       height: 118vh;
     }
-.Anxiety-Landing-Video {height: 100vh;grid-column: 4/7;grid-row: 1/11;}
+.Anxiety-Landing-Video {height: 100vh;grid-column: 4/7;grid-row: 1/11;mix-blend-mode: difference;filter: invert(1);z-index: 1;}
 .item-1-anxiety.item.aos-init.aos-animate {
     align-self: center;
     grid-column: 1/3;
 }
 .item-1-anxiety.item.aos-init.aos-animate{
   align-self: center;
-  grid-column: 1/3;
-  grid-row: 1/9;
+  grid-column: 1/4;
+  grid-row: 3/5;
   background: white;
+}
+.item-1-anxiety-define {
+    grid-row: 9/10;
+    z-index: 2;
+    filter: invert(1);
+    grid-column: 2/4;
+    mix-blend-mode: exclusion;
 }
 p.width-sm{
   width: 37%;
@@ -826,38 +994,53 @@ p.width-sm{
 .item.qoute-1.Goal-paragraph.display-flex-row {
     grid-column: 5/9;
 }
+.item.qoute-1.display-flex-row {
+    grid-column: 2/4;
+    grid-row: 7/8;
+    justify-content: center;
+}
+
 .item.qoute-2.display-flex-row {
-    grid-column: 4/5;
-    grid-row: 7/9;
+    grid-column: 1/3;
+    grid-row: 9/10;
+    justify-self: center;
+    width: 75%;
 }
 .item.qoute-3.display-flex-row{
-      grid-column: 2/3;
+      grid-column: 3/5;
       grid-row: 13/15;
 }
 .item.qoute-4.display-flex-row{
-      grid-column: 4/6;
+      grid-column: 2/4;
       grid-row: 12/14;
 }
 .item.qoute-5.display-flex-row{
-      grid-column: 3/4;
+      grid-column: 4/5;
       grid-row: 5/7;
 }
 .item.qoute-6.display-flex-row{
-      grid-column: 1/3;
-      top: 120vh;
+      grid-column: 2/4;
+      grid-row: 21/22;
+      justify-content: center;
 }
 .item.qoute-7.display-flex-row{
-      grid-column: 3/5;
+      grid-column: 1/3;
       grid-row: 17/18;
+}
+.item.qoute-8.display-flex-row{
+      grid-column: 4/5;
+      grid-row: 23/24;
 }
 .sticky-item-bottom.sticky-item-bottom-anxiety {
     right: 90vw;
 }
  video.Letter-2-Video{
-     grid-column: 1/8;
-     grid-row: 5/12;
-     height: 80vh;
+     grid-column: 4/6;
+     grid-row: 3/12;
+     height: 108vh;
      justify-self: auto;
+     top: 20vh;
+     position: sticky;
 }
 
   .video-1{
@@ -1025,6 +1208,15 @@ grid-column: 1/2;
     background: white;
     color: black;
 }
+ @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) {
+ 
+.item-1-depression-define{
+    grid-column: 2/6;
+    grid-row: 6/8;
+}
+.item.grid-item-2-depression-is.item-sticky{
+  grid-column:1/5;}
+}
     /*anxiety page section 5 despression close*/
 
     /*ar section*/
@@ -1035,4 +1227,4 @@ grid-column: 1/2;
 }
 
 
-
+   
