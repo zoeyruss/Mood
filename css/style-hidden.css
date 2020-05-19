@@ -434,12 +434,12 @@ header.open:after {
     display: inline-block;
     position: relative;
     background: black;
-    height: 5vh;
+    height: 6vh;
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 18vw;
+    width: 20vw;
 }
 
 h5{
@@ -582,9 +582,13 @@ h5{
 .perspective-text {
   color: white;
   font-weight: 900;
+  width: 100vw;
   background: black;
+  align-items: center;
   height: 100vh;
   z-index: 9;
+  display: flex;
+  flex-direction: column;
 }
 .perspective-text-background{
     height: black;
@@ -628,8 +632,8 @@ font-family:recife-italic;
 .perspective-line {
   position: relative;
   z-index: 9;
-  left: 37%;
   height: 5.5rem;
+  width: 50%;
   overflow: hidden;
   margin-bottom: 7vh;
   top: 20%;
