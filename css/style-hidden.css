@@ -405,13 +405,11 @@ header:after {
 header:after {
   background: red;
   content: "";
-  height: 100vh;
   left: 0;
   opacity: 0;
   padding: 0;
   top: 0;
   visibility: hidden;
-  width: 100vw;
 }
 header.open:after {
     opacity: 1;
@@ -424,7 +422,6 @@ header.open:after {
 
 .main-nav.open {
     visibility: visible;
-    width: 100vw;
 }
 .main-nav.open div {
     animation-duration: 0.2s;
@@ -1227,4 +1224,4 @@ grid-column: 1/2;
 }
 
 
-   
+   w

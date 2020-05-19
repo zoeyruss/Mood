@@ -2,7 +2,7 @@
 
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+
 img{
 object-fit: contain;
 }
@@ -309,7 +309,7 @@ https://flickity.metafizzy.co
 
 * {box-sizing: border-box;}
 
-body { font-family: sans-serif; }
+
 
 .carousel {
   background: #FAFAFA;
@@ -602,7 +602,7 @@ https://flickity.metafizzy.co
 
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+
 
 .carousel {
   background: #FAFAFA;
@@ -896,8 +896,6 @@ https://flickity.metafizzy.co
 }/* external css: flickity.css */
 
 * {box-sizing: border-box;}
-
-body { font-family: sans-serif; }
 
 .carousel {
   background: #FAFAFA;
