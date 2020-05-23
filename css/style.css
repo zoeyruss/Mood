@@ -144,12 +144,12 @@ span.pull-qoute-span{
 }
 
 em.intro-anxiety{
-    font-size: 28rem;
+    font-size: 12rem;
     line-height: .5em;
     letter-spacing: 0.02em;
 }
 em.intro-depression{
-    font-size: 17rem;
+    font-size: 4rem;
     color: white;
     line-height: 0.69em;
 }
@@ -1042,7 +1042,7 @@ li.nav-section-item a{
     /*Anxiety page Section 4 Anxiety open*/ 
 
     section.Section.Section-1.Anxiety.Landing-Page{
-   height: 103vh;
+   height: 113vh;
    padding-bottom: 3vh;
    display: grid;
    grid-auto-rows: 10vh;
@@ -1058,11 +1058,12 @@ li.nav-section-item a{
   mix-blend-mode: exclusion;
 }
 .item-1-anxiety-define{
-  grid-row: 9/10;
+  grid-row: 7/11;
   z-index: 2;
-  width: 98%;
+  width: 85%;
+  margin-left: 7vw;
   filter: invert(1);
-  grid-column: 2/4;
+  grid-column: 1/4;
   mix-blend-mode: exclusion;
 }
 .grid-item-2-anxiety-is{
@@ -1766,7 +1767,7 @@ grid-column: 1/2;
   grid-column: 1/7;
   grid-row: 9/10;
 }
-.item-1-depression-define{grid-column: 2/4;grid-row: 2/6;color: darkgray;z-index: 9;}
+.item-1-depression-define{grid-column: 2/6;grid-row: 5/9;color: darkgray;z-index: 9;}
 .sticky-item-depression.sticky-item-bottom-anxiety {
     right: 90vw;
 }
