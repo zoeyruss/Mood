@@ -241,7 +241,7 @@ h6 {
 p {
   font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 300;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   letter-spacing: 0.06em;
   line-height: 1.25em;
 }
@@ -541,10 +541,10 @@ footer {
   color: white;
   background: black;
   width: 100vw;
-  height: 75vh;
+  height: 100vh;
   z-index: 1;
   top: 0;
-  padding: 17vh 14vw;
+  padding: 9vh 14vw;
   position: sticky;
 }
 .display-flex-column {
@@ -1300,41 +1300,36 @@ li.nav-section-item a:hover {
 /*Section 3 Nav Close*/
 /*Anxiety page Section 4 Anxiety open*/
 
-section.Section.Section-1.Anxiety.Landing-Page,
-section.Section.Section-1.CBT.Landing-Page {
-  height: 113vh;
-  padding-bottom: 3vh;
-  display: grid;
-  grid-auto-rows: 10vh;
-  grid-template-columns: repeat(3, 1fr);
-  color: black;
+
+.Container-Grid.anxiety-landing-page-section {
+    grid-auto-rows: 10vh;
+    margin-top:-5vh;
+    grid-template-columns: repeat(6,1fr);
 }
 .Anxiety-Landing-Video {
-  height: 33vh;
-  grid-column: 2/4;
-  position: fixed;
+  height: 47vh;
+  grid-column: 3/7;
   right: 0;
   width: auto;
-  grid-row: 1/4;
+  grid-row: 1/3;
 }
-.item-1-anxiety.item.aos-init.aos-animate {
+.item-1-anxiety{
   align-self: center;
-  grid-column: 1/3;
-  grid-row: 4/6;
+  grid-column: 1/7;
+  grid-row: 3/8;
   width: 70%;
   top: 18vh;
-  position: fixed;
   filter: invert(1);
   mix-blend-mode: exclusion;
 }
 
 .item-1-anxiety-define {
-  grid-row: 7/11;
+  grid-row: 8/12;
   z-index: 2;
   width: 85%;
   margin-left: 7vw;
   filter: invert(1);
-  grid-column: 1/4;
+  grid-column: 1/7;
   mix-blend-mode: exclusion;
 }
 .grid-item-2-anxiety-is {
@@ -1512,11 +1507,11 @@ video.Letter-2-Video {
     filter: invert(1);
     z-index: 1;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/3;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/5;
     grid-row: 3/7;
@@ -1601,11 +1596,11 @@ video.Letter-2-Video {
     filter: invert(1);
     z-index: 1;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/3;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/4;
     grid-row: 3/5;
@@ -1688,11 +1683,11 @@ video.Letter-2-Video {
     filter: invert(1);
     z-index: 1;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/3;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/4;
     grid-row: 4/6;
@@ -1867,11 +1862,11 @@ video.Letter-2-Video {
     filter: invert(1);
     z-index: 1;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/3;
   }
-  .item-1-anxiety.item.aos-init.aos-animate {
+  .item-1-anxiety{
     align-self: center;
     grid-column: 1/4;
     grid-row: 3/5;
@@ -2558,7 +2553,7 @@ footer a {
 }
 
 .footer-contect {
-  grid-column: 1/2;
+  grid-column: 1/3;
   grid-row: 8/10;
 }
 @media (max-width: 767px) and (min-width: 376px) {
