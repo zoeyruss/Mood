@@ -1329,7 +1329,7 @@ li.nav-section-item a:hover {
    z-index: 5;
    align-self: center;
    position: fixed;
-   top: 65vh;
+   top: 54vh;
   }
 .grid-item-2-anxiety-is {
   grid-column: 1/6;
@@ -1502,8 +1502,6 @@ video.Letter-2-Video {
     height: 100vh;
     grid-column: 3/6;
     grid-row: 1/5;
-    mix-blend-mode: difference;
-    filter: invert(1);
     z-index: 1;
   }
 
@@ -2017,9 +2015,7 @@ height: 85vh;
 
 }
 .anxiety-Landing-Video{
-    grid-row: 1/9;
-    grid-column: 1/7;
-    height: 73vh;
+    height: 83vh;
 }
 
 .depression-Landing-Video {
