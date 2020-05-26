@@ -435,7 +435,7 @@ span.largetext {
     letter-spacing: 0.02em;
   }
   em.intro-depression {
-    font-size: 15rem;
+    font-size: 8rem;
   }
 
   span.pull-qoute-span {
@@ -2116,6 +2116,15 @@ height: 85vh;
   .item.grid-item-2-depression-is.item-sticky {
     grid-column: 1/5;
   }
+  .depression-Landing-Video{
+    width: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.item-1-depression{
+  top: 65vh;
+  left: 4vw;
+}
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
   .item-1-depression-define {
@@ -2125,6 +2134,30 @@ height: 85vh;
   .item.grid-item-2-depression-is.item-sticky {
     grid-column: 1/5;
   }
+  .depression-Landing-Video{
+    width: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.item-1-depression{
+  top: 65vh;
+  left: 4vw;
+}  .item-1-depression-define {
+    grid-column: 2/6;
+    grid-row: 6/8;
+  }
+  .item.grid-item-2-depression-is.item-sticky {
+    grid-column: 1/5;
+  }
+  .depression-Landing-Video{
+    width: 10;
+    width: 100vw;
+    height: 100vh;
+}
+.item-1-depression{
+  top: 65vh;
+  left: 4vw;
+}
 }
 
 /*anxiety page section 5 despression close*/
