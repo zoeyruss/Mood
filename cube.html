@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="https://use.typekit.net/yxv2pzr.css">
 
@@ -96,7 +96,7 @@
                             </div>
                         
         </section>
-        <section class="Section Section-4-ar container">
+        <section class="Section Section-4-cube container">
             <div class="sticky-item-bottom ">
                 <h2>03. Visualize</h2>
             </div>
@@ -105,73 +105,104 @@
                 <div class="cube">
                   <div class="cube__face cube__face--front">	
                       <video playsinline="" autoplay="" loop="" muted="">
-					<source type="video/mp4" src="images/7.mp4" />
-				</video>
+                    <source type="video/mp4" src="images/7.mp4" />
+                </video>
+            <div class="cube-text">
+                <h4>Example</h4>
+                <p>List</p>
+            </Div>
                 </div>
-                  <div class="cube__face cube__face--back"> <video playsinline="" autoplay="" loop="" muted="">
+                  <div class="cube__face cube__face--back cube-grid"> <video playsinline="" autoplay="" loop="" muted="">
 					<source type="video/mp4" src="images/7.mp4" />
-				</video></div>
+                </video>
+                            <div class="cube-text">
+    <h4>Advice from others suffering</h4> 
+                                   <p>List</p>
+                            </Div>
+</div>
                   <div class="cube__face cube__face--right"> <video playsinline="" autoplay="" loop="" muted="">
-					<source type="video/mp4" src="images/9.mp4" />
-				</video></div>
+                    <source type="video/mp4" src="images/9.mp4" />
+                </video>
+                                <div class="cube-text">
+                                    <h4>Tools</h4>
+                                    <p>List</p>
+                                </Div>
+</div>
                   <div class="cube__face cube__face--left"> <video playsinline="" autoplay="" loop="" muted="">
 					<source type="video/mp4" src="images/4.mp4" />
-				</video></div>
+                </video>
+                            <div class="cube-text">
+                                    <h4>Additional Resources for CBT</h4>
+                                <p>List</p>
+                            </Div>
+</div>
                   <div class="cube__face cube__face--top"> <video playsinline="" autoplay="" loop="" muted="">
 					<source type="video/mp4" src="images/3_Motion.mp4" />
-				</video></div>
+                </video>
+                            <div class="cube-text">
+                                <h4>Additional Resources for Anxiety</h4>
+                                <p>List</p>
+                            </Div>
+</div>
                   <div class="cube__face cube__face--bottom"> <video playsinline="" autoplay="" loop="" muted="">
 					<source type="video/mp4" src="images/7.mp4" />
-				</video></div>
+				</video><div class="cube-text">
+                    <h4>Additional Resources for Depression</h4>
+                    <p>List</p>
+                </Div>
+</div>
                 </div>
               
               <p class="radio-group">
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="front" checked /> front
+                  <input type="radio" name="rotate-cube-side" value="front" checked href="#feelings-button-item" /><button><a href="#feelings-button-item"><span class="cube-checkbox-word">feelings</span></a></button>
                 </label>
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="right" /> right
+                  <input type="radio" name="rotate-cube-side" value="right" /> <button><a href="#behavoirs-button-item"><span class="cube-checkbox-word">behaviors</span></a></button> 
                 </label>
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="back" /> back
+                  <input type="radio" name="rotate-cube-side" value="back" /> <button><a href="#behavoirs-button-item"><button><a href="#thouguhts-button-item"><span class="cube-checkbox-word">thoughts</span></a></button></a></button>
                 </label>
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="left" /> left
+                  <input type="radio" name="rotate-cube-side" value="left" /><button><a href="#change-button-item"><span class="cube-checkbox-word">change</span></a></button>
                 </label>
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="top" /> top
+                  <input type="radio" name="rotate-cube-side" value="top" /> <span class="cube-checkbox-word">revert</span></button>
                 </label>
                 <label>
-                  <input type="radio" name="rotate-cube-side" value="bottom" /> bottom
+                  <input type="radio" name="rotate-cube-side" value="bottom" /><span class="cube-checkbox-word">fix</span>
                 </label>
               </p>
             </div>    
-        </section>
 
-        <script> 
-            var cube = document.querySelector('.cube');
-            var radioGroup = document.querySelector('.radio-group');
-            var currentClass = '';
-            
-            function changeSide() {
-              var checkedRadio = radioGroup.querySelector(':checked');
-              var showClass = 'show-' + checkedRadio.value;
-              if ( currentClass ) {
-                cube.classList.remove( currentClass );
-              }
-              cube.classList.add( showClass );
-              currentClass = showClass;
-            }
-            // set initial side
-            changeSide();
-            
-            radioGroup.addEventListener( 'change', changeSide );
-            </script>
-            
+       
+    </section>
+
+
 
     </main>
+    
 
     </div>
+            <script>
+                var cube = document.querySelector('.cube');
+                var radioGroup = document.querySelector('.radio-group');
+                var currentClass = '';
+
+                function changeSide() {
+                    var checkedRadio = radioGroup.querySelector(':checked');
+                    var showClass = 'show-' + checkedRadio.value;
+                    if (currentClass) {
+                        cube.classList.remove(currentClass);
+                    }
+                    cube.classList.add(showClass);
+                    currentClass = showClass;
+                }
+                // set initial side
+                changeSide();
+
+                radioGroup.addEventListener('change', changeSide);
+            </script>
     <script src="js/burger.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
