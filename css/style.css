@@ -355,9 +355,7 @@ em.arrow-style.cube-arrow {
     font-size: 21px;
   }
   span.intro {
-    font-weight: 500;
     font-size: 7rem;
-    line-height: 0rem;
   }
   em.intro {
     font-size: 9rem;
@@ -598,7 +596,7 @@ footer {
   position: sticky;
   width: 100%;
   padding-left: 7vw;
-  top: 91vh;
+  top: 86vh;
   z-index: 9;
   grid-column: 1/4;
   mix-blend-mode: exclusion;
@@ -839,7 +837,7 @@ a.top-btn {
   border-radius: 200px 80px 180px 200px;
   width: 10vw;
   right: 4vw;
-  top: 87vh;
+  top: 83vh;
   height: 6vh;
 }
 a.top-btn:hover {
@@ -1061,8 +1059,10 @@ a p.perspective-italic {
 
 .item-1.item-1-index {
     grid-column: 1/5;
+    margin-left: 5vw;
     grid-row: 8/11;
     align-self: flex-end;
+    line-height: 9em;
 }
 video.Logo-Video,
 img.Logo-Video-gif {
