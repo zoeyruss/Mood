@@ -182,9 +182,8 @@ html {
 }
 
 video {
-  height: auto;
-  object-fit: cover;
-  max-width: 100%;
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 video.video-contain {
@@ -251,7 +250,6 @@ h6 {
   letter-spacing: 0.1em;
 }
 p {
-  font-family: neue-haas-grotesk-display, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   letter-spacing: 0.06em;
@@ -838,8 +836,8 @@ a.top-btn {
   border-radius: 200px 80px 180px 200px;
   width: 10vw;
   right: 4vw;
-  top: 87vh;
   height: 6vh;
+  bottom: 5vh;
 }
 a.top-btn:hover {
   border-radius: 1060px 20px 100px 206px;
@@ -1060,7 +1058,7 @@ a p.perspective-italic {
 
 .item-1.item-1-index {
     grid-column: 1/5;
-    grid-row: 8/10;
+    grid-row: 10/11;
 }
 video.Logo-Video,
 img.Logo-Video-gif {
@@ -1069,10 +1067,7 @@ img.Logo-Video-gif {
   align-self: auto;
   left: 4vw;
   position: fixed;
-  scroll-behavior: auto;
-  overflow: scroll;
   top: 11vh;
-  background-attachment: scroll;
 }
 .Transparent-scroll-box {
     grid-row: 0/11;
@@ -1096,7 +1091,6 @@ img.Logo-Video-gif {
   }
   video.Logo-Video,
   img.Logo-Video-gif {
-    height: 68vh;
     top: 12vh;
   }
 }
