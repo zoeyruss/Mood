@@ -287,6 +287,7 @@ span.intro {
 }
 em.intro {
   font-size: 8rem;
+  line-height: 8rem;
   font-style: italic;
   font-family: recife-italic;
 }
@@ -837,7 +838,7 @@ a.top-btn {
   border-radius: 200px 80px 180px 200px;
   width: 10vw;
   right: 4vw;
-  top: 83vh;
+  top: 81vh;
   height: 6vh;
 }
 a.top-btn:hover {
@@ -1059,20 +1060,18 @@ a p.perspective-italic {
 
 .item-1.item-1-index {
     grid-column: 1/5;
-    margin-left: 5vw;
-    grid-row: 8/11;
-    align-self: flex-end;
-    line-height: 9em;
+    grid-row: 8/10;
 }
 video.Logo-Video,
 img.Logo-Video-gif {
   height: 55vh;
   filter: brightness(1.15);
-  align-self: center;
+  align-self: auto;
+  left: 4vw;
   position: fixed;
   scroll-behavior: auto;
   overflow: scroll;
-  top: 16vh;
+  top: 11vh;
   background-attachment: scroll;
 }
 .Transparent-scroll-box {
