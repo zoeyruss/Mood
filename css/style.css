@@ -598,7 +598,7 @@ footer {
   position: sticky;
   width: 100%;
   padding-left: 7vw;
-  top:95vh;
+  top: 91vh;
   z-index: 9;
   grid-column: 1/4;
   mix-blend-mode: exclusion;
@@ -839,7 +839,7 @@ a.top-btn {
   border-radius: 200px 80px 180px 200px;
   width: 10vw;
   right: 4vw;
-  top: 92vh;
+  top: 87vh;
   height: 6vh;
 }
 a.top-btn:hover {
@@ -1061,7 +1061,7 @@ a p.perspective-italic {
 
 .item-1.item-1-index {
     grid-column: 1/5;
-    grid-row: 9/12;
+    grid-row: 8/11;
     align-self: flex-end;
 }
 video.Logo-Video,
