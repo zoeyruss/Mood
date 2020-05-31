@@ -261,7 +261,23 @@
 				</div>
 			</footer>
 		</main>
+		<script>
+			function setDocHeight() {
+				document.documentElement.style.setProperty(
+					"--vh",
+					`${window.innerHeight / 100}px`
+				);
+			}
 
+			window.addEventListener("resize", function () {
+				setDocHeight();
+			});
+			window.addEventListener("orientationchange", function () {
+				setDocHeight();
+			});
+
+			setDocHeight();
+		</script>
 		<script src="js/burger.js"></script>
 
 		<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>

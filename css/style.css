@@ -183,7 +183,7 @@ html {
 
 video {
   width: 100%    !important;
-  height: auto   !important;
+  height: auto;
 }
 
 video.video-contain {
@@ -1058,7 +1058,7 @@ a p.perspective-italic {
 
 .item-1.item-1-index {
     grid-column: 1/5;
-    grid-row: 10/11;
+    grid-row: 9/11;
 }
 video.Logo-Video,
 img.Logo-Video-gif {
@@ -1103,6 +1103,7 @@ img.Logo-Video-gif {
     left: 5vw;
     top: 8vh;
   }
+  
 
   a p.perspective-italic,
   a p.perspective {
@@ -1116,6 +1117,11 @@ img.Logo-Video-gif {
     height: 101vh;
     top: -7vh;
   }
+  .item-1.item-1-index {
+    grid-column: 1/5;
+    grid-row: 9/11;
+    align-self: self-end;
+}
   a p.perspective-italic,
   a p.perspective {
     font-size: 5rem;
@@ -1201,8 +1207,7 @@ video.Letter-1-Video {
   video.Letter-1-Video {
     grid-column: 4/6;
     grid-row: 3/14;
-    height: 77vh;
-    justify-self: flex-end;
+    height: 114vh;
   }
   .grid-item-1 {
     grid-column: ;
@@ -1226,6 +1231,7 @@ video.Letter-1-Video {
   .item.grid-item-1.item-sticky.display-flex-row {
     grid-column: 2/10;
     grid-row: 3/7;
+    grid-template-columns: repeat(2,1fr);
     top: 14vh;
     width: 70%;
   }
