@@ -16,14 +16,7 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
-	<body
-		class="index_body"
-		translate="no"
-		data-aos-easing="ease"
-		data-aos-duration="1200"
-		data-aos-delay="0"
-		style="--x: 7px; --y: 147px;"
-	>
+	<body class="index_body">
 		<div id="follower">
 			<div id="circle"></div>
 		</div>
@@ -86,13 +79,16 @@
 			<a name="top"></a>
 			<section class="Section Section-1 Landing-Page index-landing-page">
 				<div class="Transparent-scroll-box"></div>
-				<video class="Logo-Video" playsinline="" autoplay="" loop="" muted="">
-					<source type="video/webm" src="images/logo.webm" />
-				</video>
-				<img class="Logo-Video-gif" src="images/logo.gif" />
+				<div class="logo-video-container">
+					<video class="Logo-Video" playsinline="" autoplay="" loop="" muted="">
+						<source type="video/webm" src="images/logo.webm" />
+					</video>
+					<img class="Logo-Video-gif" src="images/logo.gif" />
+				</div>
 
 				<div class="item-1 item-1-index">
-					<span class="intro">It's a <em class="intro">mood.</em></span>
+					<span class="intro">It's a </span>
+					<em class="intro">mood.</em>
 				</div>
 			</section>
 			<section class="Section Section-2-About container Section-Display-flex">
@@ -261,23 +257,7 @@
 				</div>
 			</footer>
 		</main>
-		<script>
-			function setDocHeight() {
-				document.documentElement.style.setProperty(
-					"--vh",
-					`${window.innerHeight / 100}px`
-				);
-			}
 
-			window.addEventListener("resize", function () {
-				setDocHeight();
-			});
-			window.addEventListener("orientationchange", function () {
-				setDocHeight();
-			});
-
-			setDocHeight();
-		</script>
 		<script src="js/burger.js"></script>
 
 		<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>

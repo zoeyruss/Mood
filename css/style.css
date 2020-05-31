@@ -134,7 +134,7 @@ body.index_body.depression {
   background: black;
 }
 
-@media (max-width: 3000px) and (min-width: 1024px) {
+@media (max-width: 3000px) and (min-width: 1366px) {
   body:before {
     content: "";
     cursor: none;
@@ -158,7 +158,7 @@ body.index_body.depression {
     visibility: hidden;
   }
 }
-@media (max-width: 1023px) and (min-width: 0px) {
+@media (max-width:1365px) and (min-width: 0px) {
   video.Logo-Video {
     visibility: hidden;
   }
@@ -171,7 +171,7 @@ a {
   text-decoration: none;
 }
 body,
-html {
+html { 
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -201,7 +201,7 @@ h1 {
   font-weight: 200;
   letter-spacing: 0.05em;
   font-size: 3rem;
-  line-height: 1.5em;
+  line-height: 0.5em;
 }
 h2 {
   font-family: recife-italic;
@@ -374,6 +374,7 @@ em.arrow-style.cube-arrow {
   }
   h1 {
     font-size: 4.5rem;
+    line-height: 0.95em;
   }
   h2 {
     font-size: 1.5rem;
@@ -416,11 +417,12 @@ em.arrow-style.cube-arrow {
   }
 
   span.intro {
-    font-size: 11rem;
+    font-size: 9rem;
   }
   em.intro {
-    font-size: 16rem;
+    font-size: 9rem;
     line-height: 1em;
+    margin-left: 3vw;
   }
   em.intro-anxiety {
     font-size: 23rem;
@@ -432,11 +434,76 @@ em.arrow-style.cube-arrow {
     font-size:.9rem;
   }
   h5{font-size:1.2rem;}
-h1{font-size:6rem;}
+h1{font-size:6rem;line-height: .8em;}
 h2{font-size:2rem;}
 span.largetext{font-size: 12rem;}
 }
-@media (max-width: 1999px) and (min-width: 1024px) {
+@media (max-width: 1299px) and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    line-height: 4rem;
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+  h4 {
+    font-size: 1.75rem;
+    line-height: 1.4em;
+  }
+  h4.pull-qoute {
+    font-size: 1.75rem;
+    line-height: 1.4em;
+  }
+  h5 {
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-size: 1.05rem;
+  }
+  p {
+    font-size: 1.16rem;
+    line-height: 1.25em;
+  }
+  span.intro {
+    font-size: 13rem;
+  }
+  em.intro {
+    font-size: 13rem;
+    margin-left: 3vw;
+  }
+  span.largetext {
+    font-size: 12rem;
+  }
+
+  em.intro-anxiety {
+    font-size: 30rem;
+    line-height: 0.5em;
+    letter-spacing: 0.02em;
+  }
+  em.intro-depression {
+    font-size: 8rem;
+  }
+
+  span.pull-qoute-span {
+    font-size: 1.75rem;
+  }
+  em.intro-cbt {
+    font-size: 5rem;
+  }
+   em.arrow-style.cube-arrow {
+    display: block;
+    line-height: inherit;
+}
+
+.cube__face em.arrow-style.cube-arrow {
+    line-height: 3em;
+    text-align: center;
+}
+}
+@media (max-width: 1999px) and (min-width: 1300px) {
   h1 {
     font-size: 8rem;
   }
@@ -470,6 +537,7 @@ span.largetext{font-size: 12rem;}
   }
   em.intro {
     font-size: 17rem;
+    margin-left: 3vw;
   }
   span.largetext {
     font-size: 15rem;
@@ -588,7 +656,6 @@ footer {
   width: 100%;
   bottom: 0vh;
   z-index: 9;
-  margin-bottom: -1vh;
   grid-row: 1;
 }
 .sticky-item-bottom {
@@ -671,6 +738,9 @@ a.outside-resource {
 a.tiny-link {
   border-bottom: 1px black solid;
   color: black;
+}
+section.Section.Section-1.Landing-Page.index-landing-page {
+    height: 100vh;
 }
 .Section-1.Landing-Page {
   background: white;
@@ -895,7 +965,7 @@ img.logo-svg {
     width: 9vw;
     right: 1vw;
     top: 92vh;
-    height: 7vh;
+    height: 6vh;
   }
   .nav-menu {
     height: 6vh;
@@ -914,7 +984,7 @@ img.logo-svg {
 
 @media (max-width: 1023px) and (min-width: 768px) {
   a.top-btn {
-    width: 8vw;
+    width: 6vw;
     right: 1vw;
     top: 91vh;
     height: 7vh;
@@ -923,12 +993,42 @@ img.logo-svg {
     height: 6vh;
     width: 16vw;
   }
-  img.logo-svg.logo-3.change-navbar {
+  img.logo-svg.logo-5.change-navbar {
+    visibility: visible;
+  }
+}
+@media (max-width: 1999px) and (min-width: 1024px) {
+  .burger {
+    width: 8vw;
+    height: 3vw;
+  }
+  a.top-btn {
+    width: 3.5vw;
+    right: 1vw;
+    top: 92vh;
+    height: 6.75vh;
+  }
+  img.logo-svg {
+    height: 6vh;
+    margin: 1vh 1vw;
+  }
+  a.depression-mood-link.rotate-link.invert {
+    right: 0;
+  }
+  a.anixety-mood-link.rotate-link.invert {
+    left: 0px;
+  }
+  .nav-menu {
+    height: 5vh;
+    width: 8vw;
+  }
+  img.logo-svg.logo-4.change-navbar {
     visibility: visible;
   }
 }
 
-@media (max-width: 1999px) and (min-width: 1024px) {
+
+@media (max-width: 1999px) and (min-width: 1300px) {
   .burger {
     width: 8vw;
     height: 3vw;
@@ -1060,14 +1160,15 @@ a p.perspective-italic {
 .item-1.item-1-index {
     grid-column: 1/5;
     grid-row: 9/11;
+    padding: 2vh 4vw;
+    display: flex;
+    flex-direction: column;
 }
 video.Logo-Video,
 img.Logo-Video-gif {
-  height: 55vh;
   filter: brightness(1.15);
-  align-self: auto;
   position: fixed;
-  top: 11vh;
+  top: 16vh;
 }
 .Transparent-scroll-box {
     grid-row: 0/11;
@@ -1075,6 +1176,12 @@ img.Logo-Video-gif {
     grid-row: 1/11;
     z-index: 3;
     background: transparent;
+}
+.logo-video-container {
+    justify-content: center;
+    grid-row: 1/12;
+    display: flex;
+    grid-column: 1/5;
 }
 
 @media (max-width: 767px) and (min-width: 376px) {
@@ -1091,7 +1198,7 @@ img.Logo-Video-gif {
   }
   video.Logo-Video,
   img.Logo-Video-gif {
-    top: 12vh;
+    top: 7vh;
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
@@ -1099,9 +1206,8 @@ img.Logo-Video-gif {
  
   video.Logo-Video,
   img.Logo-Video-gif {
-    height: 69vh;
-    left: 5vw;
-    top: 8vh;
+  height: 83vh;
+  top: 0;
   }
   
 
@@ -1109,18 +1215,24 @@ img.Logo-Video-gif {
   a p.perspective {
     font-size: 4.5rem;
   }
+  .item-1.item-1-index{
+        padding: 0vh 1vw;
+    align-items: center;
+    flex-direction: row;
+  }
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
   
   video.Logo-Video,
   img.Logo-Video-gif {
-    height: 108vh;
-    top: -7vh;
+  top: -11vh;
   }
   .item-1.item-1-index {
     grid-column: 1/5;
-    grid-row: 9/11;
-    align-self: self-end;
+    grid-row: 9/12;
+    padding: 0vh 1vw;
+    align-items: center;
+    flex-direction: row;
 }
   a p.perspective-italic,
   a p.perspective {
@@ -1431,7 +1543,7 @@ video.cbt-Landing-Video   {
     grid-row: 1/9;
     grid-column: 1/9;
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 .item-1-anxiety{
@@ -2837,7 +2949,7 @@ footer a {
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
-  .footer-content {display: grid;align-items: baseline;grid-auto-rows: 10vh;grid-template-columns:repeat(6,1fr);}
+  .footer-content {display: grid;align-items: baseline;height: auto;grid-auto-rows: 10vh;grid-template-columns:repeat(6,1fr);}
   .item-1-CBT {
  width: 96%;
  }
@@ -2858,12 +2970,12 @@ footer a {
 
   .footer-rescources {
     grid-column: 1/4;
-    grid-row: 3/5;
+    grid-row: 3/4;
   }
 
   .footer-contect {
     grid-column: 5/9;
-    grid-row: 3/5;
+    grid-row: 3/4;
   }
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
