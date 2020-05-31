@@ -201,7 +201,7 @@ h1 {
   font-weight: 200;
   letter-spacing: 0.05em;
   font-size: 3rem;
-  line-height: 0.95em;
+  line-height: 1.4em;
 }
 h2 {
   font-family: recife-italic;
@@ -252,7 +252,7 @@ h6 {
 }
 p {
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.06em;
   line-height: 1.25em;
 }
@@ -306,7 +306,7 @@ em.intro-depression {
   line-height: 0.69em;
 }
 em.intro-cbt {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1em;
 }
 em.arrow-style {
@@ -665,11 +665,11 @@ footer {
   padding-left: 7vw;
   top: 94vh;
   z-index: 9;
-  grid-column: 1/4;
+  grid-column: 1/5;
   mix-blend-mode: exclusion;
   filter: invert(1) !important;
 }
-.sticky-item-bottom.header-section-stick-bottom {
+.header-section-stick-bottom {
     margin-top: -5vh;
 }
 .depression-bottom {
@@ -1149,7 +1149,7 @@ a p.perspective-italic {
   height: 5.5rem;
   width: 59%;
   overflow: hidden;
-  left: 18%;
+  left: 9%;
   margin-bottom: 7vh;
   top: 22%;
 }
@@ -2678,7 +2678,7 @@ footer p {
 /*CBT Section Open*/
 .item-1-CBT {
   grid-row: 3/4;
-  grid-column: 1/6;
+  grid-column: 1/8;
   width: 80%;
   mix-blend-mode: exclusion;
   z-index: 2;
@@ -2690,13 +2690,7 @@ footer p {
 }
 
 
-video.CBT-Landing-Video {
-  height: 100vh;
-  grid-column: 1/7;
-  right: 0;
-  width: auto;
-  grid-row: 1/12;
-}
+
 .item.item-1-cbt-define {
   grid-row: 5/7;
   z-index: 2;
