@@ -182,9 +182,8 @@ html {
 }
 
 video {
-  height: auto;
-  object-fit: cover;
-  max-width: 100%;
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 video.video-contain {
@@ -286,7 +285,7 @@ span.intro {
 }
 em.intro {
   font-size: 8rem;
-  line-height: 1em;
+  line-height: 8rem;
   font-style: italic;
   font-family: recife-italic;
 }
@@ -466,10 +465,10 @@ span.largetext{font-size: 12rem;}
     line-height: 1.25em;
   }
   span.intro {
-    font-size: 16rem;
+    font-size: 14rem;
   }
   em.intro {
-    font-size: 17rem;
+    font-size: 14rem;
   }
   span.largetext {
     font-size: 15rem;
@@ -596,7 +595,7 @@ footer {
   position: sticky;
   width: 100%;
   padding-left: 7vw;
-  top: 94vh;
+  top: 86vh;
   z-index: 9;
   grid-column: 1/4;
   mix-blend-mode: exclusion;
@@ -838,7 +837,7 @@ a.top-btn {
   width: 10vw;
   right: 4vw;
   height: 6vh;
-  bottom: 3vh;
+  bottom: 5vh;
 }
 a.top-btn:hover {
   border-radius: 1060px 20px 100px 206px;
@@ -1059,13 +1058,14 @@ a p.perspective-italic {
 
 .item-1.item-1-index {
     grid-column: 1/5;
-    grid-row: 9/11;
+    grid-row: 10/11;
 }
 video.Logo-Video,
 img.Logo-Video-gif {
   height: 55vh;
   filter: brightness(1.15);
   align-self: auto;
+  left: 4vw;
   position: fixed;
   top: 11vh;
 }
@@ -1103,7 +1103,6 @@ img.Logo-Video-gif {
     left: 5vw;
     top: 8vh;
   }
-  
 
   a p.perspective-italic,
   a p.perspective {
@@ -1114,14 +1113,9 @@ img.Logo-Video-gif {
   
   video.Logo-Video,
   img.Logo-Video-gif {
-    height: 108vh;
+    height: 101vh;
     top: -7vh;
   }
-  .item-1.item-1-index {
-    grid-column: 1/5;
-    grid-row: 9/11;
-    align-self: self-end;
-}
   a p.perspective-italic,
   a p.perspective {
     font-size: 5rem;
@@ -1207,7 +1201,8 @@ video.Letter-1-Video {
   video.Letter-1-Video {
     grid-column: 4/6;
     grid-row: 3/14;
-    height: 114vh;
+    height: 77vh;
+    justify-self: flex-end;
   }
   .grid-item-1 {
     grid-column: ;
@@ -1231,7 +1226,6 @@ video.Letter-1-Video {
   .item.grid-item-1.item-sticky.display-flex-row {
     grid-column: 2/10;
     grid-row: 3/7;
-    grid-template-columns: repeat(2,1fr);
     top: 14vh;
     width: 70%;
   }
