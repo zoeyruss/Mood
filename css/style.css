@@ -201,7 +201,7 @@ h1 {
   font-weight: 200;
   letter-spacing: 0.05em;
   font-size: 3rem;
-  line-height: 0.5em;
+  line-height: 0.95em;
 }
 h2 {
   font-family: recife-italic;
@@ -669,6 +669,9 @@ footer {
   mix-blend-mode: exclusion;
   filter: invert(1) !important;
 }
+.sticky-item-bottom.header-section-stick-bottom {
+    margin-top: -5vh;
+}
 .depression-bottom {
   grid-column: 1/5;
 }
@@ -690,6 +693,9 @@ footer {
   top: 0;
   padding: 13vh 14vw;
   position: sticky;
+}
+.sm-sub-section{
+    height: 50vh;
 }
 .display-flex-column {
   display: flex;
@@ -905,7 +911,7 @@ a.top-btn {
   align-items: center;
   transition: all ease-in-out 0.3s;
   border-radius: 200px 80px 180px 200px;
-  width: 10vw;
+  width: 8vw;
   right: 4vw;
   height: 6vh;
   bottom: 3vh;
@@ -1543,7 +1549,7 @@ video.cbt-Landing-Video   {
     grid-row: 1/9;
     grid-column: 1/9;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
 }
 
 .item-1-anxiety{
