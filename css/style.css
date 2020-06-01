@@ -222,9 +222,7 @@ h4 {
 }
 .cube-text h4{
   font-weight:500;
-  color: black;
 }
-
 h4.pull-qoute {
   font-size: 1.2rem;
   font-weight: 200;
@@ -270,7 +268,7 @@ p.width-sm {
 p.strike-out {
     text-decoration: line-through;
 }
-em.cube-text-head {
+li.border em {
     font-weight: 500;
     font-size: .9rem;
 }
@@ -336,13 +334,6 @@ em.arrow-style.cube-arrow {
 .cube__face em.arrow-style.cube-arrow {
     line-height: 3em;
     text-align: center;
-}
-.cube-text li.cube-text-survey-responses {
-    list-style: disc;
-    line-height: 1em;
-    font-weight: 200;
-    margin-bottom: 1vh;
-    margin-top: 0vh;
 }
 @media (max-width: 767px) and (min-width: 376px) {
   p {
@@ -744,15 +735,6 @@ footer {
 }
 a {
   z-index: 8;
-  line-height: 1em;
-  font-weight: 100;
-  text-decoration: none;
-  font-size: .75em;
-}
-a.outside-resource {
-    color: black;
-    line-height: 3em;
-  border-bottom: 1px black solid;
 }
 a.tiny-link {
   border-bottom: .7px black solid;
@@ -2412,21 +2394,16 @@ span.cube-checkbox-word {
     grid-row: 1/2;
     color: black;
 }
-.cube-text li { 
+.cube-text li {
     text-decoration: none;
     list-style: none;
-    margin-top: 0vh;
-    margin-bottom: 1vh;
+  
 }
 .cube-text li.border,
 .border{
     padding: 3.25vh 4vw;
     border: .5px black solid;
     border-radius: 50%;
-    margin-bottom: 0vh;
-    color: black;
-    filter: invert(1);
-    mix-blend-mode: exclusion;
 }
 .cube {
   width: 400px;
@@ -2441,11 +2418,7 @@ span.cube-checkbox-word {
     width: 100%;
     POSITION: ABSOLUTE;
     color: black;
-    max-height: 100vh;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 4vh 2vw;
+    left: -51vw;
     overflow: scroll;
     TOP: 62VH;
     background: white;
@@ -2611,7 +2584,6 @@ button {
 span.cube-checkbox-word {
     z-index: 9;
     color: black;
-    line-height: 0;
     transition: ease-in .2s;
 }
 
@@ -2625,12 +2597,11 @@ span.cube-checkbox-word {
   transition: transform 1s;
 }
 .cube-text {
-    width: 37vw;
+    width: 100%;
     POSITION: ABSOLUTE;
     color: black;
     left: -59vw;
-    TOP: -17VH;
-    height: 79vh;
+    TOP: -14VH;
 }
 .cube.show-front {
   transform: translateZ(-200px) rotateY(0deg);
@@ -2687,14 +2658,18 @@ span.cube-checkbox-word {
 
 .cube-text.depression-cube-text,
 .cube-text.anxiety-cube-text  {
-  background: white;
+  background: red;
   transform: rotateX(0deg) translateZ(0px);
+
 }
 .cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {top: 4vh;}
+.cube-text.anxiety-cube-text  {
+
+  top: 10vh;
+}
 
 label {
-  margin-right: 30px;
+  margin-right: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
