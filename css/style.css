@@ -295,7 +295,7 @@ span.pull-qoute-span {
 }
 
 em.intro-anxiety {
-  font-size: 16rem;
+  font-size: 18rem;
   line-height: 0.5em;
   letter-spacing: 0.02em;
 }
@@ -741,6 +741,7 @@ a.tiny-link {
   color: black;
   filter: invert(1);
   mix-blend-mode: exclusion;
+  line-height: 0;
 }
 section.Section.Section-1.Landing-Page.index-landing-page {
     height: 100vh;
@@ -1567,8 +1568,8 @@ section.Section.Section-1.depression.Landing-Page {
 .item-1-anxiety{
    filter: invert(1);
    mix-blend-mode: exclusion;
-   grid-row: 2/16;
-   grid-column: 4/8;
+   grid-row: 1/8;
+   grid-column: 2/10;
   }
 .grid-item-2-anxiety-is {
   grid-column: 1/6;
@@ -2390,14 +2391,18 @@ button {
 }
 
 span.cube-checkbox-word {
-    grid-column: 1/3;
-    grid-row: 1/2;
     color: black;
+    left: 0;
 }
 .cube-text li {
     text-decoration: none;
     list-style: none;
-  
+    font-weight: 200;
+    line-height: 1.2em;
+    margin-bottom: 2vh;
+}
+li.cube-text-survey-responses {
+    list-style: disc;
 }
 .cube-text li.border,
 .border{
@@ -2415,12 +2420,13 @@ span.cube-checkbox-word {
   transition: transform 1s;
 }
 .cube-text {
-    width: 100%;
+    width: 100vw;
     POSITION: ABSOLUTE;
     color: black;
-    left: -51vw;
+    left: 0;
     overflow: scroll;
     TOP: 62VH;
+    height: 50vh;
     background: white;
 }
 .cube.show-front {
@@ -2479,21 +2485,18 @@ span.cube-checkbox-word {
 
 .cube-text.depression-cube-text,
 .cube-text.anxiety-cube-text  {
-  background: red;
-  transform: rotateX(0deg) translateZ(0px);
 
+  transform: rotateX(-1800deg) translateZ(0px);
 }
 .cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {
-
-  top: 10vh;
-}
+.cube-text.anxiety-cube-text  {}
 
 label {
   margin-right: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  justify-items: left;
   justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
 }
 .cube-section {
   height: 100vh;
@@ -2512,12 +2515,16 @@ label {
 }
 p.radio-group {
    height: 32vh;
-  flex-direction: column;
-  background: white;
-  position: sticky;
-  z-index: 2;
-  top: 38vh;
-  text-align: left;
+   flex-direction: column;
+   background: white;
+   position: sticky;
+   z-index: 2;
+   HEIGHT: 51VH;
+   top: 0;
+   width: auto;
+   display: flex;
+   padding-top: 18VH;
+   text-align: left;
 }
 }
 footer p {
@@ -2528,6 +2535,7 @@ footer p {
 @media (max-width: 1023px) and (min-width: 768px) {
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
+
   section.Section.Section-4-cube.container {
     top: 0;
     z-index: 6;
@@ -2600,8 +2608,11 @@ span.cube-checkbox-word {
     width: 100%;
     POSITION: ABSOLUTE;
     color: black;
-    left: -59vw;
-    TOP: -14VH;
+    left: -57vw;
+    height: 70vh;
+    overflow: scroll;
+    background: white;
+    TOP: 2VH;
 }
 .cube.show-front {
   transform: translateZ(-200px) rotateY(0deg);
@@ -2622,7 +2633,10 @@ span.cube-checkbox-word {
   transform: translateZ(-200px) rotateX(90deg);
 }
 
-
+.cube-text.depression-cube-text, .cube-text.anxiety-cube-text {
+    top: 10vh;
+    transform: rotateX(0deg) translateZ(0px);
+}
 .cube__face {
   position: absolute;
   width: 400px;
@@ -2658,9 +2672,7 @@ span.cube-checkbox-word {
 
 .cube-text.depression-cube-text,
 .cube-text.anxiety-cube-text  {
-  background: red;
   transform: rotateX(0deg) translateZ(0px);
-
 }
 .cube-text.depression-cube-text,
 .cube-text.anxiety-cube-text  {
@@ -2693,6 +2705,9 @@ p.radio-group {
   align-items: center;
   top: 0vh;
   height: 4vh;
+  margin-left: -3vw;
+  padding: 0;
+  background: transparent;
 }
 footer p {
   color: red;
