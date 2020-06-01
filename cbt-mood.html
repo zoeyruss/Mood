@@ -110,23 +110,31 @@
 				</div>
 			</section>
 
-			<section class="Section Section-2-About container">
+			<section
+				class="Section Section-2-Flow-chart container Section-Display-flex"
+			>
 				<div class="sticky-item-bottom">
 					<h2>01. Framework</h2>
 				</div>
 
-				<div class="sub-section thoughts-anxiety-subsection">
+				<div class="sub-section feelings-anxiety-subsection">
 					<div class="sticky-item-top invert">
-						<h2>01.</h2>
+						<h2>02.</h2>
 					</div>
 					<div class="sticky-item-top display-flex-row">
-						<h1>frameworks</h1>
+						<h1>feelings</h1>
 						<p class="width-sm">
-							79 people suffering from anxiety were asked “what does anxiety
-							feel like?” these are their responses
+							How can you understand something you've never experienced? As a
+							response to the two questions; "What is one thing you do you not
+							like hearing when you're feeling anxious or depressed" and "Having
+							Anxiety/Depression Is actually like...." visual responses aim to
+							express outward appearances vs. inner struggle. The motion
+							graphics visualize anxiety and depression through the lens of
+							someone suffering while the text expresses societal outlooks.
 						</p>
 					</div>
 				</div>
+
 				<div class="Container-Grid flow-chart">
 					<div class="circle-flow"><img src="images/circle-outline.svg" /></div>
 
@@ -159,51 +167,43 @@
 					</div>
 				</div>
 			</section>
-			<section class="Section Section-4 container">
+			<section class="Section Section-3-Changes container">
 				<div class="sub-section container cbt-changes-container">
 					<div class="identify-container">
 						<p>identify</p>
 						<p class="identify-container-item-define">
 							problems or issues in your daily life, to become aware of the
 							trigger of negtive thoughts
+							<em class="arrow-style">→</em>
+							<em class="arrow-style down-arrow">↓</em>
 						</p>
-						<em class="arrow-style">→</em>
-						<em class="arrow-style down-arrow">↓</em>
 					</div>
 					<div class="identify-container challenge-container">
 						<p>challenge</p>
 						<p class="identify-container-item-define">
 							negative/disruptive thoughts by questioning and examing the
 							situation
+							<em class="arrow-style">→</em>
+							<em class="arrow-style down-arrow">↓</em>
 						</p>
-						<em class="arrow-style">→</em>
-						<em class="arrow-style down-arrow">↓</em>
 					</div>
 					<div class="identify-container replace-container">
 						<p>Replace</p>
 						<p class="identify-container-item-define">
 							reframe, resturture the thoughts
+							<em class="arrow-style">→</em>
+							<em class="arrow-style down-arrow">↓</em>
 						</p>
-						<em class="arrow-style">→</em>
-						<em class="arrow-style down-arrow">↓</em>
 					</div>
-					<div class="identify-container result-container">
-						<p>Replace</p>
-						<p class="identify-container-item-define">
-							reframe, restructure the thoughts
-						</p>
-						<em class="arrow-style">→</em>
-						<em class="arrow-style down-arrow">↓</em>
-					</div>
+
 					<div class="identify-container result-container">
 						<p>End Goal</p>
 						<p class="identify-container-item-define">
 							form new habits to form reality-based postive thinking
 						</p>
-						<em class="arrow-style">→</em>
-						<em class="arrow-style down-arrow">↓</em>
 					</div>
 					<a
+						class="tiny-link cbt-changes-item"
 						href="https://www.healthline.com/health/cbt-techniques#types-of-cbt-techniques"
 						>https://www.healthline.com</a
 					>
@@ -730,58 +730,5 @@
 		<script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
 		<script src="js/app.js"></script>
 		<script src="js/flickity.pkgd.js"></script>
-
-		<!-- Code injected by live-server -->
-		<script type="text/javascript">
-			// <![CDATA[  <-- For SVG support
-			if ("WebSocket" in window) {
-				(function () {
-					function refreshCSS() {
-						var sheets = [].slice.call(document.getElementsByTagName("link"));
-						var head = document.getElementsByTagName("head")[0];
-						for (var i = 0; i < sheets.length; ++i) {
-							var elem = sheets[i];
-							var parent = elem.parentElement || head;
-							parent.removeChild(elem);
-							var rel = elem.rel;
-							if (
-								(elem.href && typeof rel != "string") ||
-								rel.length == 0 ||
-								rel.toLowerCase() == "stylesheet"
-							) {
-								var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
-								elem.href =
-									url +
-									(url.indexOf("?") >= 0 ? "&" : "?") +
-									"_cacheOverride=" +
-									new Date().valueOf();
-							}
-							parent.appendChild(elem);
-						}
-					}
-					var protocol =
-						window.location.protocol === "http:" ? "ws://" : "wss://";
-					var address =
-						protocol + window.location.host + window.location.pathname + "/ws";
-					var socket = new WebSocket(address);
-					socket.onmessage = function (msg) {
-						if (msg.data == "reload") window.location.reload();
-						else if (msg.data == "refreshcss") refreshCSS();
-					};
-					if (
-						sessionStorage &&
-						!sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
-					) {
-						console.log("Live reload enabled.");
-						sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
-					}
-				})();
-			} else {
-				console.error(
-					"Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
-				);
-			}
-			// ]]>
-		</script>
 	</body>
 </html>

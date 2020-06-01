@@ -106,6 +106,7 @@ legend {
   font-family: suisse-light;
   src: url(fonts/SuisseIntl-Light.ttf);
 }
+
 h2.warning {
   font-size: 1.5rem;
   margin-left: 3vw;
@@ -199,7 +200,7 @@ img {
 /*Open Type Styles*/
 h1 {
   font-weight: 200;
-  letter-spacing: 0.05em;
+  letter-spacing: .01em;
   font-size: 3rem;
   line-height: 1.4em;
 }
@@ -258,7 +259,7 @@ p {
 }
 .identify-container p{font-weight:500;}
 
-p.identify-container-item-define{font-weight:200;}
+p.identify-container-item-define{font-weight:200;display: flex;flex-direction: column;}
 p.width-sm {
   margin-top: 6vh;
 }
@@ -320,14 +321,7 @@ span.largetext {
   text-align: right;
   letter-spacing: 0.0015em;
 }
-.identify-container,
-.challenge-container,
-.replace-container{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  text-align: center;
-}
+
 .arrow-style{
   display: none;
 }
@@ -425,7 +419,7 @@ em.arrow-style.cube-arrow {
     margin-left: 3vw;
   }
   em.intro-anxiety {
-    font-size: 23rem;
+    font-size: 29rem;
   }
   em.intro-cbt {
     font-size: 5rem;
@@ -434,7 +428,7 @@ em.arrow-style.cube-arrow {
     font-size:.9rem;
   }
   h5{font-size:1.2rem;}
-h1{font-size:6rem;line-height: .8em;}
+h1{font-size:6rem;line-height: 1.2em;}
 h2{font-size:2rem;}
 span.largetext{font-size: 12rem;}
 }
@@ -479,7 +473,7 @@ span.largetext{font-size: 12rem;}
   }
 
   em.intro-anxiety {
-    font-size: 30rem;
+    font-size: 26rem;
     line-height: 0.5em;
     letter-spacing: 0.02em;
   }
@@ -502,8 +496,15 @@ span.largetext{font-size: 12rem;}
     line-height: 3em;
     text-align: center;
 }
+  .arrow-style{
+  display: block;}
+.arrow-style.down-arrow{
+
+    display: none;
+}
 }
 @media (max-width: 1999px) and (min-width: 1300px) {
+
   h1 {
     font-size: 8rem;
   }
@@ -567,8 +568,20 @@ span.largetext{font-size: 12rem;}
     line-height: 3em;
     text-align: center;
 }
+  .arrow-style{
+  display: block;}
+.arrow-style.down-arrow{
+
+    display: none;
+}
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+  .arrow-style{
+  display: block;}
+.arrow-style.down-arrow{
+
+    display: none;
+}
   h1 {
     font-size: 11rem;
   }
@@ -577,7 +590,7 @@ span.largetext{font-size: 12rem;}
     font-size: 4.25rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 1.65rem;
   }
   h4 {
     font-size: 3.75rem;
@@ -742,8 +755,10 @@ a.outside-resource {
   border-bottom: 1px black solid;
 }
 a.tiny-link {
-  border-bottom: 1px black solid;
+  border-bottom: .7px black solid;
   color: black;
+  filter: invert(1);
+  mix-blend-mode: exclusion;
 }
 section.Section.Section-1.Landing-Page.index-landing-page {
     height: 100vh;
@@ -756,6 +771,14 @@ section.Section.Section-1.Landing-Page.index-landing-page {
 }
 section.Section.Section-1.depression.Landing-Page {
     height: 100vh;
+}
+video.anxiety-Landing-Video,
+video.depression-Landing-Video,
+video.cbt-Landing-Video   {
+    grid-row: 1/9;
+    grid-column: 1/9;
+    width: 100vw;
+    height: 90vh;
 }
 @media (max-width: 767px) and (min-width: 376px) {
   .sticky-item-bottom {
@@ -796,8 +819,18 @@ section.Section.Section-1.depression.Landing-Page {
     top: 91vh;
     grid-column: 1/3;
   }
+  .header-section-stick-bottom {
+    margin-top: -8vh;
+}
+  video.anxiety-Landing-Video,
+video.depression-Landing-Video,
+video.cbt-Landing-Video   {
+
+    height: 100vh;
+}
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+
   .sub-section {
     height: 100vh;
     padding: 16vh 6vw;
@@ -814,6 +847,9 @@ section.Section.Section-1.depression.Landing-Page {
   .sticky-item-bottom {
     top: 93vh;
     grid-column: 1/3;
+  }
+  .header-section-stick-bottom{
+    margin-top: -8vh;
   }
 }
 /*open topnav */
@@ -915,6 +951,7 @@ a.top-btn {
   right: 4vw;
   height: 6vh;
   bottom: 3vh;
+  text-align: center;
 }
 a.top-btn:hover {
   border-radius: 1060px 20px 100px 206px;
@@ -1072,7 +1109,7 @@ img.logo-svg {
   a.top-btn {
     width: 4vw;
     right: 2vw;
-    top: 90vh;
+    top: 91vh;
     height: 7vh;
   }
   img.logo-svg {
@@ -1543,20 +1580,13 @@ section.Section.Section-1.depression.Landing-Page {
     height: 100vh;
 }
 
-video.anxiety-Landing-Video,
-video.depression-Landing-Video,
-video.cbt-Landing-Video   {
-    grid-row: 1/9;
-    grid-column: 1/9;
-    width: 100vw;
-    height: 90vh;
-}
+
 
 .item-1-anxiety{
    filter: invert(1);
    mix-blend-mode: exclusion;
-   grid-row: 4/16;
-   grid-column: 2/9;
+   grid-row: 2/16;
+   grid-column: 4/8;
   }
 .grid-item-2-anxiety-is {
   grid-column: 1/6;
@@ -1797,7 +1827,10 @@ video.Letter-2-Video {
 }
 @media (max-width: 1023px) and (min-width: 768px) {
  
-
+.item-1-anxiety{
+  grid-column: 3/9;
+  grid-row: 3/6;
+}
 
   
   p.width-sm {
@@ -2321,6 +2354,11 @@ em.intro-depression {
 /*anxiety page section 5 despression close*/
 
 /*ar section*/
+section.Section.Section-4-cube.container {
+    top: 0;
+    z-index: 6;
+    background: linear-gradient(0deg, white 50%, black 50%);
+}
 label {
   margin-right: 15px;
   line-height: 32px;
@@ -2380,11 +2418,15 @@ span.cube-checkbox-word {
     margin-top: 0vh;
     margin-bottom: 1vh;
 }
-.cube-text li.border{
+.cube-text li.border,
+.border{
     padding: 3.25vh 4vw;
     border: .5px black solid;
     border-radius: 50%;
     margin-bottom: 0vh;
+    color: black;
+    filter: invert(1);
+    mix-blend-mode: exclusion;
 }
 .cube {
   width: 400px;
@@ -2401,6 +2443,8 @@ span.cube-checkbox-word {
     color: black;
     max-height: 100vh;
     left: 0;
+    display: flex;
+    flex-direction: column;
     padding: 4vh 2vw;
     overflow: scroll;
     TOP: 62VH;
@@ -2442,6 +2486,7 @@ span.cube-checkbox-word {
 
 .cube__face--front {
   transform: rotateY(0deg) translateZ(200px);
+  background: blue;
 }
 .cube__face--right {
   transform: rotateY(90deg) translateZ(200px);
@@ -2493,14 +2538,14 @@ label {
   FLEX-DIRECTION: column;
 }
 p.radio-group {
-  display: flex;
-  height: 32vh;
+   height: 32vh;
   flex-direction: column;
   background: white;
   position: sticky;
   z-index: 2;
   top: 38vh;
   text-align: left;
+}
 }
 footer p {
   color: red;
@@ -2510,6 +2555,12 @@ footer p {
 @media (max-width: 1023px) and (min-width: 768px) {
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
+  section.Section.Section-4-cube.container {
+    top: 0;
+    z-index: 6;
+    position: sticky;
+    background: linear-gradient(90deg, white 50%, black 50%);
+}
 label {
   margin-right: 15px;
   line-height: 32px;
@@ -2558,18 +2609,16 @@ button {
 }
 
 span.cube-checkbox-word {
-    grid-column: 1/3;
-    grid-row: 1/2;
+    z-index: 9;
     color: black;
     line-height: 0;
     transition: ease-in .2s;
 }
-span.cube-checkbox-word:hover {
-  transform:skew(-25dEG)
-}
+
 .cube {
   width: 400px;
   height: 400px;
+  top: -10vh;
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
@@ -2654,19 +2703,21 @@ label {
   height: 100vh;
 }
 .cube-section {
-  height: 100vh;
   width: 100%;
   justify-content: space-around;
-  z-index: 99;
+  z-index: 9;
   display: flex;
+  height: 100vh;
+  margin-bottom: 0;
   top: 9vh;
-  position: sticky;
-  align-items: flex-start;
   FLEX-DIRECTION: row-reverse;
 }
 p.radio-group {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  top: 0vh;
+  height: 4vh;
 }
 footer p {
   color: red;
@@ -2720,6 +2771,7 @@ footer p {
   justify-self: center;
 }
 
+
 .thoughts-head {
   grid-column: 1/3;
   grid-row: 5/6;
@@ -2741,8 +2793,9 @@ footer p {
 .container.cbt-changes-container {
   grid-row: 15/17;
   grid-column: 3/7;
-  display: flex;
-  flex-direction: column;
+  grid-auto-rows: 21vh;
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
 }
 .behaviors-head.full-behaviors,
 .feelings-head.full-feelings,
@@ -2760,12 +2813,55 @@ footer p {
   grid-row: 13/15;
   grid-column: 2/8;
 }
+.identify-container,
+.challenge-container,
+.replace-container{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+}
+.cbt-changes-item{
+ 
+  width:50%;
+}
 
 @media (max-width: 767px) and (min-width: 376px) {
 }
 @media (max-width: 1023px) and (min-width: 768px) {
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
+  .item-1-CBT{grid-column:2/6;}
+   .identify-container,
+   .challenge-container,
+   .replace-container
+   {
+   grid-row:1/2;
+   text-align: left;
+   }
+   
+  .identify-container{
+grid-column:1/2;
+
+  }
+.challenge-container{
+grid-column:2/3;
+}
+.replace-container{
+grid-column:3/4;
+
+}
+.result-container{
+  grid-row:2/3;
+  grid-column:2/3;
+}
+.cbt-changes-item{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  width: 35%;
+  height: 2vh;
+  align-self: end;
+}
  
   .circle-flow {
     position: relative;
@@ -2796,9 +2892,11 @@ footer p {
 
   .container.cbt-changes-container {
     grid-row: 15/17;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 15vh;
     grid-column: 3/13;
-    flex-direction: row;
-    justify-content: space-around;
+    grid-gap: 12vh 6vw;
   }
   .thoughts-head.full-thoughts {
     display: block;
@@ -3071,11 +3169,7 @@ footer a {
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
 }
-section.Section.Section-5-cube.container {
-    top: 0;
-    z-index: 6;
-    background: linear-gradient(0deg, white 50%, black 50%);
-}
+
 .carousel.flickity-enabled.is-draggable {
   width: 100vw;
   z-index: 7;
