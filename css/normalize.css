@@ -20,10 +20,6 @@ body {
     margin: 0;
 }
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
 figcaption,
 figure,
 main {
@@ -43,56 +39,7 @@ samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
-a {
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-a:active,
-a:hover {
-    outline-width: 0;
-}
-abbr[title] {
-    border-bottom: none;
-    text-decoration: underline;
-    text-decoration: underline dotted;
-}
-b,
-strong {
-    font-weight: bolder;
-}
-dfn {
-    font-style: italic;
-}
-mark {
-    background-color: #ff0;
-    color: #000;
-}
-small {
-    font-size: 80%;
-}
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-}
-sub {
-    bottom: -0.25em;
-}
-sup {
-    top: -0.5em;
-}
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-img {
-    border-style: none;
-}
-svg:not(:root) {
-    overflow: hidden;
-}
-button,
+
 input,
 optgroup,
 select,
