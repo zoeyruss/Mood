@@ -40,7 +40,7 @@
             </div>
             <div class="perspective-line">
                 <a href="cbt-mood.html">
-                    <p class="perspective">cbt</p>
+                    <p class="perspective">cognitive behavioral therapy</p>
                 </a>
                 <a href="cbt-mood.html">
                     <p class="perspective-italic perspective">cbt</p>
@@ -76,7 +76,7 @@
 
     <main class="index">
         <a name="top"></a>
-                <section class="Section Section-1 CBT Landing-Page">
+                <section class="Section Section-1 CBT Landing-Page ">
                     <div class="sticky-item-bottom sticky-item-bottom CBT ">
                     <h2>Cognitive Behavoiral Therapy</h2>
                     </div>
@@ -98,14 +98,13 @@
                 <h2>01. Framework </h2>
             </div>
 
-            <div class="sub-section thoughts-anxiety-subsection">
+            <div class="sub-section sm-sub-section thoughts-anxiety-subsection">
                 <div class="sticky-item-top invert">
                     <h2>01.</h2>
                 </div>
                 <div class="sticky-item-top display-flex-row">
                     <h1> frameworks </h1>
-                    <p class="width-sm">79 people suffering from anxiety were asked “what does anxiety feel like?” these
-                        are their responses</p>
+                    <p class="width-sm">The 'cognitive model' used to understand the underlying issue causing distress in a person's mental state. The framework uses the experiences in the form of a formula.</p>
                 </div>
             </div>
                         <div class="Container-Grid flow-chart">
@@ -531,16 +530,22 @@
     </main>
 
     </div>
+
+
     <script>
         var cube = document.querySelector('.cube');
         var radioGroup = document.querySelector('.radio-group');
         var currentClass = '';
 
+
+
         function changeSide() {
             var checkedRadio = radioGroup.querySelector(':checked');
+
             var showClass = 'show-' + checkedRadio.value;
             if (currentClass) {
                 cube.classList.remove(currentClass);
+                
             }
             cube.classList.add(showClass);
             currentClass = showClass;
