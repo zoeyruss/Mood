@@ -548,7 +548,7 @@ span.largetext{font-size: 12rem;}
   }
 
   em.intro-anxiety {
-    font-size: 30rem;
+    font-size: 41rem;
     line-height: 0.5em;
     letter-spacing: 0.02em;
   }
@@ -1039,15 +1039,15 @@ img.logo-svg {
     visibility: visible;
   }
 }
-@media (max-width: 1999px) and (min-width: 1024px) {
+@media (max-width: 1299px) and (min-width: 1024px) {
   .burger {
     width: 8vw;
     height: 3vw;
   }
   a.top-btn {
-    width: 3.5vw;
-    right: 1vw;
-    top: 92vh;
+    width: 4.5vw;
+    right: 14vw;
+    top: 90vh;
     height: 6.75vh;
   }
   img.logo-svg {
@@ -1942,7 +1942,7 @@ video.Letter-2-Video {
     grid-column: 4/6;
     grid-row: 3/12;
     height: 108vh;
-    justify-self: auto;
+    justify-self: flex-end;
     top: 20vh;
     position: sticky;
   }
@@ -2016,6 +2016,11 @@ video.Letter-2-Video {
   .video-14 {
     grid-column: 1/2;
     grid-row: 14/15;
+  }
+  .video-15-a{
+     grid-column: 2/4;
+     grid-row: 5/7;
+     z-index: 3;
   }
   .video-15 {
     grid-row: 15/19;
@@ -3120,14 +3125,16 @@ grid-column:3/4;
 }
 .result-container{
   grid-row:2/3;
+  align-self: self-end;
   grid-column:2/3;
+  justify-content: center;
+  width: 75%;
 }
 .cbt-changes-item{
   grid-row: 2/3;
-  grid-column: 2/3;
+  grid-column: 3/6;
   width: 35%;
   height: 2vh;
-  align-self: end;
 }
  
   .circle-flow {
