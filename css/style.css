@@ -621,7 +621,8 @@ span.largetext{font-size: 12rem;}
     font-size: 31rem;
   }
   em.intro {
-    font-size: 30rem;
+    font-size: 28rem;
+    margin-left: 3vw;
   }
   span.largetext {
     font-size: 26rem;
@@ -1403,6 +1404,10 @@ video.Letter-1-Video {
   }
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+  .item-1.item-1-index{
+    align-items: center;
+    flex-direction:row;
+  }
   video.Letter-1-Video {
     grid-column: 4/6;
     grid-row: 3/14;
