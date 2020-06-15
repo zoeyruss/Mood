@@ -211,6 +211,14 @@ h2 {
   line-height: 0px;
   font-weight: 200;
 }
+h1.sm-h1{
+  font-size: 1rem;
+}
+em.hanging-puncuation{
+  margin-left:-.15em;
+  font-weight: 100;
+}
+.sticky-item-bottom h2{line-height:0;}
 h3 {
   font-size: 0.6rem;
 }
@@ -500,9 +508,20 @@ span.largetext{font-size: 12rem;}
 }
 @media (max-width: 1999px) and (min-width: 1300px) {
 
-  h1 {
+  h1,
+  em.perspective-italic,
+  em.hanging-puncuation {
     font-size: 8rem;
+    line-height: 1em;
   }
+  .display-flex-row h1{
+    width: 62%;
+  }
+  h1.sm-h1{
+  font-size:5rem;
+  width:30%;
+  line-height:.95em;
+}
   h2 {
     line-height: 4rem;
     font-size: 1.25rem;
@@ -805,7 +824,7 @@ video.cbt-Landing-Video   {
 @media (max-width: 1999px) and (min-width: 1024px) {
   .sub-section {
     height: 100vh;
-    padding: 16vh 6vw;
+    padding: 16vh 11vw;
   }
   .Container-Grid {
     padding-bottom: 40vh;
@@ -820,7 +839,7 @@ video.cbt-Landing-Video   {
     grid-column: 1/3;
   }
   .header-section-stick-bottom {
-    margin-top: -8vh;
+    margin-top: -9vh;
 }
   video.anxiety-Landing-Video,
 video.depression-Landing-Video,
@@ -1176,7 +1195,8 @@ a p.perspective-italic{
   font-size: 2.5rem;
 } 
 
-a p.perspective-italic {
+a p.perspective-italic,
+em.perspective-italic {
   font-family: recife-italic;
 
 }
