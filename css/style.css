@@ -120,7 +120,7 @@ h2.warning {
   font-style: normal;
   margin: 0;
   padding: 0;
-  cursor: none;
+
   font-family: neue-haas-grotesk-display, sans-serif;
   box-sizing: border-box;
   font-size: 16px;
@@ -178,7 +178,7 @@ html {
   overflow-wrap: break-word;
   overflow-y: scroll;
   background: white;
-  cursor: none;
+
   overflow-x: hidden;
 }
 
@@ -1314,7 +1314,7 @@ img.Logo-Video-gif {
   }
   .item-1.item-1-index {
     grid-column: 1/5;
-    grid-row: 9/12;
+    grid-row: 9/10;
     padding: 0vh 1vw;
     align-items: center;
     flex-direction: row;
