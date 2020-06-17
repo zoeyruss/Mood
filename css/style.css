@@ -170,22 +170,27 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-body,
-html {
-  width: 100%;
+body, html {
+  width: 100vw;
   height: 100%;
   overflow-x: hidden;
   overflow-wrap: break-word;
   overflow-y: scroll;
   background: white;
-
   overflow-x: hidden;
+  scroll-behavior: auto;
+  overflow: scroll;
 }
 
 video {
   height: auto;
   object-fit: cover;
   max-width: 100%;
+}
+.cube__face video{
+  width: 100vw;
+  object-fit:cover;
+  height:100%;
 }
 
 video.video-contain {
@@ -451,7 +456,7 @@ h1.sm-h1{
 h1, em.perspective-italic, em.hanging-puncuation{
   font-size:5rem;
 }
-h2{font-size:2rem;}
+h2{font-size: 1.25rem;}
 span.largetext{font-size: 12rem;}
 }
 @media (max-width: 1299px) and (min-width: 1024px) {
@@ -620,6 +625,9 @@ span.largetext{font-size: 12rem;}
 }
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+  p.identify-container-item-define{
+    flex-direction:row;
+  }
   .arrow-style{
   display: block;}
 .arrow-style.down-arrow{
@@ -630,11 +638,10 @@ span.largetext{font-size: 12rem;}
     font-size: 11rem;
   }
   h2 {
-    line-height: 5rem;
-    font-size: 4.25rem;
+    font-size: 2rem;
   }
   h3 {
-    font-size: 1.65rem;
+    font-size: 1.25rem;
   }
   h4 {
     font-size: 3.75rem;
@@ -649,20 +656,20 @@ span.largetext{font-size: 12rem;}
     line-height: 1.4em;
   }
   h5 {
-    font-size: 2.25rem;
+    font-size: 2rem;
   }
   h6 {
     font-size: 2.05rem;
   }
   p {
-    font-size: 2.16rem;
+    font-size: 1.75rem;
     line-height: 1.25em;
   }
   span.intro {
-    font-size: 31rem;
+    font-size: 25rem;
   }
   em.intro {
-    font-size: 28rem;
+    font-size: 25rem;
     margin-left: 3vw;
   }
   span.largetext {
@@ -682,7 +689,7 @@ span.largetext{font-size: 12rem;}
     font-size: 1.75rem;
   }
   em.intro-cbt {
-    font-size: 8rem;
+    font-size: 10rem;
   }
   em.arrow-style.cube-arrow {
     display: block;
@@ -842,6 +849,9 @@ video.cbt-Landing-Video   {
   .display-flex-row {
     flex-direction: column;
   }
+  a.tiny-link{
+    font-size:1.15rem;
+  }
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
   .sub-section {
@@ -871,6 +881,9 @@ video.cbt-Landing-Video   {
 }
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+  a.tiny-link{
+    font-size:1.2rem;
+  }
 
   .sub-section {
     height: 100vh;
@@ -886,7 +899,7 @@ video.cbt-Landing-Video   {
     flex-direction: row;
   }
   .sticky-item-bottom {
-    top: 93vh;
+    top: 95vh;
     grid-column: 1/3;
   }
   .header-section-stick-bottom{
@@ -1148,10 +1161,10 @@ img.logo-svg {
     height: 3vw;
   }
   a.top-btn {
-    width: 4vw;
-    right: 2vw;
-    top: 91vh;
-    height: 7vh;
+    width: 2.54vw;
+    right: 1vw;
+    top: 92vh;
+    height: 6vh;
   }
   img.logo-svg {
     height: 6vh;
@@ -1164,8 +1177,8 @@ img.logo-svg {
     left: 0px;
   }
   .nav-menu {
-    height: 5vh;
-    width: 8vw;
+    height: 4vh;
+    width: 6vw;
   }
   img.logo-svg.logo-5.change-navbar {
     visibility: visible;
@@ -1277,9 +1290,6 @@ img.Logo-Video-gif {
   a p.perspective {
     font-size: 2.5rem;
   }
-  p.perspective.cbt-perspective, p.perspective-italic.cbt-perspective {
-    font-size:2rem;
-}
   .Section-1.Landing-Page {
     height: 104vh;
     justify-content: flex-end;
@@ -1302,10 +1312,6 @@ img.Logo-Video-gif {
   a p.perspective-italic,
   a p.perspective {
     font-size: 4.5rem;
-  }
-  p.perspective.cbt-perspective,
-  p.perspective-italic.cbt-perspective{
-    font-size:3.6rem;
   }
   .item-1.item-1-index{
         padding: 0vh 1vw;
@@ -1453,9 +1459,13 @@ video.Letter-1-Video {
   }
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+  .perspective-line.nav-section{
+    left:30vw;
+  }
   .item-1.item-1-index{
     align-items: center;
     flex-direction:row;
+    padding: 2vh 2vw;
   }
   video.Letter-1-Video {
     grid-column: 4/6;
@@ -1487,11 +1497,14 @@ video.Letter-1-Video {
     grid-row: 3/7;
     top: 14vh;
     width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 6rem;
   }
   .sticky-item-bottom.Qoute-item {
     grid-column: 2/11;
     top: 0;
-    grid-row: 15/19;
+    grid-row: 10/16;
     bottom: 0;
   }
 
@@ -1695,6 +1708,10 @@ video.Letter-2-Video {
 .Container-Grid.flow-chart {
   grid-template-columns: repeat(8, 1fr);
   grid-auto-rows: 10vh;
+  color: black;
+  padding: 4vh 4vw;
+  height: 100%;
+  position: relative;
 }
 .Container-Grid.anxiety-is-section,
 .Container-Grid.depression-is-section {
@@ -2459,7 +2476,7 @@ em.intro-depression {
 /*ar section*/
 section.Section.Section-4-cube.container {
     top: 0;
-    z-index: 6;
+    z-index: 2;
     background: linear-gradient(0deg, white 50%, black 50%);
 }
 label {
@@ -2515,7 +2532,7 @@ span.cube-checkbox-word {
     left: 0;
     grid-column: 1/2;
     grid-row: 1/2;
-    justify-self: left;
+    justify-self: center;
 }
 .cube-text li {
     text-decoration: none;
@@ -2575,12 +2592,10 @@ li.cube-text-survey-responses {
 
 .cube__face {
   position: absolute;
-  width: 400px;
+  width: 100vw;
   height: 400px;
   line-height: 200px;
   top: 0;
-  font-size: 40px;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   color: white;
@@ -2592,13 +2607,13 @@ li.cube-text-survey-responses {
   background: blue;
 }
 .cube__face--right {
-  transform: rotateY(92deg) translateZ(200px);
+  transform: rotateY(90deg) translateZ(200px);
 }
 .cube__face--back {
   transform: rotateY(180deg) translateZ(200px);
 }
 .cube__face--left {
-  transform: rotateY(-90deg) translateZ(200px);
+  transform: rotateY(-90deg) translateZ(0px);
 }
 .cube__face--top {
   transform: rotateX(90deg) translateZ(200px);
@@ -2610,13 +2625,13 @@ li.cube-text-survey-responses {
 .cube-text.depression-cube-text,
 .cube-text.anxiety-cube-text  {
 
-  transform: rotateX(-1800deg) translateZ(0px);
+  transform: rotateX(-180deg) translateZ(0px);
 }
 .cube-text.depression-cube-text,
 .cube-text.anxiety-cube-text  {}
 
 label {
-  margin-right: 6px;
+  margin-right: 10px;
   justify-items: left;
   justify-items: center;
   display: grid;
@@ -2630,7 +2645,7 @@ label {
   top: 0;
   width: 100%;
   justify-content:;
-  z-index: 99;
+  z-index: 3;
   display: flex;
   margin-bottom: 50vh;
   position: sticky;
@@ -2639,13 +2654,13 @@ label {
 }
 p.radio-group {
    height: 32vh;
-   flex-direction: row;
+   flex-direction: column;
    background: white;
-   position: sticky;
-   z-index: 5;
-   HEIGHT: 10vh;
-   bottom: 0vh;
-   width: 100vw;
+   position: absolute;
+   z-index: 2;
+   HEIGHT: 29vh;
+   top: 10vh;
+   width: auto;
    display: flex;
    padding-top: 2vh;
    text-align: left;
@@ -2687,85 +2702,18 @@ footer p {
     display: none;
 }
 }
-@media (max-width: 1023px) and (min-width: 768px) {
-  .cube-text li{
-    font-size:1.4rem;
-  }
-
-  
-  .cube__face {
-    position: absolute;
-    width: 100vw;
-    height: 48vh;
-    line-height: 200px;
-    top: 0;
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    color: white;
-    text-align: left;
-}
-.cube__face--front div{
-
-  left: 0vw;
-}
-.cube-text{
-  top: 40vh;
-}
-.cube__face--front div:active  .cube__face--back{
- width:0vw;
-}
-.cube__face--right div{left: -1vw;}
-
-.cube__face--back div{z-index: 1;left: 92vw;}
-
-.cube__face--left div{left: -1vw;}
-
-.cube__face--back {
-    transform: rotateY(180deg) translateZ(200px);
-    right: 0vw;
-    display: none;
-}}
-@media (max-width: 1999px) and (min-width: 1200px) {
-
-.cube-text {
-    width: 43vw;
-    POSITION: ABSOLUTE;
-    color: black;
-    left: -62vw;
-    height: 70vh;
-    overflow: scroll;
-    background: white;
-    TOP: 0VH;
-}}
-
-@media (max-width: 1199px) and (min-width: 1024px) {
-
-.cube-text {
-    width: 43vw;
-    POSITION: ABSOLUTE;
-    color: black;
-    left: -51vw;
-    height: 70vh;
-    overflow: scroll;
-    background: white;
-    TOP: 0VH;
-}}
-
-@media (max-width: 1999px) and (min-width: 1024px) {
-  .cube-text li.border, .border {
+@media (max-width: 1400px) and (min-width: 768px) {
+ .cube-text li.border, .border {
     padding: 4.25vh 6vw;
     border: .5px black solid;
     border-radius: 50%;
-    margin-left: 0vw;
+    margin-left: 7vw;
 }
 
   section.Section.Section-4-cube.container {
     top: 0;
-    z-index: 6;
     position: sticky;
-    background: linear-gradient(90deg, white 50%, black 50%);
+    background: white;
 }
 label {
   margin-right: 15px;
@@ -2785,50 +2733,35 @@ input {
 }
 
 
-button,
-legend {
-
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 0;
-  border: 0;
-  font-size: 14px;
-}
-
-button:hover,
-button:focus {
-  color: #999;
-}
-
-button:active {
-  background-color: white;
-  color: black;
-  outline: 1px solid black;
-}
-div#button-item feelings-button-item {
-    height: 100vh;
-}
-
-button {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
 
 span.cube-checkbox-word {
     z-index: 9;
     color: black;
-    transition: ease-in .2s;
+    display: block;
+    transition: ease-in .02s;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+}
+[type="checkbox"], [type="radio"], span.cube-checkbox-word {
+    width: 15vw;
+}
+span.cube-checkbox-word:hover {
+border-radius:50%;
+border:black solid .1px;
+
 }
 
 .cube {
-  width: 400px;
-  height: 400px;
-  top: -10vh;
-  right: 8vw;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-100px);
-  transition: transform 1s;
+  width: 100vw;
+  height: 50vw;
+}
+.cube-text {
+    right: 50vw;
+    width: 100vw;
+    left: 0vw;
+    height: 70vh;
+    TOP: 45VH;
 }
 
 
@@ -2837,17 +2770,11 @@ span.cube-checkbox-word {
     transform: rotateX(0deg) translateZ(0px);
 }
 .cube__face {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  line-height: 200px;
-  top: 20vh;
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  color: white;
-  text-align: left;
+  width: 100vw;
+  height: 50vh;
+}
+.cube__face video {
+    width: 100vw;
 }
 
 .cube-text.depression-cube-text,
@@ -2855,7 +2782,9 @@ span.cube-checkbox-word {
   transform: rotateX(0deg) translateZ(0px);
 }
 .cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {top: 18vh;}
+.cube-text.anxiety-cube-text  {
+    top: 54vh;
+}
 
 label {
   margin-right: 6px;
@@ -2867,31 +2796,23 @@ label {
   height: 100vh;
 }
 .cube-section {
-  width: 100%;
-  z-index: 9;
-  display: flex;
-  height: 100vh;
-  margin-bottom: 0;
-  top: 9vh;
-  FLEX-DIRECTION: row-reverse;
+  FLEX-DIRECTION: column;
 }
 p.radio-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-self: auto;
-  top: 0vh;
-  width: 50vw;
-  height: 4vh;
+  top: 7vh;
+  width: 20vw;
+  height: 50vw;
   left: 2vw;
   justify-content: space-evenly;
   padding: 0;
-  background: transparent;
-}
-footer p {
-  color: red;
+  background: white;
 }
 }
-@media (max-width: 3000px) and (min-width: 2000px) {
+
+@media (max-width: 3000px) and (min-width: 1401px) {
   .cube-text li.border, .border {
     padding: 4.25vh 6vw;
     border: .5px black solid;
@@ -2901,9 +2822,8 @@ footer p {
 
   section.Section.Section-4-cube.container {
     top: 0;
-    z-index: 6;
     position: sticky;
-    background: linear-gradient(90deg, white 50%, black 50%);
+    background: white;
 }
 label {
   margin-right: 15px;
@@ -2923,60 +2843,35 @@ input {
 }
 
 
-button,
-legend {
-
-  background-color: transparent;
-  padding: 5px 10px;
-  border-radius: 0;
-  border: 0;
-  font-size: 14px;
-}
-
-button:hover,
-button:focus {
-  color: #999;
-}
-
-button:active {
-  background-color: white;
-  color: black;
-  outline: 1px solid black;
-}
-div#button-item feelings-button-item {
-    height: 100vh;
-}
-
-button {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
 
 span.cube-checkbox-word {
     z-index: 9;
     color: black;
-    transition: ease-in .2s;
+    display: block;
+    transition: ease-in .02s;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+}
+[type="checkbox"], [type="radio"], span.cube-checkbox-word {
+    width: 5vw;
+}
+span.cube-checkbox-word:hover {
+border-radius:50%;
+border:black solid .1px;
+
 }
 
 .cube {
-  width: 400px;
-  height: 400px;
-  top: -10vh;
-  right: 8vw;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(-100px);
-  transition: transform 1s;
+  width: 50vw;
+  height: 100vh;
 }
 .cube-text {
-    width: 50vw;
-    POSITION: ABSOLUTE;
-    color: black;
-    left: -67vw;
+    right: 50vw;
+    width: 45vw;
+    left: -50vw;
     height: 70vh;
-    overflow: scroll;
-    background: white;
-    TOP: 0VH;
+    TOP: 10VH;
 }
 
 
@@ -2985,17 +2880,12 @@ span.cube-checkbox-word {
     transform: rotateX(0deg) translateZ(0px);
 }
 .cube__face {
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  line-height: 200px;
-  top: 20vh;
-  font-size: 40px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  color: white;
-  text-align: left;
+  width: 50vw;
+  height: 100vh;
+}
+.cube__face video {
+    width: 50vw;
+   
 }
 
 .cube-text.depression-cube-text,
@@ -3003,7 +2893,7 @@ span.cube-checkbox-word {
   transform: rotateX(0deg) translateZ(0px);
 }
 .cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {top: 18vh;}
+.cube-text.anxiety-cube-text  {}
 
 label {
   margin-right: 6px;
@@ -3015,25 +2905,35 @@ label {
   height: 100vh;
 }
 .cube-section {
-  width: 100%;
-  z-index: 9;
-  display: flex;
-  height: 100vh;
-  margin-bottom: 0;
-  top: 9vh;
   FLEX-DIRECTION: row-reverse;
 }
 p.radio-group {
   display: flex;
   flex-direction: row;
   align-self: auto;
-  top: 0vh;
+  top: 5vh;
   width: 50vw;
-  height: 4vh;
+  height: 3vh;
   left: 2vw;
   justify-content: space-evenly;
   padding: 0;
   background: transparent;
+}
+}
+@media (max-width: 2000px) and (min-width: 1401px) {
+  [type="checkbox"], [type="radio"], span.cube-checkbox-word,input[type="radio"]:focus,[type="checkbox"], [type="radio"] {
+    width: 10vw;
+}
+span.cube-checkbox-word:hover {
+width:10vw;
+}
+label{
+    margin-right: 2px;
+    width: 10vw;
+}
+p.radio-group{
+  justify-content: space-around;
+  top: 7vh;
 }
 }
 
@@ -3065,7 +2965,16 @@ p.radio-group {
   grid-row: 3/7;
   grid-column: 2/8;
 }
-.cbt-head {
+.cbt-head{
+  grid-column:;
+  grid-column: 3/8;
+  grid-row: 4/6;
+  font-size: 1.5rem;
+  width: 63%;
+  justify-self: center;
+  align-self: center;
+}
+a {
   grid-column: 4/6;
   grid-row: 4/6;
   font-size: 0.95rem;
@@ -3102,12 +3011,9 @@ p.radio-group {
 }
 
 .container.cbt-changes-container {
-  grid-row: 15/17;
-  grid-column: 3/7;
-  grid-auto-rows: 21vh;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .behaviors-head.full-behaviors,
 .feelings-head.full-feelings,
@@ -3133,7 +3039,11 @@ p.radio-group {
   height: auto;
   text-align: center;
 }
-.result-container{border-radius:50%;border:white solid .1px;padding: 3vh 2vw;height:20vh;}
+.result-container{border-radius:50%;
+border:white solid .1px;
+padding:3vh 2vw;
+height:20vh;
+}
 .cbt-changes-item{
  
   width:50%;
@@ -3147,13 +3057,13 @@ p.radio-group {
   }
   .cbt-head{
     font-size:2rem;
-    grid-row: 4/6;
-    grid-column: 4/6;
-    align-self: end;
+    grid-row: 4/7;
+    grid-column: 4/7;
+    align-self: center;
   }
   .identify-container, .challenge-container, .replace-container{
     justify-self: center;
-    width:50%;
+    width: 100%;
   }
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
@@ -3248,11 +3158,27 @@ grid-column:3/4;
 
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+  .item-1-CBT {
+  grid-row: 3/12;
+  grid-column: 1/4;
+  width: 80%;
+  mix-blend-mode: exclusion;
+  z-index: 2;
+  filter: invert(1);
+}
+.item-2-CBT {
+    padding-left: 7vw;
+    grid-column: 1/3;
+    grid-row: 10/11;
+    mix-blend-mode: exclusion;
+    align-self: center;
+    filter: invert(1) !important;
+}
   
   .circle-flow {
     position: relative;
-    grid-row: 2/20;
-    grid-column: 5/13;
+    grid-row: 2/10;
+    grid-column: 6/12;
   }
   .item.item-1-cbt-define {
     grid-row: 6/10;
@@ -3267,24 +3193,67 @@ grid-column:3/4;
   .Container-Grid.flow-chart {
     grid-template-columns: repeat(16, 1fr);
     grid-auto-rows: 10vh;
+    padding-bottom: 10vh;
+    padding: 0;
+    position: sticky;
   }
   .cbt-head {
     grid-column: ;
-    grid-column: 8/11;
-    grid-row: 5/8;
-    font-size: 2.5rem;
+    grid-column: 7/12;
+    grid-row: 5/6;
+    font-size: 4.5rem;
+    width: 55%;
+    justify-self: center;
+    align-self: center;
   }
 
   .container.cbt-changes-container {
-    grid-row: 15/17;
+       grid-row: 15/17;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 15vh;
     grid-column: 3/13;
-    flex-direction: row;
-    justify-content: space-around;
+    grid-gap: 12vh 6vw;
+
+  } .item-1-CBT{grid-column: 1/4;}
+   .identify-container,
+   .challenge-container,
+   .replace-container
+   {
+   grid-row:1/2;
+   text-align: left;
+   display: flex;
+   }
+   
+  .identify-container{
+grid-column:1/2;
+
   }
+.challenge-container{
+grid-column:2/3;
+}
+.replace-container{
+grid-column:3/4;
+
+}
+.result-container{
+  grid-row:2/3;
+  align-self: self-end;
+  grid-column:2/3;
+  justify-content: center;
+  width: 75%;
+}
+.cbt-changes-item{
+  grid-row: 2/3;
+  grid-column: 3/6;
+  width: 35%;
+  height: 2vh;
+}
+ 
   .thoughts-head.full-thoughts {
     display: block;
     grid-row: 6/8;
-    grid-column: 4/7;
+    grid-column: 5/7;
   }
   .feelings-head.full-feelings {
     display: block;
@@ -3297,7 +3266,7 @@ grid-column:3/4;
     display: block;
     grid-row: 6/8;
     background: white;
-    grid-column: 12/14;
+    grid-column: 11/13;
   }
 
 }
@@ -3490,14 +3459,6 @@ footer a {
 }
 
 /*Close footer*/
-@media (max-width: 767px) and (min-width: 376px) {
-}
-@media (max-width: 1023px) and (min-width: 768px) {
-}
-@media (max-width: 1999px) and (min-width: 1024px) {
-}
-@media (max-width: 3000px) and (min-width: 2000px) {
-}
 
 .carousel.flickity-enabled.is-draggable {
   width: 100vw;
