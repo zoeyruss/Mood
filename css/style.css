@@ -126,10 +126,17 @@ h2.warning {
   font-size: 16px;
   word-break: break-word;
 }
-body {
-  height: 100%;
+body, html {
   width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  background: white;
+  overflow-x: hidden;
+  scroll-behavior:smooth;
+  overflow: scroll;
 }
+
 body.index_body.depression {
   background: black;
 }
@@ -169,17 +176,6 @@ body.index_body.depression {
 a {
   cursor: pointer;
   text-decoration: none;
-}
-body, html {
-  width: 100vw;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-wrap: break-word;
-  overflow-y: scroll;
-  background: white;
-  overflow-x: hidden;
-  scroll-behavior: auto;
-  overflow: scroll;
 }
 
 video {
@@ -456,7 +452,7 @@ h1.sm-h1{
 h1, em.perspective-italic, em.hanging-puncuation{
   font-size:5rem;
 }
-h2{font-size: 1.25rem;}
+h2{font-size:2rem;}
 span.largetext{font-size: 12rem;}
 }
 @media (max-width: 1299px) and (min-width: 1024px) {
@@ -2476,7 +2472,7 @@ em.intro-depression {
 /*ar section*/
 section.Section.Section-4-cube.container {
     top: 0;
-    z-index: 2;
+    z-index: 6;
     background: linear-gradient(0deg, white 50%, black 50%);
 }
 label {
@@ -2645,7 +2641,7 @@ label {
   top: 0;
   width: 100%;
   justify-content:;
-  z-index: 3;
+  z-index: 99;
   display: flex;
   margin-bottom: 50vh;
   position: sticky;
@@ -2782,9 +2778,7 @@ border:black solid .1px;
   transform: rotateX(0deg) translateZ(0px);
 }
 .cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {
-    top: 54vh;
-}
+.cube-text.anxiety-cube-text  {}
 
 label {
   margin-right: 6px;
@@ -3057,13 +3051,13 @@ height:20vh;
   }
   .cbt-head{
     font-size:2rem;
-    grid-row: 4/7;
-    grid-column: 4/7;
-    align-self: center;
+    grid-row: 4/6;
+    grid-column: 4/6;
+    align-self: end;
   }
   .identify-container, .challenge-container, .replace-container{
     justify-self: center;
-    width: 100%;
+    width:50%;
   }
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
