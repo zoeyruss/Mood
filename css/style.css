@@ -273,7 +273,7 @@ p {
 }
 .identify-container p{font-weight:500;}
 
-p.identify-container-item-define{font-weight:200;display: flex;flex-direction: row;}
+p.identify-container-item-define{font-weight:200;display: flex;flex-direction: column;}
 p.width-sm {
   margin-top: 6vh;
 }
@@ -1277,6 +1277,9 @@ img.Logo-Video-gif {
   a p.perspective {
     font-size: 2.5rem;
   }
+  p.perspective.cbt-perspective, p.perspective-italic.cbt-perspective {
+    font-size:2rem;
+}
   .Section-1.Landing-Page {
     height: 104vh;
     justify-content: flex-end;
@@ -1299,6 +1302,10 @@ img.Logo-Video-gif {
   a p.perspective-italic,
   a p.perspective {
     font-size: 4.5rem;
+  }
+  p.perspective.cbt-perspective,
+  p.perspective-italic.cbt-perspective{
+    font-size:3.6rem;
   }
   .item-1.item-1-index{
         padding: 0vh 1vw;
@@ -2585,7 +2592,7 @@ li.cube-text-survey-responses {
   background: blue;
 }
 .cube__face--right {
-  transform: rotateY(90deg) translateZ(200px);
+  transform: rotateY(92deg) translateZ(200px);
 }
 .cube__face--back {
   transform: rotateY(180deg) translateZ(200px);
@@ -2609,7 +2616,7 @@ li.cube-text-survey-responses {
 .cube-text.anxiety-cube-text  {}
 
 label {
-  margin-right: 10px;
+  margin-right: 6px;
   justify-items: left;
   justify-items: center;
   display: grid;
@@ -2632,13 +2639,13 @@ label {
 }
 p.radio-group {
    height: 32vh;
-   flex-direction: column;
+   flex-direction: row;
    background: white;
-   position: absolute;
-   z-index: 2;
-   HEIGHT: 29vh;
-   top: 10vh;
-   width: auto;
+   position: sticky;
+   z-index: 5;
+   HEIGHT: 10vh;
+   bottom: 0vh;
+   width: 100vw;
    display: flex;
    padding-top: 2vh;
    text-align: left;
@@ -2681,6 +2688,10 @@ footer p {
 }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
+  .cube-text li{
+    font-size:1.4rem;
+  }
+
   
   .cube__face {
     position: absolute;
@@ -3094,6 +3105,7 @@ p.radio-group {
   grid-row: 15/17;
   grid-column: 3/7;
   grid-auto-rows: 21vh;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(1,1fr);
 }
@@ -3121,11 +3133,7 @@ p.radio-group {
   height: auto;
   text-align: center;
 }
-.result-container{border-radius:50%;
-border:white solid .1px;
-padding:3vh 2vw;
-height:20vh;
-}
+.result-container{border-radius:50%;border:white solid .1px;padding: 3vh 2vw;height:20vh;}
 .cbt-changes-item{
  
   width:50%;
