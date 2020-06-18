@@ -279,6 +279,7 @@ input[type="radio"]:focus {
   align-self: flex-end;
   justify-self: center;
   text-align: center;
+  width: 5vw;
 }
 
 /*# sourceMappingURL=normalize.min.css.map */
