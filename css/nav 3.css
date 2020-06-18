@@ -1,0 +1,125 @@
+header.open,
+header:after {
+    overflow: hidden;
+}
+.main-nav,
+header:after {
+    position: absolute;
+}
+
+@-webkit-keyframes slideInLeft {
+    0% {
+        -webkit-transform: translate3d(250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes slideOutLeft {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(250px, 0, 0);
+        transform: translate3d(250px, 0, 0);
+        visibility: hidden;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+header:after {
+background:red;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 0;
+    top: 0;
+    visibility: hidden;
+    width: 100%;
+}
+header.open:after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-nav:not(.open) {
+    visibility: hidden;
+}
+
+.main-nav.open {
+    visibility: visible;
+}
+.main-nav.open div {
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+.nav-menu {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: black;
+    height: 4vw;
+    z-index: 12;
+    display: flex;
+    justify-content: center;
+    width: 8vw;
+}
+ .change-navbar{
+     mix-blend-mode: exclusion ;
+     filter:  invert(1) !important;
+}
+ .change-navbar {
+     display: block !important;
+     opacity: 1 !important;
+}
+
+h5{
+    color: white;
+}
+.menu-container {
+    position: absolute;
+    right: 0;
+    top: 0;  
+}
+
+
+.perspective-text {
+  height: 100vh;
+  z-index: 11;
+}
+
+p.perspective {
+    color: white;
+  margin: 0;
+ height: 5.35rem;
+  line-height: 5rem;
+font-family: sans-serif;
+  transition: all 0.2s ease-out;
+  font-size: 5.5rem;
+  font-weight: 100;
+}
+a p.perspective-italic {
+font-family:serif;
+}
+.perspective-line:hover p.perspective {
+  transform: translate(0, -88px);
+}
+
+.perspective-line {
+  position: relative;
+  left: 37%;
+  height: 5.5rem;
+  overflow: hidden;
+  margin-bottom: 7vh;
+  top: 20%;
+}
