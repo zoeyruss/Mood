@@ -98,6 +98,17 @@ legend {
 #yui3-css-stamp.cssreset {
   display: none;
 }
+body, html{
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  scroll-behavior: auto;
+  overflow:;
+}
+
 @font-face {
   font-family: recife-italic;
   src: url(fonts/RecifeDisplayTrial-LightItalic.otf);
@@ -120,17 +131,12 @@ h2.warning {
   font-style: normal;
   margin: 0;
   padding: 0;
-  cursor: pointer;
   font-family: neue-haas-grotesk-display, sans-serif;
   box-sizing: border-box;
   font-size: 16px;
-
   word-break: break-word;
 }
-body {
-  height: 100%;
-  width: 100vw;
-}
+
 body.index_body.depression {
   background: black;
 }
@@ -171,17 +177,6 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-body,
-html { 
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-wrap: break-word;
-  overflow-y: scroll;
-  background: white;
-  overflow-x: hidden;
-}
-
 
 video {
   height: auto;
@@ -1003,9 +998,9 @@ a.top-btn {
   transition: all ease-in-out 0.3s;
   border-radius: 200px 80px 180px 200px;
   width: 8vw;
-  right: 12vw;
+  right: 4vw;
   height: 6vh;
-  bottom: 11vh;
+  bottom: 3vh;
   text-align: center;
 }
 a.top-btn:hover {
@@ -2388,7 +2383,7 @@ em.intro-depression {
   grid-auto-rows: 10vh;
   BACKGROUND: BLACK;
 }
-.white-background {
+.sub-section.white-background.thoughts-depression-subsection {
   background: white;
   color: black;
 }
