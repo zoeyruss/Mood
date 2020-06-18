@@ -1223,7 +1223,6 @@ a p.perspective-italic{
   font-size: 2.5rem;
 } 
 
-a p.perspective-italic,
 em.perspective-italic {
   font-family: recife-italic;
 
@@ -1232,7 +1231,7 @@ em.perspective-italic {
   position: relative;
   z-index: 9;
   height: 5.5rem;
-  width: 59%;
+  
   overflow: hidden;
   left: 9%;
   margin-bottom: 7vh;
@@ -2617,8 +2616,7 @@ li.cube-text-survey-responses {
 
   transform: rotateX(-180deg) translateZ(0px);
 }
-.cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {}
+
 
 label {
   margin-right: 10px;
@@ -2634,7 +2632,6 @@ label {
   height: 100vh;
   top: 0;
   width: 100%;
-  justify-content:;
   z-index: 99;
   display: flex;
   margin-bottom: 50vh;
@@ -2656,9 +2653,7 @@ p.radio-group {
    text-align: left;
 }
 }
-footer p {
-  color: red;
-}
+
 @media (max-width: 767px) and (min-width: 376px) {
   .cube__face {
     position: absolute;
@@ -2806,8 +2801,7 @@ width:5vw;
 .cube-text.anxiety-cube-text  {
   transform: rotateX(0deg) translateZ(0px);
 }
-.cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {}
+
 
 label {
   margin-right: 6px;
