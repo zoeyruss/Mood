@@ -358,7 +358,7 @@ em.arrow-style.cube-arrow {
     margin-left: 3vw;
   }
   em.intro-anxiety {
-    font-size: 33rem;
+    font-size: 32rem;
   }
   em.intro-cbt {
     font-size: 5rem;
@@ -372,12 +372,14 @@ h1{font-size:6rem;line-height: 1.2em;}
 h1.sm-h1{
   font-size:5rem;
   width: 75%;
+  line-height: .9em;
 }
 h1, em.perspective-italic, em.hanging-puncuation{
   font-size:5rem;
 }
 h1.qoute, h1 span.recife-italic{
   font-size:6rem;
+  line-height: .95em;
 }
 h4.anxiety-is,
 span.typeface-italic{
@@ -664,7 +666,6 @@ footer {
   padding-left: 2vw;
   top: 93vh;
   z-index: 9;
-  grid-column: 1/5;
   mix-blend-mode: exclusion;
   filter: invert(1) !important;
 }
@@ -783,10 +784,8 @@ video.cbt-Landing-Video   {
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   .sticky-item-bottom {
-     grid-column: 2/11;
-    top: 94vh;
-    grid-row: 12/14;
-    bottom: ;
+     top: 94%;
+     margin-left: 3vw;
   }
   .sub-section {
     height: 50vvhh;
@@ -960,9 +959,9 @@ a.top-btn {
   align-items: center;
   transition: all ease-in-out 0.3s;
   border-radius: 50% 25% 50%  50%;
-  width: 5vw;
+  width: 44px;
   right: 2vw;
-  height: 4vh;
+  height: 47px;
   bottom: 3vh;
   text-align: center;
 }
@@ -1496,8 +1495,7 @@ li.nav-section-item a:hover ::before {
 li.nav-section-item a:hover {
   transform: skewY(90deg, 15deg);
 }
-.sticky-item-top {
-}
+.sticky-item-top.display-flex-row, .sub-section .sticky-item-top {margin-left: 3vw;}
 @media (max-width: 767px) and (min-width: 376px) {
   li.nav-section-item {
     z-index: 9;
@@ -1610,6 +1608,7 @@ section.Section.Section-1.depression.Landing-Page {
    mix-blend-mode: exclusion;
    grid-row: 2/8;
    grid-column: 1/5;
+   background: red;
   }
 .grid-item-2-anxiety-is {
   grid-column: 1/6;
@@ -1651,6 +1650,16 @@ section.Section.Section-1.depression.Landing-Page {
   margin-left: 3vw;
 }
 .item.qoute-8.display-flex-row {
+  grid-column: 3/6;
+  grid-row: 20/21;
+  width: 90%;
+}
+.item.qoute-9.display-flex-row {
+  grid-column: 3/6;
+  grid-row: 20/21;
+  width: 90%;
+}
+.item.qoute-10.display-flex-row {
   grid-column: 3/6;
   grid-row: 20/21;
   width: 90%;
@@ -1856,19 +1865,23 @@ video.Letter-2-Video {
  
 .item-1-anxiety{
   grid-column: 1/5;
-  grid-row: 3/6;
+  grid-row: 2/6;
+}
+.sticky-item-top.display-flex-row, .sub-section .sticky-item-top {
+    margin-left: 7vw;
+    width: 90%;
 }
 
   
   p.width-sm {
     width: 73%;
-    margin-left: 7vw;
+
   }
   .item.qoute-1.Goal-paragraph.display-flex-row {
     grid-column: 5/9;
   }
   .item.qoute-1.display-flex-row {
-    grid-column: 2/4;
+    grid-column: 2/5;
     grid-row: 7/8;
     justify-content: center;
   }
@@ -1888,8 +1901,8 @@ video.Letter-2-Video {
     grid-row: 12/14;
   }
   .item.qoute-5.display-flex-row {
-    grid-column: 4/5;
-    grid-row: 5/7;
+    grid-column: 3/5;
+    grid-row: 4/7;
   }
   .item.qoute-6.display-flex-row {
     grid-column: 2/4;
@@ -1901,8 +1914,17 @@ video.Letter-2-Video {
     grid-row: 17/18;
   }
   .item.qoute-8.display-flex-row {
-    grid-column: 4/5;
-    grid-row: 23/24;
+    grid-column: 1/4;
+    grid-row: 25/26;
+    margin-left: 6vw;
+  }
+    .item.qoute-9.display-flex-row {
+    grid-column: 3/6;
+    grid-row: 29/31;
+  }
+    .item.qoute-10.display-flex-row {
+    grid-column: 2/5;
+    grid-row: 33/34;
   }
   .sticky-item-bottom.sticky-item-bottom-anxiety {
     right: 90vw;
