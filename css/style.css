@@ -127,7 +127,7 @@ h1.sm-h1{
 h1, em.perspective-italic, em.hanging-puncuation{
   font-size:3rem;
   line-height:1em;
-  margin-top:5vh;
+  margin-top: 2vh;
 }
 h1 span.recife-italic{
   font-family: recife-italic;
@@ -196,7 +196,7 @@ p {
 
 p.identify-container-item-define{font-weight:200;display: flex;flex-direction: column;}
 p.width-sm {
-  margin-top: 6vh;
+  margin-top: 0vh;
 }
 .cube-text p{
   font-size: .9rem;
@@ -297,7 +297,7 @@ em.arrow-style.cube-arrow {
   }
   h1 {
     font-size: 4.5rem;
-    line-height: 0.95em;
+    line-height: 0.9em;
   }
   h1.qoute, h1 span.recife-italic{
     font-size:5rem;
@@ -1039,7 +1039,7 @@ img.logo-svg {
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  a.top-btn {top: ;bottom: 4vh;}
+  a.top-btn {top:;bottom: 2vh;}
   .nav-menu {
     height: 6vh;
     width: 16vw;
@@ -1797,7 +1797,7 @@ video.Letter-2-Video {
   p.width-sm {
     width: 100%;
     margin-left: 0;
-    margin-top: 8vh;
+    margin-top: 2vh;
   }
   .item.qoute-1.Goal-paragraph.display-flex-row {
     grid-column: 5/9;
