@@ -314,7 +314,7 @@ em.arrow-style.cube-arrow {
     font-weight: 200;
   }
   p {
-    font-family: Neue Haas Grotesk Display Pro;
+    font-family: ;
     font-weight: 300;
     font-size: 1.25rem;
     letter-spacing: 0.06em;
@@ -685,7 +685,7 @@ footer {
   position: sticky;
 }
 .sm-sub-section{
-    height: 60vh;
+    height: 50vh;
 }
 .display-flex-column {
   display: flex;
@@ -768,16 +768,16 @@ video.cbt-Landing-Video   {
 
 @media (max-width: 767px) and (min-width: 376px) {
   .sticky-item-bottom {
-    top: 93vh;
+    top: 95vh;
     grid-column: 1/5;
   }
 }
 @media (max-width: 1023px) and (min-width: 768px) {
   .sticky-item-bottom {
      grid-column: 2/11;
-    top: 0;
+    top: 94vh;
     grid-row: 12/14;
-    bottom: 0;
+    bottom: ;
   }
   .sub-section {
     height: 50vvhh;
@@ -951,9 +951,9 @@ a.top-btn {
   align-items: center;
   transition: all ease-in-out 0.3s;
   border-radius: 50% 25% 50%  50%;
-  width: 9vw;
+  width: 5vw;
   right: 2vw;
-  height: 6vh;
+  height: 4vh;
   bottom: 3vh;
   text-align: center;
 }
@@ -1030,7 +1030,7 @@ img.logo-svg {
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
-  a.top-btn {top: 93vh;}
+  a.top-btn {top: ;bottom: 4vh;}
   .nav-menu {
     height: 6vh;
     width: 16vw;
