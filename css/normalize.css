@@ -27,7 +27,7 @@ input[type="radio"]:focus {
   outline: none;
   background: transparent;
   height: 3vh;
-  border: solid black 0.1px;
+  border: solid white 0.1px;
   border-radius: 50%;
   z-index: 9;
   color: black;
@@ -36,7 +36,7 @@ input[type="radio"]:focus {
   align-self: flex-end;
   justify-self: center;
   text-align: center;
-  width: 5vw;
+  width: 7vw;
 }
 
 html {
