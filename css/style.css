@@ -182,6 +182,10 @@ h6 {
   line-height: 22px;
   letter-spacing: 0.1em;
 }
+span.typeface-italic{  
+  font-family: recife-italic;
+}
+
 p {
   font-weight: 300;
   font-size: 1.2rem;
@@ -295,6 +299,9 @@ em.arrow-style.cube-arrow {
     font-size: 4.5rem;
     line-height: 0.95em;
   }
+  h1.qoute, h1 span.recife-italic{
+    font-size:5rem;
+  }
   h2 {
     font-size: 1.5rem;
   }
@@ -302,8 +309,10 @@ em.arrow-style.cube-arrow {
     font-size: 1.5rem;
     letter-spacing: 0.05em;
   }
-  h4.anxiety-is {
-    font-size: 4rem;
+
+  h4.anxiety-is,
+  span.typeface-italic{
+      font-size: 4rem;
   }
   h4.depression-is {
     font-size: 2rem;
