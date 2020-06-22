@@ -38,13 +38,21 @@ input[type="radio"]:focus {
   text-align: center;
   width: 7vw;
 }
-@media (max-width: 3000px) and (min-width: 768px)
-{input[type="radio"]:focus {
+@media (max-width: 1400px) and (min-width: 768px) {
+  input[type="radio"]:focus {
     grid-column: 1/2;
     justify-self: flex-start;
-    margin-left: 4vw;
+    width: 10vw;
+    margin-left: 0;
+  }
 }
-  
+@media (max-width: 2000px) and (min-width: 1401px) {
+  input[type="radio"]:focus {
+    grid-column: 1/2;
+    width: 10vw;
+    justify-self: flex-start;
+    margin-left: 0;
+  }
 }
 html {
   scroll-behavior: smooth;

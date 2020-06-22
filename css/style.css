@@ -94,8 +94,10 @@ video {
   max-width: 100%;
 }
 .cube__face video{
-  width: 100vw;
+  grid-row: 1/2;
   object-fit:cover;
+  grid-column: 1/5;
+  width: fit-content;
   height:100%;
 }
 
@@ -2529,18 +2531,24 @@ section.Section.Section-4-cube.container {
 label {
   margin-right: 15px;
   line-height: 32px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+  margin-right: 15px;
+  line-height: 32px;
 }
 
 input {
+  grid-row: 1/2;
+  grid-column: 1/2;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 50%;
-  width: 56px;
-  grid-row: 1/2;
-  height: 33px;
+  border-radius: 0;
+  width: 7vw;
+  align-self: center;
+  height: .1vh;
   border: none;
-  grid-column: 1/2;
   transition: 0.2s all linear;
 }
 
@@ -2574,12 +2582,30 @@ button {
     grid-row: 1/2;
 }
 
+.cube-section {
+  top: 0;
+  background: black;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  position: sticky;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
 span.cube-checkbox-word {
-    color: white;
     left: 0;
     grid-column: 1/2;
     grid-row: 1/2;
+    z-index: 9;
+    color: black;
+    font-size: 1.15rem;
+    display: block;
+    filter: invert(1);
+    transition: ease-in .02s;
+    align-self: flex-end;
     justify-self: center;
+    text-align: center;
 }
 .cube-text li {
     text-decoration: none;
@@ -2600,25 +2626,26 @@ li.cube-text-survey-responses {
 .cube {
   width: 100vw;
   position: sticky;
-  grid-column: 1/3;
+  grid-column: 1/5;
+  grid-row: 1/3;
+  z-index: 1;
   height: 400px;
-  grid-row: 1;
   top: 0;
   transform-style: preserve-3d;
   transform: translateZ(-100px);
   transition: transform 1s;
 }
 .cube-text {
-    width: 100vw;
     POSITION: ABSOLUTE;
     color: black;
-    left: 0;
     overflow-y: scroll;
-    padding: 2vh 6vw;
-    TOP: 50vh;
     border: solid black .15px;
-    height: 60vh;
     background: white;
+    left: 0;
+    grid-column: 1/5;
+    grid-row: 2/3;
+    TOP: 0;
+    padding: 10vh 5vw;
 }
 .cube.show-front {
   transform: translateZ(-200px) rotateY(0deg);
@@ -2643,11 +2670,12 @@ li.cube-text-survey-responses {
 .cube__face {
   position: absolute;
   width: 100vw;
-  height: 400px;
   line-height: 200px;
   top: 0;
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: 50vh;
   color: white;
   text-align: left;
 }
@@ -2672,52 +2700,30 @@ li.cube-text-survey-responses {
   transform: rotateX(90deg) translateZ(200px);
 }
 
-.cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {}
+label {
+}
+
+p.radio-group {
+   background: black;
+   grid-column: 1/2;
+   grid-row: 1/2;
+   z-index: 6;
+   display: flex;
+   flex-direction: column;
+
+   top: 0;
+   left: 2vw;
+   padding: 0;
+}
+
+
 @media (max-width: 3000px) and (min-width: 768px) {
-  .cube__face--front {
-    transform: rotateY(0deg) translateZ(200px);
-    background: blue;
-  }
-  .cube__face--right {
-    transform: rotateY(90deg) translateZ(200px);
-  }
-  .cube__face--back {
-    transform: rotateY(180deg) translateZ(200px);
-  }
-  .cube__face--left {
-    transform: rotateY(-90deg) translateZ(0px);
-  }
-  .cube__face--top {
-    transform: rotateX(90deg) translateZ(200px);
-  }
-  .cube__face--bottom {
-    transform: rotateX(90deg) translateZ(200px);
-  }
-  .cube.show-front {
-    transform: translateZ(-200px) rotateY(0deg);
-  }
-  .cube.show-right {
-    transform: translateZ(-200px) rotateY(-90deg);
-  }
-  .cube.show-back {
-    transform: translateZ(-200px) rotateY(-180deg);
-  }
-  .cube.show-left {
-    transform: translateZ(-200px) rotateY(90deg);
-  }
-  .cube.show-top {
-    transform: translateZ(-200px) rotateX(-90deg);
-  }
-  .cube.show-bottom {
-    transform: translateZ(-200px) rotateX(90deg);
-  }
-  
+
   
   .cube__face {
     position: absolute;
-    width: 100vw;
-    height: 400px;
+    width: 50vw;
+    height: 100vh;
     line-height: 200px;
     top: 0;
     display: flex;
@@ -2727,48 +2733,7 @@ li.cube-text-survey-responses {
   }
 }
 
-label {
-  margin-right: 10px;
-  justify-items: left;
-  margin-top: 5vh;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: repeat(1,1fr);
-}
-.cube-section {
-  height: 100vh;
-}
-.cube-section {
-  height: 100vh;
-  top: 0;
-  background: black;
-  width: 100%;
-  z-index: 3;
-  display: grid;
-  position: sticky;
-  grid-template-columns: repeat(3, 1fr);
-}
-p.radio-group {
-   height: 32vh;
-   flex-direction: column;
-   background: black;
-   grid-column: 1/2;
-   grid-row: 1/2;
-   align-items: center;
-   box-sizing: border-box;
-   z-index: 2;
-   position: sticky;
-   position: sticky;
-   HEIGHT: 50vh;
-   width: 25vw;
-   padding-top: 9vh;
-   top: 0;
-   text-align: left;
-}
-}
-footer p {
-  color: red;
-}
+
 @media (max-width: 767px) and (min-width: 376px) {
   .cube__face {
     position: absolute;
@@ -2803,117 +2768,113 @@ footer p {
 }
 }
 @media (max-width: 1400px) and (min-width: 768px) {
-  .cube-text li.border, .border {
-    padding: 4.25vh 6vw;
-    border: .5px black solid;
-    border-radius: 50%;
-    margin-left: 7vw;
-}
 
-  section.Section.Section-4-cube.container {
-    top: 0;
-    position: sticky;
-    background: white;
-}
-label {
-  margin-right: 15px;
-  line-height: 32px;
-}
-
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border-radius: 0;
-  width: 7vw;
-  align-self: center;
-  height: .1vh;
-  border: none;
-  transition: 0.2s all linear;
-}
-
-
-
-span.cube-checkbox-word {
-    z-index: 9;
-    color: black;
-    font-size: 1.15rem;
-    display: block;
-    filter: invert(1);
-    transition: ease-in .02s;
-    align-self: flex-end;
-    justify-self: center;
-    text-align: center;
-}
-[type="checkbox"], [type="radio"], span.cube-checkbox-word {
+    .cube-text li.border, .border {
+      padding: 4.25vh 6vw;
+      border: .5px black solid;
+      border-radius: 50%;
+      margin-left: 7vw;
+  }
+  
+    section.Section.Section-4-cube.container {
+      top: 0;
+      position: sticky;
+      background: white;
+  }
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
     width: 7vw;
-}
-span.cube-checkbox-word:hover {
-border-radius:50%;
-border:black solid .1px;
-
-}
-
-.cube {
-  width: 50vw;
-  height: 100vh;
-}
-.cube-text {
+    align-self: center;
+    height: .1vh;
+    border: none;
+    transition: 0.2s all linear;
+  }
+  
+  
+  
+  span.cube-checkbox-word {
+      z-index: 9;
+      color: black;
+      font-size: 1.15rem;
+      display: block;
+      filter: invert(1);
+      transition: ease-in .02s;
+      align-self: flex-end;
+      justify-self: center;
+      text-align: center;
+  }
+  [type="checkbox"], [type="radio"], span.cube-checkbox-word {
+      width: 7vw;
+  }
+  span.cube-checkbox-word:hover {
+  border-radius:50%;
+  border:black solid .1px;
+  
+  }
+  
+  .cube {
     width: 50vw;
-    left: -50vw;
-    height: 90vh;
-    TOP: 0;
-    padding: 10vh 5vw;
-}
-
-
-.cube-text.depression-cube-text, .cube-text.anxiety-cube-text {
-    top: 0;
+    height: 100vh;
+  }
+  .cube-text {
+      width: 50vw;
+      left: -50vw;
+      height: 90vh;
+      TOP: 0;
+      padding: 10vh 5vw;
+  }
+  
+  
+  .cube-text.depression-cube-text, .cube-text.anxiety-cube-text {
+      top: 0;
+      transform: rotateX(0deg) translateZ(0px);
+  }
+  .cube__face {
+    width: 50vw;
+    height: 100vh;
+  }
+  .cube__face video {
+      width: 50vw;
+     
+  }
+  
+  .cube-text.depression-cube-text,
+  .cube-text.anxiety-cube-text  {
     transform: rotateX(0deg) translateZ(0px);
-}
-.cube__face {
-  width: 50vw;
-  height: 100vh;
-}
-.cube__face video {
+  }
+  .cube-text.depression-cube-text,
+  .cube-text.anxiety-cube-text  {}
+  
+  label {
+    margin-right: 6px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    margin-right: 15px;
+    line-height: 32px;
+  }
+  .cube-section {
+    height: 100vh;
+  }
+  .cube-section {
+    FLEX-DIRECTION: row-reverse;
+    display: flex;
+  }
+  p.radio-group {
+    display: flex;
+    flex-direction: row;
+    top: ];
     width: 50vw;
-   
-}
-
-.cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {
-  transform: rotateX(0deg) translateZ(0px);
-}
-.cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {}
-
-label {
-  margin-right: 6px;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  justify-items: center;
-}
-.cube-section {
-  height: 100vh;
-}
-.cube-section {
-  FLEX-DIRECTION: row-reverse;
-  display: flex;
-}
-p.radio-group {
-  display: flex;
-  flex-direction: row;
-  top: ];
-  width: 50vw;
-  height: 10vh;
-  top: 90vh;
-  align-items: center;
-  left: 2vw;
-  justify-content: space-evenly;
-  padding: 0;
-  background: transparent;
-}
-}
+    height: 10vh;
+    top: 90vh;
+    align-items: center;
+    left: 2vw;
+    padding: 0;
+  }
+  }
 
 @media (max-width: 3000px) and (min-width: 1401px) {
   .cube-text li.border, .border {
@@ -2928,11 +2889,6 @@ p.radio-group {
     position: sticky;
     background: white;
 }
-label {
-  margin-right: 15px;
-  line-height: 32px;
-}
-
 input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -3005,6 +2961,8 @@ label {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   justify-items: center;
+  margin-right: 15px;
+  line-height: 32px;
 }
 .cube-section {
   height: 100vh;
@@ -3019,30 +2977,14 @@ p.radio-group {
   top: ];
   width: 50vw;
   height: 10vh;
+  position: sticky;
   top: 90vh;
   align-items: center;
   left: 2vw;
-  justify-content: space-evenly;
   padding: 0;
-  background: transparent;
 }
 }
-@media (max-width: 2000px) and (min-width: 1401px) {
-  [type="checkbox"], [type="radio"], span.cube-checkbox-word,input[type="radio"]:focus,[type="checkbox"], [type="radio"] {
-    width: 10vw;
-}
-span.cube-checkbox-word:hover {
-width:10vw;
-}
-label{
-    margin-right: 2px;
-    width: 10vw;
-}
-p.radio-group{
-  justify-content: space-around;
-  align-items: center;
-}
-}
+
 
 /*CBT Section Open*/
 .item-1-CBT {
@@ -3165,8 +3107,6 @@ height:20vh;
   width:50%;
 }
 
-@media (max-width: 767px) and (min-width: 376px) {
-}
 @media (max-width: 1023px) and (min-width: 768px) {
   .behaviors-head.full-behaviors, .feelings-head.full-feelings, .thoughts-head.full-thoughts{
     grid-column: 3/7;
