@@ -38,7 +38,14 @@ input[type="radio"]:focus {
   text-align: center;
   width: 7vw;
 }
-
+@media (max-width: 3000px) and (min-width: 768px)
+{input[type="radio"]:focus {
+    grid-column: 1/2;
+    justify-self: flex-start;
+    margin-left: 4vw;
+}
+  
+}
 html {
   scroll-behavior: smooth;
   font-size: 16px;
@@ -269,7 +276,7 @@ video {
   vertical-align: baseline;
 }
 label {
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 
 article,

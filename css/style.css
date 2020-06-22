@@ -134,7 +134,7 @@ h1 span.recife-italic{
 }
 h1.qoute,
 h1 span.recife-italic{
-  font-size: 3.75rem;
+  font-size: 3rem;
 }
 em.hanging-puncuation{
   margin-left:-.15em;
@@ -199,7 +199,7 @@ p {
 }
 .identify-container p{font-weight:500;}
 
-p.identify-container-item-define{font-weight:200;display: flex;flex-direction: column;}
+p.identify-container-item-define{font-weight:200;display: flex;flex-direction: column;flex-direction: row;}
 p.width-sm {
   margin-top: 0vh;
 }
@@ -1081,10 +1081,10 @@ img.logo-svg {
     height: 3vw;
   }
   a.top-btn {
-    width: 4vw;
+    width: 45px;
     right: 2vw;
-    top: 93vh;
-    height: 6vh;
+    height: 50px;
+    top: 94%;
   }
   img.logo-svg {
     height: 6vh;
@@ -2114,8 +2114,8 @@ video.Letter-2-Video {
     grid-row: 2/6;
   }
   .video-18 {
-    grid-column: 7/7;
-    grid-row: 20/21;
+    grid-column: 1/2;
+    grid-row: 22/23;
   }
   .video-19 {
     grid-column: 5/9;
@@ -2293,8 +2293,10 @@ video.Letter-3-Video {
   grid-column: 1/9;
   grid-row: 7/12;
   height: 70vh;
-  justify-self: auto;
-  filter: invert(1);
+  position: sticky;
+  top:30vh;
+  z-index: 1;;
+
 }
 .Container-Grid.black-background.depression-is-section {
   background: black;
@@ -2358,10 +2360,17 @@ em.intro-depression {
 .item.grid-item-2-depression-is.item-sticky {
   grid-column: 1/5;
   color: black;
+  z-index: 1;
 }
 .grid-item-2-depression-is {
   grid-column: 1/6;
   top: 8vh;
+}
+.depression-qoute{
+  mix-blend-mode: exclusion;
+  color:black;
+  filter: invert(1);
+  z-index: 1;
 }
 .item.qoute-1.depression-qoute {
   grid-column: 2/5;
@@ -2395,7 +2404,19 @@ em.intro-depression {
   grid-column: 3/6;
 }
 .item.qoute-8.depression-qoute {
-  grid-column: 1/6;
+  grid-row: 44/45;
+  grid-column: 2/5;
+}
+.item.qoute-9.depression-qoute {
+  grid-row: 38/39;
+  grid-column: 2/5;
+}.item.qoute-10.depression-qoute {
+  grid-row: 35/36;
+  grid-column: 2/4;
+}
+.item.qoute-11.depression-qoute {
+  grid-row: 42/43;
+  grid-column: 3/6;
 }
 .Image-Container-Grid.depression-experience {
   z-index: 2;
@@ -2405,13 +2426,13 @@ em.intro-depression {
 
 @media (max-width: 3000px) and (min-width: 1024px) {
 .item.qoute-1.depression-qoute {
-  grid-column: 3/4;
+  grid-column: 3/5;
   grid-row: 3/4;
 }
 .item.qoute-2.depression-qoute {
   grid-column: 4/6;
   margin-left: 2vw;
-  width: 50%;
+  width: 61%;
   grid-row: 9/11;
 }
 .item.qoute-3.depression-qoute {
@@ -2429,17 +2450,32 @@ em.intro-depression {
 }
 .item.qoute-6.depression-qoute {
   grid-row: 25/26;
-  grid-column: 4/6;
-  margin-right: 3vw;
+  grid-column: 3/5;
+  margin-right: 2vw;
 }
 
 .item.qoute-7.depression-qoute {
-  grid-row: 31/31;
-  grid-column: 3/4;
+  grid-row: 35/36;
+  grid-column: 2/4;
 }
+
 .item.qoute-8.depression-qoute {
-  grid-column: 1/6;
+  grid-row: 40/36;
+  grid-column: 3/6;
 }
+.item.qoute-9.depression-qoute {
+  grid-row: 47/48;
+  margin-right: 14vw;
+  grid-column: 3/6;
+}.item.qoute-10.depression-qoute {
+  grid-row: 30/31;
+  grid-column: 3/6;
+}
+.item.qoute-11.depression-qoute {
+    grid-row: 43/45;
+    grid-column: 2/3;
+}
+.item.qoute-8.depression-qoute {grid-row: 43/40;grid-column: 4/6;}
 }
 
 @media (max-width: 767px) and (min-width: 376px) {
@@ -2719,6 +2755,7 @@ p.radio-group {
    grid-column: 1/2;
    grid-row: 1/2;
    align-items: center;
+   box-sizing: border-box;
    z-index: 2;
    position: sticky;
    position: sticky;
@@ -2766,7 +2803,7 @@ footer p {
 }
 }
 @media (max-width: 1400px) and (min-width: 768px) {
- .cube-text li.border, .border {
+  .cube-text li.border, .border {
     padding: 4.25vh 6vw;
     border: .5px black solid;
     border-radius: 50%;
@@ -2800,14 +2837,16 @@ input {
 span.cube-checkbox-word {
     z-index: 9;
     color: black;
+    font-size: 1.15rem;
     display: block;
+    filter: invert(1);
     transition: ease-in .02s;
     align-self: flex-end;
     justify-self: center;
     text-align: center;
 }
 [type="checkbox"], [type="radio"], span.cube-checkbox-word {
-    width: 15vw;
+    width: 7vw;
 }
 span.cube-checkbox-word:hover {
 border-radius:50%;
@@ -2816,28 +2855,29 @@ border:black solid .1px;
 }
 
 .cube {
-  width: 100vw;
-  height: 50vw;
+  width: 50vw;
+  height: 100vh;
 }
 .cube-text {
-    right: 50vw;
-    width: 100vw;
-    left: 0vw;
-    height: 70vh;
-    TOP: 45VH;
+    width: 50vw;
+    left: -50vw;
+    height: 90vh;
+    TOP: 0;
+    padding: 10vh 5vw;
 }
 
 
 .cube-text.depression-cube-text, .cube-text.anxiety-cube-text {
-    top: 10vh;
+    top: 0;
     transform: rotateX(0deg) translateZ(0px);
 }
 .cube__face {
-  width: 100vw;
-  height: 50vh;
+  width: 50vw;
+  height: 100vh;
 }
 .cube__face video {
-    width: 100vw;
+    width: 50vw;
+   
 }
 
 .cube-text.depression-cube-text,
@@ -2845,9 +2885,7 @@ border:black solid .1px;
   transform: rotateX(0deg) translateZ(0px);
 }
 .cube-text.depression-cube-text,
-.cube-text.anxiety-cube-text  {
-    top: 54vh;
-}
+.cube-text.anxiety-cube-text  {}
 
 label {
   margin-right: 6px;
@@ -2859,19 +2897,21 @@ label {
   height: 100vh;
 }
 .cube-section {
-  FLEX-DIRECTION: column;
+  FLEX-DIRECTION: row-reverse;
+  display: flex;
 }
 p.radio-group {
   display: flex;
-  flex-direction: column;
-  align-self: auto;
-  top: 7vh;
-  width: 20vw;
-  height: 50vw;
+  flex-direction: row;
+  top: ];
+  width: 50vw;
+  height: 10vh;
+  top: 90vh;
+  align-items: center;
   left: 2vw;
   justify-content: space-evenly;
   padding: 0;
-  background: white;
+  background: transparent;
 }
 }
 
