@@ -50,7 +50,7 @@ input[type="radio"]:focus {
   input[type="radio"]:focus {
     grid-column: 1/2;
     width: 10vw;
-    justify-self: flex-start;
+    justify-self: center;
     margin-left: 0;
   }
 }
