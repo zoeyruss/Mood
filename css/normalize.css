@@ -6,8 +6,8 @@ input {
 
 input[type="radio"]:focus {
   outline: none;
+
   background: transparent;
-  grid-row: 1/2;
 }
 
 [type="number"]::-webkit-inner-spin-button,
@@ -24,24 +24,34 @@ input[type="radio"]:focus {
 }
 
 input[type="radio"]:focus {
-  
+  outline: none;
+  background: transparent;
+  height: 3vh;
+  border: solid white 0.1px;
+  border-radius: 50%;
+  z-index: 9;
+  color: black;
+  display: block;
+  transition: ease-in 0.02s;
+  align-self: flex-end;
+  justify-self: center;
+  text-align: center;
+  width: 7vw;
 }
 @media (max-width: 1400px) and (min-width: 768px) {
   input[type="radio"]:focus {
-    
+    grid-column: 1/2;
+    justify-self: flex-start;
+    width: 10vw;
+    margin-left: 0;
   }
 }
 @media (max-width: 2000px) and (min-width: 1401px) {
   input[type="radio"]:focus {
-          z-index: 9;
-          color: black;
-          font-size: 1rem;
-          display: block;
-          filter: invert(1);
-          transition: ease-in 0.02s;
-          height:3vh;
-          border-radius: 50%;
-          border: black solid 0.1px;
+    grid-column: 1/2;
+    width: 10vw;
+    justify-self: center;
+    margin-left: 0;
   }
 }
 html {
