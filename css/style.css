@@ -50,7 +50,7 @@ body.index_body.depression {
 
 @media (max-width: 3000px) and (min-width: 1366px) {
   body:before {
-    content: '';
+    content: "";
     cursor: none;
     position: absolute;
     z-index: 6;
@@ -206,7 +206,7 @@ p.identify-container-item-define {
   font-weight: 200;
   display: flex;
   flex-direction: column;
-  flex-direction: row;
+  flex-direction: column;
 }
 p.width-sm {
   margin-top: 0vh;
@@ -334,7 +334,7 @@ em.arrow-style.cube-arrow {
   span.typeface-italic {
     font-size: 3rem;
   }
- 
+
   h4.pull-quote {
     font-size: 1.25rem;
     line-height: 1.4em;
@@ -759,7 +759,10 @@ footer {
   --ratio: 16/9;
   --factor: calc(var(--ratioB) / var(--ratioA));
   --rh: calc(
-    ((var(--wrapper) - (var(--noOfGutters) * var(--gutter))) / var(--noOfColumns)) * var(--factor)
+    (
+        (var(--wrapper) - (var(--noOfGutters) * var(--gutter))) /
+          var(--noOfColumns)
+      ) * var(--factor)
   );
 }
 .Container-Grid {
@@ -817,7 +820,6 @@ video.cbt-Landing-Video {
   align-self: center;
   filter: invert(1) !important;
 }
-
 
 @media (max-width: 1023px) and (min-width: 768px) {
   .sticky-item-bottom {
@@ -942,7 +944,7 @@ header:after {
 
 header:after {
   background: red;
-  content: '';
+  content: "";
   left: 0;
   opacity: 0;
   padding: 0;
@@ -1963,7 +1965,6 @@ video.Letter-2-Video {
     grid-column: 2/5;
   }
 
-  
   .item.quote-1.Goal-paragraph.display-flex-row {
     grid-column: 5/9;
   }
@@ -2527,7 +2528,7 @@ label {
   margin-right: 15px;
   grid-template-rows: 1fr;
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 
 input {
@@ -2675,9 +2676,8 @@ li.cube-text-survey-responses {
   display: none;
 }
 
-
-p.radio-group label{
-  margin-bottom:2vh;
+p.radio-group label {
+  margin-bottom: 2vh;
 }
 p.radio-group {
   background: black;
@@ -2695,7 +2695,6 @@ p.radio-group {
   padding: 0;
 }
 
-
 @media (max-width: 3000px) and (min-width: 1023px) {
   .cube__face {
     width: 50vw;
@@ -2711,7 +2710,6 @@ p.radio-group {
     border-radius: 50%;
     margin-left: 7vw;
   }
-
 
   input {
     -webkit-appearance: none;
@@ -2761,21 +2759,20 @@ p.radio-group {
   }
   .cube__face video {
     width: 50vw;
+    height: 100vh;
   }
 
   .cube-text.depression-cube-text,
   .cube-text.anxiety-cube-text {
     transform: rotateX(0deg) translateZ(0px);
   }
-  
 
   label {
     margin-right: 6px;
-   
   }
   label,
-  [type='checkbox'],
-  [type='radio'],
+  [type="checkbox"],
+  [type="radio"],
   span.cube-checkbox-word {
     width: 10vw;
   }
@@ -2988,7 +2985,6 @@ a {
     padding-bottom: 10vh;
   }
   .cbt-head {
-    
     grid-column: 7/12;
     grid-row: 4/7;
     font-size: 2.5rem;
@@ -3060,7 +3056,6 @@ a {
     position: sticky;
   }
   .cbt-head {
-    
     grid-column: 6/11;
     grid-row: 5/6;
     font-size: 5.5rem;
@@ -3081,7 +3076,7 @@ a {
     justify-self: self-end;
     align-self: center;
   }
-  
+
   .identify-container,
   .challenge-container,
   .replace-container {
