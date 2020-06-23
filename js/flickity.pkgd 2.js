@@ -306,15 +306,15 @@
     "paddingLeft",
     "paddingRight",
     "paddingTop",
-    "paddingBottom",
+    "paddingbottom",
     "marginLeft",
     "marginRight",
     "marginTop",
-    "marginBottom",
+    "marginbottom",
     "borderLeftWidth",
     "borderRightWidth",
     "borderTopWidth",
-    "borderBottomWidth"
+    "borderbottomWidth"
   ];
 
   var measurementsLength = measurements.length;
@@ -433,11 +433,11 @@
     }
 
     var paddingWidth = size.paddingLeft + size.paddingRight;
-    var paddingHeight = size.paddingTop + size.paddingBottom;
+    var paddingHeight = size.paddingTop + size.paddingbottom;
     var marginWidth = size.marginLeft + size.marginRight;
-    var marginHeight = size.marginTop + size.marginBottom;
+    var marginHeight = size.marginTop + size.marginbottom;
     var borderWidth = size.borderLeftWidth + size.borderRightWidth;
-    var borderHeight = size.borderTopWidth + size.borderBottomWidth;
+    var borderHeight = size.borderTopWidth + size.borderbottomWidth;
 
     var isBorderBoxSizeOuter = isBorderBox && isBoxSizeOuter;
 
