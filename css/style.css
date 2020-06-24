@@ -2643,7 +2643,8 @@ li.cube-text-survey-responses {
 }
 
 .cube {
-	grid-row: 1/3;
+	grid-row: 1/10;
+	z-index: 1;
 	grid-column: 1/5;
 	transform-style: preserve-3d;
 	transform: translateZ(-100px);
@@ -2660,7 +2661,8 @@ li.cube-text-survey-responses {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
-	padding: 10vh 5vw;
+	z-index: 2;
+	padding: 2vh 5vw;
 	grid-column: 1/5;
 	left: 0;
 }
@@ -2731,17 +2733,28 @@ p.radio-group {
 	flex-direction: column;
 	top: 0;
 	left: 0;
-	width: 26vw;
+	width: 33vw;
 	padding: 0;
 }
+@media (max-width: 1500px) and (min-width: 1023px) {
+	.cube.show-top div.cube-text-advice {
+    transform: translate(1px);
+}
 
-@media (max-width: 3000px) and (min-width: 1023px) {
-	.cube__face {
-		width: 50vw;
-		height: 100vh;
-		display: flex;
-		flex-direction: row-reverse;
-	}
+.cube-text-reflect {
+    transform: inherit;
+}
+ 
+.cube.show-bottom div.cube-text {
+    transform: translate(1px);
+}
+.cube__face.cube__face--bottom div.cube-text {
+position:inherit;
+}
+.cube__face {
+    width: 50vw;
+    height: 100vh;
+}
 
 	.cube-text li.border,
 	.border {
@@ -2788,12 +2801,14 @@ p.radio-group {
 
 	.cube {
 		width: 100vw;
+		grid-row: 1/3;
 		height: 100vh;
 	}
 	.cube-text {
 		width: 50vw;
 		height: 90vh;
-		padding: 8vh 3vw;
+		grid-row: 1/3;
+		padding: 9vh 5vw;
 	}
 
 	.cube-text.depression-cube-text,
@@ -2802,11 +2817,11 @@ p.radio-group {
 		transform: rotateX(0deg) translateZ(0px);
 	}
 	.cube__face {
-		width: 100vw;
+		width: auto;
 	}
 	.cube__face video {
-		width: 50vw;
 		height: 100vh;
+		grid-column: 3/5;
 	}
 
 	.cube-text.depression-cube-text,
@@ -2837,6 +2852,133 @@ p.radio-group {
 		height: 10vh;
 		top: 90vh;
 		padding: 0;
+	}
+}
+@media (max-width: 3000px) and (min-width: 1501px) {
+	section.Section.Section-4-cube.container {
+		grid-auto-rows: 10vh;
+	}
+	.cube__face {
+		width: 50vw;
+		height: 100vh;
+		display: grid;
+	}
+
+	.cube-text li.border,
+	.border {
+		margin-left: 7vw;
+	}
+
+	input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		border-radius: 0;
+		width: 7vw;
+		align-self: center;
+		height: 0.1vh;
+		border: none;
+		transition: 0.2s all linear;
+	}
+	input[type="radio"]:focus {
+		z-index: 9;
+		color: white;
+		font-size: 1rem;
+		display: block;
+		transition: ease-in 0.02s;
+		height: 3vh;
+		border: white solid 0.1px;
+		outline: none;
+		background: transparent;
+		align-self: center;
+		border-radius: 50%;
+		grid-row: 1/2;
+		color: white;
+	}
+	span.cube-checkbox-word {
+		display: block;
+		text-align: center;
+		font-size: 1rem;
+	}
+
+	span.cube-checkbox-word:hover {
+		border-radius: 50%;
+		width: 6vw;
+		border: black solid 0.1px;
+	}
+
+	.cube {
+		width: 100vw;
+		height: 100vh;
+	}
+	.cube-text {
+		width: 50vw;
+		grid-column: 1/3;
+		height: 90vh;
+		grid-row: 1/2;
+		padding: 8vh 3vw;
+	}
+
+	.cube-text.depression-cube-text,
+	.cube-text.anxiety-cube-text {
+		top: 0;
+		transform: rotateX(0deg) translateZ(0px);
+	}
+	.cube__face {
+		width: 100vw;
+	}
+	.cube.show-top div.cube-text-advice {
+    transform: translate(1px);
+}
+
+.cube-text-reflect {
+    transform: inherit;
+}
+ 
+.cube.show-bottom div.cube-text {
+    transform: translate(1px);
+}
+.cube__face.cube__face--bottom div.cube-text {
+position:inherit;
+}
+	.cube__face video {
+		width: 50vw;
+		height: 100vh;
+		grid-column: 3/5;
+	}
+
+	.cube-text.depression-cube-text,
+	.cube-text.anxiety-cube-text {
+		transform: rotateX(0deg) translateZ(0px);
+	}
+
+	label {
+		margin-right: 6px;
+	}
+	label,
+	[type="checkbox"],
+	[type="radio"],
+	span.cube-checkbox-word {
+		width: 7vw;
+		margin-right: 2vw;
+		align-items: center;
+	}
+	.cube-section {
+		height: 100vh;
+	}
+	.cube-section {
+		flex-direction: row-reverse;
+		display: flex;
+	}
+	p.radio-group {
+		flex-direction: row;
+		height: 10vh;
+		padding: 0;
+		justify-content: center;
+		position: relative;
+		grid-column: 1/3;
+		width: auto;
+		grid-row: 10/11;
 	}
 }
 
