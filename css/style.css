@@ -2662,7 +2662,7 @@ li.cube-text-survey-responses {
 	overflow-y: scroll;
 	border: solid black 0.15px;
 	background: white;
-	height: 50vh;
+	height: auto;
 	grid-row: 2/3;
 	position: -webkit-sticky;
 	position: sticky;
@@ -2724,6 +2724,7 @@ li.cube-text-survey-responses {
 	transform: initial;
 	z-index: 999;
 	overflow-y: scroll;
+	height: 100%;
 }
 
 .cube__face {
@@ -3480,8 +3481,12 @@ footer.Footer-white div {
 	}
 
 	.footer-resources {
-		grid-column: 5/7;
+		grid-column: 5/8;
 		grid-row: 1/4;
+	}
+	.footer-resources h4 {
+		padding: 0;
+		margin: 1vh 0vw 1vh 0vw;
 	}
 	.footer-resources a {
 		line-height: 1.5em;
