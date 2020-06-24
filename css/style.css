@@ -666,7 +666,6 @@ section {
 .quote-item,
 .rotate-link,
 .sticky-item-bottom,
-a.tiny-link,
 a.top-btn,
 span.cube-checkbox-word {
 	-webkit-filter: invert(1);
@@ -708,7 +707,7 @@ span.cube-checkbox-word {
 }
 .sub-section {
 	color: #fff;
-	background: #000;
+	background: red;
 	width: 100vw;
 	height: 100vh;
 	z-index: 2;
@@ -765,6 +764,12 @@ span.cube-checkbox-word {
 a {
 	z-index: 8;
 }
+.cube-text.cube-text-resources.tiny-link {
+	filter: none;
+	mix-blend-mode: normal;
+	color: red;
+}
+
 a.tiny-link {
 	color: #000;
 	text-decoration: underline;
