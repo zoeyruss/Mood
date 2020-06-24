@@ -1,236 +1,245 @@
-
-
-
-
 /*! Flickity v2.2.1
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 
 .flickity-enabled {
-  position: relative;
+	position: relative;
 }
 
-.flickity-enabled:focus { outline: none; }
+.flickity-enabled:focus {
+	outline: none;
+}
 
 .flickity-viewport {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
+	overflow: hidden;
+	position: relative;
+	height: 100%;
 }
 
 .flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
 
 /* draggable */
 
 .flickity-enabled.is-draggable {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab;
+	cursor: move;
+	cursor: -webkit-grab;
+	cursor: grab;
 }
 
 .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
 }
 
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: 50%;
-  width: 44px;
-  height: 44px;
-  
+	top: 50%;
+	width: 44px;
+	height: 44px;
 }
 
 /* ---- flickity-button ---- */
 
 .flickity-button {
-  position: absolute;
-  background: transparent;
-  border: none;
-  color: #333;
+	position: absolute;
+	background: transparent;
+	border: none;
+	color: #333;
 }
 
 .flickity-button:focus {
-  outline: none;
-  
+	outline: none;
 }
 
 .flickity-button:active {
-  opacity: 0.6;
+	opacity: 0.6;
 }
 
 .flickity-button:disabled {
-  opacity: 0.3;
-  cursor: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.1' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='90px' height='90px'  viewBox='0 0 35 29' style='enable-background:new 0 0 35 29;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bstroke:%23000000;stroke-width:0.75; blend-mix-mode:difference; filterstroke-miterlimit:10;%7d %3c/style%3e%3cpolygon class='st0' points='20.7,24.3 21.1,23.9 12.5,14.3 21.2,4.7 20.8,4.3 11.8,14.3 '/%3e%3c/svg%3e  "), pointer;
-  /* prevent disabled button from capturing pointer up event. #716 */
-  pointer-events: none;
+	opacity: 0.3;
+	cursor: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.1' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='90px' height='90px'  viewBox='0 0 35 29' style='enable-background:new 0 0 35 29;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bstroke:%23000000;stroke-width:0.75; blend-mix-mode:difference; filterstroke-miterlimit:10;%7d %3c/style%3e%3cpolygon class='st0' points='20.7,24.3 21.1,23.9 12.5,14.3 21.2,4.7 20.8,4.3 11.8,14.3 '/%3e%3c/svg%3e  "),
+		pointer;
+	/* prevent disabled button from capturing pointer up event. #716 */
+	pointer-events: none;
 }
 
 .flickity-button-icon {
-  fill: black;
-  filter: invert(1);
-  mix-blend-mode: exclusion;
+	fill: black;
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	mix-blend-mode: exclusion;
 }
 
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top: 0;
-  width: 38%;
-  height: 100vh;
+	top: 0;
+	width: 38%;
+	height: 100vh;
 }
 
-.flickity-prev-next-button.previous {left: 0;}
-.flickity-prev-next-button.next {right: 0;}
+.flickity-prev-next-button.previous {
+	left: 0;
+}
+.flickity-prev-next-button.next {
+	right: 0;
+}
 /* right to left */
 .flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
+	left: auto;
+	right: 10px;
 }
 .flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
+	right: auto;
+	left: 10px;
 }
 
 .flickity-prev-next-button .flickity-button-icon {
-  position: absolute;
-  left: 0;
-  top: 80%;
-  width: 100%;
-  height: 6vh;
+	position: absolute;
+	left: 0;
+	top: 80%;
+	width: 100%;
+	height: 6vh;
 }
 
 /* ---- page dots ---- */
 
 .flickity-page-dots {
-  position:;
-  width: 100%;
-  mix-blend-mode: exclusion;
-  filter: 0;
-  filter: invert(1);
-  margin: 0;
-  margin-top: -18vh;
-  height: 2vh;
-  list-style: none;
-  text-align: center;
-  background: transparent;
-  line-height: 1;
+	width: 100%;
+	mix-blend-mode: exclusion;
+	-webkit-filter: 0;
+	filter: 0;
+	-webkit-filter: invert(1);
+	filter: invert(1);
+	margin: 0;
+	margin-top: -18vh;
+	height: 2vh;
+	list-style: none;
+	text-align: center;
+	background: transparent;
+	line-height: 1;
 }
 
-.flickity-rtl .flickity-page-dots { direction: rtl; }
+.flickity-rtl .flickity-page-dots {
+	direction: rtl;
+}
 
 .flickity-page-dots .dot {
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 8px;
-  background: black;
-  border-radius: 50%;
-  opacity: 0.25;
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 8px;
+	background: black;
+	border-radius: 50%;
+	opacity: 0.25;
 }
 
 .flickity-page-dots .dot.is-selected {
-  opacity: 1;
-}/* external css: flickity.css */
+	opacity: 1;
+} /* external css: flickity.css */
 
-* {box-sizing: border-box;}
+* {
+	box-sizing: border-box;
+}
 
-
-
-.carousel { 
-  background: #FAFAFA;
+.carousel {
+	background: #fafafa;
 }
 
 .carousel-cell {
-  width: 100vw;
-  display: flex;
-  background: black;
-  justify-content: center;
-  height: 100vh;
-  counter-increment: carousel-cell;
+	width: 100vw;
+	display: flex;
+	background: black;
+	justify-content: center;
+	height: 100vh;
+	counter-increment: carousel-cell;
 }
 
+@media (max-width: 3000px) and (min-width: 1024px) {
+	.flickity-prev-next-button .flickity-button-icon {
+		display: none;
+	}
+	button.flickity-button.flickity-prev-next-button.previous {
+		cursor: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.1' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='90px' height='90px'  viewBox='0 0 35 29' style='enable-background:new 0 0 35 29;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bstroke:%23000000;stroke-width:0.75; fill:white;stroke-miterlimit:10;%7d %3c/style%3e%3cpolygon class='st0' points='20.7,24.3 21.1,23.9 12.5,14.3 21.2,4.7 20.8,4.3 11.8,14.3 '/%3e%3c/svg%3e "),
+			pointer;
+		fill: RED;
+	}
+	button.flickity-button.flickity-prev-next-button.next {
+		cursor: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.1' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='90px' height='90px'  viewBox='0 0 35 29' style='enable-background:new 0 0 35 29;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bstroke:%23000000;stroke-width:0.75;stroke-miterlimit:10;%7d %3c/style%3e%3cpolygon class='st0' points='21.6,4.3 21.2,4.7 29.8,14.3 21.2,23.9 21.5,24.3 30.5,14.3 '/%3e%3c/svg%3e"),
+			pointer;
+	}
 
+	.flickity-prev-next-button {
+		top: 50%;
+		width: 50%;
+		height: 100vh;
+	}
 
-  @media (max-width: 3000px) and (min-width : 1024px)  {
-  .flickity-prev-next-button .flickity-button-icon {
+	.flickity-prev-next-button.previous {
+		left: 10px;
+	}
+	.flickity-prev-next-button.next {
+		right: 10px;
+	}
+	/* right to left */
+	.flickity-rtl .flickity-prev-next-button.previous {
+		left: auto;
+		right: 10px;
+	}
+	.flickity-rtl .flickity-prev-next-button.next {
+		right: auto;
+		left: 10px;
+	}
 
-  display: none;
+	.flickity-prev-next-button .flickity-button-icon {
+		position: absolute;
+		left: 20%;
+		top: 20%;
+		display: none;
+		width: 60%;
+		height: 60%;
+	}
+	.flickity-prev-next-button {
+		top: 0;
+		width: 50%;
+		height: 100vh;
+	}
 
+	.flickity-prev-next-button.previous {
+		left: 10px;
+	}
+	.flickity-prev-next-button.next {
+		right: 10px;
+	}
+	/* right to left */
+	.flickity-rtl .flickity-prev-next-button.previous {
+		left: auto;
+		right: 10px;
+	}
+	.flickity-rtl .flickity-prev-next-button.next {
+		right: auto;
+		left: 10px;
+	}
+
+	.flickity-prev-next-button .flickity-button-icon {
+		position: absolute;
+		left: 20%;
+		top: 20%;
+		display: none;
+		width: 60%;
+		height: 60%;
+	}
 }
-button.flickity-button.flickity-prev-next-button.previous{cursor: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.1' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='90px' height='90px'  viewBox='0 0 35 29' style='enable-background:new 0 0 35 29;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bstroke:%23000000;stroke-width:0.75; fill:white;stroke-miterlimit:10;%7d %3c/style%3e%3cpolygon class='st0' points='20.7,24.3 21.1,23.9 12.5,14.3 21.2,4.7 20.8,4.3 11.8,14.3 '/%3e%3c/svg%3e "), pointer;FILL: RED;}
-    button.flickity-button.flickity-prev-next-button.next{
-    cursor: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.1' encoding='utf-8'?%3e%3c!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3e%3csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='90px' height='90px'  viewBox='0 0 35 29' style='enable-background:new 0 0 35 29;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bstroke:%23000000;stroke-width:0.75;stroke-miterlimit:10;%7d %3c/style%3e%3cpolygon class='st0' points='21.6,4.3 21.2,4.7 29.8,14.3 21.2,23.9 21.5,24.3 30.5,14.3 '/%3e%3c/svg%3e"), pointer;
-
-}
-
-.flickity-prev-next-button {
-  top: 50%;
-  width: 50%;
-  height: 100vh;
-  
-
-}
-
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
-/* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
-}
-.flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
-}
-
-.flickity-prev-next-button .flickity-button-icon {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  display: none;
-  width: 60%;
-  height: 60%;
-}
-.flickity-prev-next-button {
-  top: 0;
-  width: 50%;
-  height: 100vh;
-}
-
-.flickity-prev-next-button.previous { left: 10px; }
-.flickity-prev-next-button.next { right: 10px; }
-/* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
-  left: auto;
-  right: 10px;
-}
-.flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
-}
-
-.flickity-prev-next-button .flickity-button-icon {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  display: none;
-  width: 60%;
-  height: 60%;
-}
-  
-  }
-
