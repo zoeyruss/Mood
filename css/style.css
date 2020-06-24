@@ -1073,7 +1073,9 @@ a.logo.change-navbar {
 }
 
 a.depression-mood-link.rotate-link.invert {
-	right: -23px;
+	right: 4px;
+	display: flex;
+	bottom: 42vh;
 }
 a.anxiety-mood-link.rotate-link.invert {
 	left: -11px;
@@ -3376,6 +3378,7 @@ footer.Footer-white {
 	display: flex;
 	padding: 3vh 5vw;
 	height: auto;
+	z-index: 9;
 	flex-direction: column;
 	justify-content: space-between;
 }
@@ -3439,6 +3442,10 @@ footer.Footer-white div {
 	.footer-resources {
 		grid-column: 1/4;
 		grid-row: 3/4;
+	}
+	.footer-resources h4 {
+		padding: 0;
+		margin: 1vh 0vw;
 	}
 
 	.footer-contact {
