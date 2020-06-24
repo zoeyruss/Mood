@@ -2643,7 +2643,8 @@ li.cube-text-survey-responses {
 }
 
 .cube {
-	grid-row: 1/3;
+	grid-row: 1/10;
+	z-index: 1;
 	grid-column: 1/5;
 	transform-style: preserve-3d;
 	transform: translateZ(-100px);
@@ -2660,6 +2661,7 @@ li.cube-text-survey-responses {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+	z-index: 2;
 	padding: 10vh 5vw;
 	grid-column: 1/5;
 	left: 0;
@@ -2736,11 +2738,13 @@ p.radio-group {
 }
 
 @media (max-width: 3000px) and (min-width: 1023px) {
+	section.Section.Section-4-cube.container {
+		grid-auto-rows: 10vh;
+	}
 	.cube__face {
 		width: 50vw;
 		height: 100vh;
-		display: flex;
-		flex-direction: row-reverse;
+		display: grid;
 	}
 
 	.cube-text li.border,
@@ -2754,7 +2758,7 @@ p.radio-group {
 		appearance: none;
 		border-radius: 0;
 		width: 7vw;
-		align-self: flex-start;
+		align-self: center;
 		height: 0.1vh;
 		border: none;
 		transition: 0.2s all linear;
@@ -2776,13 +2780,13 @@ p.radio-group {
 	}
 	span.cube-checkbox-word {
 		display: block;
-		text-align: left;
+		text-align: center;
 		font-size: 1rem;
 	}
 
 	span.cube-checkbox-word:hover {
 		border-radius: 50%;
-		width: 10vw;
+		width: 6vw;
 		border: black solid 0.1px;
 	}
 
@@ -2792,7 +2796,9 @@ p.radio-group {
 	}
 	.cube-text {
 		width: 50vw;
+		grid-column: 1/3;
 		height: 90vh;
+		grid-row: 1/2;
 		padding: 8vh 3vw;
 	}
 
@@ -2807,6 +2813,7 @@ p.radio-group {
 	.cube__face video {
 		width: 50vw;
 		height: 100vh;
+		grid-column: 3/5;
 	}
 
 	.cube-text.depression-cube-text,
@@ -2821,7 +2828,8 @@ p.radio-group {
 	[type="checkbox"],
 	[type="radio"],
 	span.cube-checkbox-word {
-		width: 10vw;
+		width: 7vw;
+		margin-right: 2vw;
 		align-items: center;
 	}
 	.cube-section {
@@ -2833,10 +2841,13 @@ p.radio-group {
 	}
 	p.radio-group {
 		flex-direction: row;
-		width: 50vw;
 		height: 10vh;
-		top: 90vh;
 		padding: 0;
+		justify-content: center;
+		position: relative;
+		grid-column: 1/3;
+		width: auto;
+		grid-row: 10/11;
 	}
 }
 
