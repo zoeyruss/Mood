@@ -808,7 +808,7 @@ a.tiny-link {
 	text-decoration: underline;
 	line-height: 0;
 	width: 100%;
-	font-size: 0.9rem;
+	font-size: 1rem;
 	line-height: 3em;
 }
 
@@ -2722,6 +2722,8 @@ li.cube-text-survey-responses {
 .cube.show-back .cube-text.cube-text-cbt,
 .cube.show-bottom .cube-text.cube-text-reflect {
 	transform: initial;
+	z-index: 999;
+	overflow-y: scroll;
 }
 
 .cube__face {
