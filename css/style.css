@@ -123,7 +123,7 @@ em.hanging-punctuation,
 em.perspective-italic,
 h1 {
 	font-size: 3rem;
-	line-height: 1.4em;
+	line-height: 1.5em;
 	margin-top: 0;
 }
 h1 span.recife-italic,
@@ -163,7 +163,8 @@ span.typeface-italic {
 	font-size: 3rem;
 	font-weight: 400;
 }
-h4.depression-is {
+h4.depression-is,
+h4.depression-is span.typeface-italic {
 	font-size: 2.55rem;
 }
 h5 {
@@ -707,7 +708,7 @@ span.cube-checkbox-word {
 }
 .sub-section {
 	color: #fff;
-	background: red;
+	background: blue;
 	width: 100vw;
 	height: 100vh;
 	z-index: 2;
@@ -729,7 +730,6 @@ span.cube-checkbox-word {
 }
 .white-background {
 	background-color: #fff;
-	padding-top: 28vh;
 	color: #000;
 }
 :root {
@@ -763,11 +763,6 @@ span.cube-checkbox-word {
 }
 a {
 	z-index: 8;
-}
-.cube-text.cube-text-resources.tiny-link {
-	filter: none;
-	mix-blend-mode: normal;
-	color: red;
 }
 
 a.tiny-link {
@@ -852,6 +847,9 @@ video.depression-Landing-Video {
 	}
 }
 @media (max-width: 3000px) and (min-width: 2000px) {
+	.sub-section {
+		padding: 25vh 9vw;
+	}
 	a.tiny-link {
 		font-size: 1.2rem;
 	}
@@ -1020,6 +1018,8 @@ a.logo.change-navbar {
 }
 a.depression-mood-link.rotate-link.invert {
 	right: -23px;
+	position: fixed;
+	overflow: hidden;
 }
 a.anxiety-mood-link.rotate-link.invert {
 	left: -11px;
@@ -1159,6 +1159,7 @@ img.logo-svg {
 	z-index: 13;
 	display: flex;
 	flex-direction: column;
+	transition: ease 0.2s;
 }
 .perspective-text-background {
 	height: #000;
@@ -2580,7 +2581,6 @@ span.cube-checkbox-word {
 	transform: initial;
 	z-index: 999;
 	overflow-y: scroll;
-	height: 100%;
 }
 .cube__face {
 	position: absolute;
@@ -2803,6 +2803,7 @@ p.radio-group {
 	.cube.show-top div.cube-text-advice {
 		transform: translate(1px);
 	}
+
 	.cube-text-reflect {
 		transform: inherit;
 	}
@@ -3178,6 +3179,10 @@ footer a {
 .footer-resources {
 	grid-column: 1/4;
 	grid-row: 6/9;
+}
+.footer-resources h4 {
+	line-height: 1em;
+	margin: 0;
 }
 .footer-contact {
 	grid-column: 1/3;
