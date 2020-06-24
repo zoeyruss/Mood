@@ -2734,6 +2734,7 @@ li.cube-text-survey-responses {
 	grid-template-columns: repeat(4, 25%);
 	grid-auto-rows: 50vh;
 	text-align: left;
+	overflow-y: scroll;
 }
 p.radio-group label.display-none {
 	display: none;
