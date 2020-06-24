@@ -585,6 +585,7 @@ em.arrow-style.cube-arrow {
 	}
 	h1 {
 		font-size: 9rem;
+		line-height: 0.9em;
 	}
 	h1 span.recife-italic,
 	h1.quote {
@@ -629,7 +630,7 @@ em.arrow-style.cube-arrow {
 		font-size: 26rem;
 	}
 	em.intro-anxiety {
-		font-size: 52rem;
+		font-size: 51rem;
 		line-height: 0.5em;
 		letter-spacing: 0.02em;
 	}
@@ -729,6 +730,7 @@ span.cube-checkbox-word {
 }
 .white-background {
 	background-color: #fff;
+	padding-top: 28vh;
 	color: #000;
 }
 :root {
@@ -1007,15 +1009,12 @@ a.logo.change-navbar {
 .rotate-link {
 	position: absolute;
 	transform: rotate(-90deg);
-	-webkit-filter: invert(0);
-	filter: invert(0);
 	top: 50vh;
 	z-index: 10;
-	color: #fff;
+	color: black;
 }
 a.depression-mood-link.rotate-link.invert {
-	right: 4px;
-	display: flex;
+	right: -23px;
 }
 a.anxiety-mood-link.rotate-link.invert {
 	left: -11px;
@@ -1198,7 +1197,7 @@ a p.perspective-italic {
 	grid-column: 1/5;
 	grid-row: 9/11;
 	padding: 2vh 4vw;
-	align-items: center;
+	align-items: baseline;
 	display: flex;
 	flex-direction: column;
 }
