@@ -204,7 +204,6 @@ ul,
 li,
 fieldset,
 form,
-label,
 legend,
 table,
 caption,
@@ -240,7 +239,6 @@ video {
 	vertical-align: baseline;
 }
 label {
-	margin-top: 1vh;
 }
 
 article,
