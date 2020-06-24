@@ -1182,6 +1182,7 @@ a p.perspective-italic {
 	margin: 0;
 	width: 100%;
 	height: 5.35rem;
+	transition: ease 0.2s;
 	line-height: 5rem;
 	font-size: 1.5rem;
 }
