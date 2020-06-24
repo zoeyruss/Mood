@@ -569,7 +569,7 @@ em.arrow-style.cube-arrow {
 	}
 
 	em.intro-anxiety {
-		font-size: 41rem;
+		font-size: 31rem;
 		line-height: 0.5em;
 		letter-spacing: 0.02em;
 	}
@@ -1075,7 +1075,6 @@ a.logo.change-navbar {
 a.depression-mood-link.rotate-link.invert {
 	right: 4px;
 	display: flex;
-	bottom: 42vh;
 }
 a.anxiety-mood-link.rotate-link.invert {
 	left: -11px;
@@ -2403,7 +2402,6 @@ em.intro-depression {
 
 .item.grid-item-2-depression-is.item-sticky {
 	grid-column: 1/5;
-	color: black;
 	z-index: 1;
 }
 .grid-item-2-depression-is {
