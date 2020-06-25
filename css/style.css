@@ -148,6 +148,9 @@ h4 {
 	font-weight: 400;
 	letter-spacing: 0.025em;
 }
+h4 span.typeface {
+	font-size: 2.5rem;
+}
 .cube-text h4 {
 	font-weight: 500;
 	margin-bottom: 2vh;
@@ -329,12 +332,17 @@ em.arrow-style.cube-arrow {
 	}
 }
 @media (max-width: 1023px) and (min-width: 768px) {
+	h4 span.typeface {
+		line-height: 2.3em;
+		font-size: 2.5rem;
+	}
 	h4.pull-quote,
 	span.pull-quote-span {
 		font-size: 2rem;
 	}
 	p {
 		font-size: 1.25rem;
+		line-height: 1.35em;
 	}
 	span.intro {
 		font-size: 9rem;
@@ -472,6 +480,10 @@ em.arrow-style.cube-arrow {
 	}
 }
 @media (max-width: 1999px) and (min-width: 1300px) {
+	h4 span.typeface {
+		font-size: 2.5rem;
+		line-height: 2em;
+	}
 	.cube-text p {
 		font-size: 1rem;
 	}
@@ -535,11 +547,11 @@ em.arrow-style.cube-arrow {
 	p.identify-container-item-define {
 		flex-direction: row;
 	}
-	span.intro {
-		font-size: 16rem;
+	span.intro,
+	em.intro {
+		font-size: 18rem;
 	}
 	em.intro {
-		font-size: 17rem;
 		margin-left: 3vw;
 	}
 	span.large-text {
@@ -1323,6 +1335,7 @@ video.Letter-1-Video {
 	grid-column: 2/10;
 	grid-row: 2/6;
 	margin-left: 0;
+	top: 15vh;
 }
 .item.grid-item-2-Goals.item-sticky,
 .item.grid-item-2-about.item-sticky {
@@ -1381,7 +1394,7 @@ video.Letter-1-Video {
 	}
 	.item.grid-item-1.item-sticky.display-flex-column {
 		grid-column: 2/4;
-		top: 27vh;
+		top: 24vh;
 	}
 	.item.grid-item-2-about.item-sticky {
 		grid-column: 1/3;
