@@ -1914,8 +1914,8 @@ video.grid-item.video {
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
 	.item-1-anxiety {
-		grid-row: 1/3;
-		grid-column: 2/4;
+		grid-row: 1/4;
+		grid-column: 3/5;
 	}
 	.item.quote-1.Goal-paragraph.display-flex-row {
 		grid-column: 5/9;
