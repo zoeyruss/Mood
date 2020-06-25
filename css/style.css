@@ -2637,7 +2637,7 @@ span.cube-checkbox-word {
 	transition: ease-in 20ms;
 	z-index: 9;
 	font-size: 1.15rem;
-	padding-left: 1vw;
+	padding-left: 3vw;
 	display: block;
 	text-align: left;
 }
@@ -2692,7 +2692,7 @@ span.cube-checkbox-word {
 }
 .border,
 .cube-text li.border {
-	padding: 6.25vh 7vw;
+	padding: 7.25vh 11vw;
 	border: 0.5px #000 solid;
 	border-radius: 50%;
 }
@@ -2825,7 +2825,7 @@ p.radio-group {
 	}
 }
 
-@media (max-width: 3000px) and (min-width: 1023px) {
+@media (max-width: 3000px) and (min-width: 1026px) {
 	.cube-text.cube-text-tools li {
 		margin-bottom: 1vh;
 	}
