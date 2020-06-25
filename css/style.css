@@ -123,7 +123,7 @@ em.hanging-punctuation,
 em.perspective-italic,
 h1 {
 	font-size: 3rem;
-	line-height: 1.4em;
+	line-height: 1em;
 	margin-top: 0;
 }
 h1 span.recife-italic,
@@ -144,6 +144,7 @@ h3.bold {
 }
 h4 {
 	font-size: 1.5rem;
+	color: black;
 	line-height: 48px;
 	font-weight: 400;
 	letter-spacing: 0.025em;
@@ -390,12 +391,16 @@ em.arrow-style.cube-arrow {
 		line-height: 1em;
 	}
 	h4.anxiety-is,
-	h4.depression-is,
 	span.typeface-italic {
 		font-size: 6rem;
 	}
-	h2 {
-		font-size: 1.25rem;
+	h4.depression-is,
+	h4.depression-is span.typeface-italic h2 {
+		font-size: 5rem;
+	}
+	h4.depression-is,
+	h4.depression-is span.typeface-italic {
+		font-size: 4rem;
 	}
 	span.large-text {
 		font-size: 11rem;
@@ -1774,7 +1779,7 @@ video.grid-item.video.video-4 {
 	z-index: 1;
 }
 .video-14 {
-	grid-column: 8/9;
+	grid-column: 5/9;
 	grid-row: 43/46;
 }
 .video-15 {
@@ -1803,7 +1808,7 @@ video.grid-item.video.video-4 {
 }
 .video-21 {
 	grid-column: 1/2;
-	grid-row: 24/27;
+	grid-row: 30/31;
 }
 @media (max-width: 767px) and (min-width: 376px) {
 	.item-1-anxiety {
