@@ -348,12 +348,12 @@ em.arrow-style.cube-arrow {
 		line-height: 1.35em;
 	}
 	span.intro {
-		font-size: 9rem;
+		font-size: 10rem;
 	}
 	em.intro {
-		font-size: 9rem;
-		line-height: 1em;
-		margin-left: 3vw;
+		font-size: 13rem;
+		line-height: 1;
+		margin-left: 0;
 	}
 	em.intro-anxiety {
 		font-size: 32rem;
@@ -678,7 +678,7 @@ em.arrow-style.cube-arrow {
 	}
 	em.intro,
 	span.intro {
-		font-size: 25rem;
+		font-size: 29rem;
 	}
 	em.intro {
 		margin-left: 3vw;
@@ -1316,8 +1316,7 @@ video.Logo-Video {
 	}
 	.item-1.item-1-index {
 		padding: 0 1vw;
-		align-items: center;
-		flex-direction: row;
+		align-items: baseline;
 	}
 }
 @media (max-width: 1999px) and (min-width: 1024px) {
