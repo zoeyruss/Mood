@@ -123,7 +123,7 @@ em.hanging-punctuation,
 em.perspective-italic,
 h1 {
 	font-size: 3rem;
-	line-height: 1em;
+	line-height: 1.4em;
 	margin-top: 0;
 }
 h1 span.recife-italic,
@@ -1217,7 +1217,6 @@ img.logo-svg {
 	z-index: 13;
 	display: flex;
 	flex-direction: column;
-	transition: ease 0.2s;
 }
 .perspective-text-background {
 	height: #000;
