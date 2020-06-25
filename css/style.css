@@ -1186,9 +1186,9 @@ img.logo-svg {
 		height: 3vw;
 	}
 	a.top-btn {
-		width: 50px;
+		width: 63px;
 		right: 1vw;
-		height: 55px;
+		height: 64px;
 	}
 	img.logo-svg {
 		height: 6vh;
@@ -1202,7 +1202,7 @@ img.logo-svg {
 	}
 	.nav-menu {
 		height: 4vh;
-		width: 5vw;
+		width: 6vw;
 	}
 	img.logo-svg.logo-5.change-navbar {
 		visibility: visible;
